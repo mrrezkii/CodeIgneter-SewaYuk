@@ -1,0 +1,79 @@
+body {
+    background: rgba(229, 229, 229, 0.4);
+}
+
+h4 {
+    font-size: 16px !important;
+    color: #a0a0a0;
+}
+
+.image-profile img {
+    z-index: 99;
+    max-width: 140px;
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.nama-profil {
+    font-size: 16pt;
+    color: #474747;
+    text-align: center;
+}
+
+.hr-profile {
+    width: 20%;
+    border-radius: 50px;
+    background: #00aeef;
+    height: 2px;
+}
+
+.edit-profile {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.content-profile {
+    margin: 20px;
+}
+
+.container-profile {
+    margin-top: 64px;
+}
+
+.card-profile {
+    position: relative;
+    margin-top: 150px;
+    width: 100%;
+    min-height: 20px;
+    background: white;
+    padding: 120px 36px 36px 36px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.card-ticket {
+    margin-bottom: 120px;
+    position: relative;
+    margin-top: 150px;
+    width: 100%;
+    min-height: 20px;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.card-transaksi {
+    margin-bottom: 10px;
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    min-height: 20px;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}

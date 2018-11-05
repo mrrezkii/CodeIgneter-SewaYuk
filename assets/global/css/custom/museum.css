@@ -1,0 +1,67 @@
+.item-museum {
+	margin-top: 20px;
+}
+
+.card:hover {
+	box-shadow: 0 0 40px rgba(27, 99, 255, 0.2);
+}
+
+.card-img-top {
+   height: 200px!important;
+}
+
+.card .card-title {
+	color: #449bff;
+}
+
+.card .card-text {
+	text-align: justify;
+	line-height: 1.4;
+	font-size: 15px;
+}
+
+.card .btn-primary {
+	font-weight: 600;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+    border-radius: 0;
+    background-color: #449bff;
+}
+
+.btn-lg, .btn-group-lg > .btn:hover {
+    background-color: #007bff;
+}
+
+.btn-lg, .btn-group-lg > .btn:active {
+    background-color: #007bff;
+}
+
+.btn-info{
+    background-color: #449bff;
+}
+
+.btn-info:hover{
+    background-color: #007bff;
+}
+
+.input-group{
+    padding-top: 150px;
+    width:100%;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: default;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+
+    .input-group{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+}
