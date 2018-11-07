@@ -7,7 +7,7 @@
 	<title>
 		<?=$title?>
 	</title>
-	<link rel="icon" href="<?=base_url()?>assets/image/icon.png" type="image/png" width="40px" height="auto">
+	<link rel="icon" href="<?=base_url()?>assets/global/image/logo.png" type="image/png" width="40px" height="auto">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="<?=base_url()?>assets/global/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="<?=base_url()?>assets/global/css/font-awesome.css" />
@@ -25,7 +25,7 @@
 				<form class="login-form" action="<?=base_url('user/proses_login')?>" method="post">
 
 				<span class="login-form-title">
-					<img src="<?=base_url()?>assets/global/image/logo-asli2.png" width=300px alt="Logo">
+					<img src="<?=base_url()?>assets/global/image/logo-kata.png" width=120px alt="Logo">
 				</span>
 
 				<?php if($this->session->flashdata('pesan_gagal')==TRUE) {?>

@@ -81,9 +81,9 @@
                     <br>
                     <h4>Kartu Tanda Pengenal:</h4>            
                         <?php if( $this->session->userdata('foto_identitas') == null): ?>
-                        <font color="red"><b>Belum Diupload Atau Diverifikasi <i class="fa fa-close"></i></b></font>                     
+                        <font color="red"><b><i class="fa fa-close"></i> Belum Diupload Atau Diverifikasi</b></font>                     
                         <?php else: ?>
-                            <font color="#108410"><b>Sudah Di Upload <i class="fa fa-check"></i></b></font>   
+                            <font color="#108410"><b><i class="fa fa-check"></i> Sudah Di Upload</font>   
                         <?php endif ?>
                 </div>
             </div>

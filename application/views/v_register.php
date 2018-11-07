@@ -7,7 +7,7 @@
 	<title>
 		<?=$title?>
 	</title>
-	<link rel="icon" href="<?=base_url()?>assets/global/image/icon.png" type="image/png" width="40px" height="auto">
+	<link rel="icon" href="<?=base_url()?>assets/global/image/logo.png" type="image/png" width="40px" height="auto">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="<?=base_url()?>assets/global/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="<?=base_url()?>assets/global/css/font-awesome.css" />
@@ -18,9 +18,9 @@
 	<div class="limiter">
 		<div class="container-register">
 			<div class="wrap-register">
-				<form class="login-form" action="<?=base_url('index.php/user/register_akun')?>" method="post">
+				<form class="register-form" action="<?=base_url('index.php/user/register_akun')?>" method="post">
 					<span class="register-form-title">
-					<img src="<?= base_url() ?>assets/global/image/logo-asli2.png" width=250px alt="logo">
+					<img src="<?= base_url() ?>assets/global/image/logo-kata.png" width=130px alt="logo">
 					</span>
                     <div class="wrap-input100 validate-input" data-validate="Entry your name">
 						<input class="input100" type="text" name="nama_user" placeholder="Nama Lengkap">

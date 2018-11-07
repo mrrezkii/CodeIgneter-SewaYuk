@@ -1,6 +1,11 @@
 body {
     /* background: rgba(229, 229, 229, 0.4); */
-    background: #007bff;
+    background-color: #3F51B5;
+}
+
+@font-face {
+    font-family: gotham-book;
+    src: url('../../fonts/gotham-rounded/GothamRounded-Book.otf');
 }
 
 h4 {
@@ -82,6 +87,8 @@ h4 {
 .col-md-6 p{
     background-color:#e5e5e5; 
     padding:10px; 
+    font-size: 15px;
     margin-top:10px; 
     border-radius: 10px;
+    font-family: gotham-book;
 }

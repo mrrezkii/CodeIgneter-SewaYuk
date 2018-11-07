@@ -158,7 +158,7 @@ iframe {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background-color: #1890f1;
+    background-color: #3F51B5;
 }
 
 .container-register {
@@ -173,7 +173,7 @@ iframe {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background-color: #1890f1;
+    background-color: #3F51B5;
 }
 
 .wrap-login {
@@ -220,6 +220,10 @@ iframe {
 [  ]*/
 .login-form {
     width: 290px;
+}
+
+.register-form {
+    width: 100%;
 }
 
 .login-form-title {

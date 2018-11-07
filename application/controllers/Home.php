@@ -5,7 +5,8 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$data['title']="SewaYuk | Home";
+		$this->load->view('v_home',$data);
 	}
 
 	public function profil()
