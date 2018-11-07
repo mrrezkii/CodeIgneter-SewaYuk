@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: gotham-book;
+    src: url('../../fonts/gotham-rounded/GothamRounded-Book.otf');
+}
+
+@font-face {
     font-family: gotham-bold;
     src: url('../../fonts/gotham-rounded/GothamRounded-Bold.otf');
 }
@@ -11,6 +16,11 @@
 @font-face {
     font-family: gotham-medium;
     src: url('../../fonts/gotham-rounded/GothamRounded-Medium.otf');
+}
+
+@font-face {
+    font-family: poppins-medium;
+    src: url('../../fonts/poppins/Poppins-Medium.ttf');
 }
 
 * {
@@ -110,4 +120,83 @@
     .tujuan h1 {
         padding-top: 15%;
     }
+}
+
+
+/* CSS KONTAK / FOOTER */
+.kontak-bg{
+    padding-top: 20px;
+    background-color: #444444;
+    font-family: gotham-medium;
+    color: white;
+}
+.h1-kontak {
+	font-size: 28px;
+	text-align: center;
+}
+.padding-content-kontak{
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+.btn-download{
+	background: #F56954;
+	border-radius: 3px;
+	border-style: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: white;
+	font-size: 18px;
+	margin-top: 20px;
+}
+.h2-kontak{
+	font-size: 1rem;
+}
+.p-kontak{
+	font-size: 15px;
+}
+.spacingMediaSosialKontak{
+	
+}
+.spacingMediaSosialKontak img{
+	padding-right: 5px;
+}
+.inputContent{
+	margin-right: 40px;
+}
+.infoContent{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+/* END CSS KONTAK / FOOTER */
+
+.about{
+    padding: 100px 50px 100px 50px;
+    text-align: center;
+}
+
+.about h4{
+    text-align:center;
+    font-family: gotham-medium;   
+    font-size: 30px;
+    margin-bottom: -10px;
+}
+
+.about h2{
+    padding-top: 10px;
+    font-size: 30px;
+  color: #3F51B5;
+}
+
+.about h5{
+    font-size: 18px;
+    font-family: poppins-medium;
+  }
+  
+
+.about img{
+    border-radius: 100%;
+    width: 100%;
+    margin-top: 80px;
+    padding-right: 8%;
+    padding-left: 8%;
 }
