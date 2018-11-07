@@ -6,9 +6,9 @@ class User extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->model('m_user','user');
-        if ($this->session->userdata('login')==TRUE) {
-                redirect('home','refresh');
-        }
+        // if ($this->session->userdata('login')==TRUE) {
+        //         redirect('home','refresh');
+        // }
     
     }
 
@@ -98,7 +98,6 @@ class User extends CI_Controller {
 		
     }
     
-
     public function logout()
     {
        

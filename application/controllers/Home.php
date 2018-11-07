@@ -7,4 +7,10 @@ class Home extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
+
+	public function profil()
+	{
+		$data['title']="Data Akun Pengguna";
+		$this->load->view('v_profil',$data);
+    }
 }
