@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class m_user extends CI_Model {
 
-    
+
     public function masuk(){
         $nama_user=$this->input->post('nama_user');
         $email=$this->input->post('email');
@@ -28,7 +28,6 @@ class m_user extends CI_Model {
         }
     }   
 
-
     public function get_login(){
         $this->db->select('*');
         $this->db->from('user');
@@ -36,6 +35,14 @@ class m_user extends CI_Model {
         $this->db->where('password', $this->input->post('password'));
         return $this->db->get();
     }  
+
+    public function detail_user($a)
+    {
+        return $this->db
+                    ->where('id_user', $a)
+                    ->get('user')
+                    ->row();
+    }
 }
 
 

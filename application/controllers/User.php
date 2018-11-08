@@ -97,6 +97,21 @@ class User extends CI_Controller {
 		}
 		
     }
+
+    public function profil($id)
+	{
+		$data['title']="Data Akun Pengguna";
+		$data['data_user']= $this->user->detail_user($id);
+		$this->load->view('v_profil',$data);
+	}
+	
+	public function edit_profil()
+	{
+        $data['title']="Edit Data Akun Pengguna";
+        $data['data_user']= $this->user->detail_user($id);
+		$this->load->view('v_edit_profil',$data);
+    }
+
     
     public function logout()
     {

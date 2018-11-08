@@ -38,7 +38,7 @@
             </div>
             
             <div class="col-12">
-                <center><button class="btn btn-primary"><b>Edit Data</b></button></center>
+                <center><a href="<?= base_url() ?>home/edit_profil"><button class="btn btn-primary"><b>Edit Data</b></button></a></center>
             </div>
             <br><br>
 
