@@ -135,19 +135,10 @@
 	text-align: center;
 }
 .padding-content-kontak{
-	padding-top: 40px;
+	padding-top: 20px;
 	padding-bottom: 10px;
 }
-.btn-download{
-	background: #F56954;
-	border-radius: 3px;
-	border-style: none;
-	padding-left: 20px;
-	padding-right: 20px;
-	color: white;
-	font-size: 18px;
-	margin-top: 20px;
-}
+
 .h2-kontak{
 	font-size: 1rem;
 }
@@ -155,14 +146,12 @@
 	font-size: 15px;
 }
 .spacingMediaSosialKontak{
-	
+    padding-bottom: 50px;
 }
 .spacingMediaSosialKontak img{
 	padding-right: 5px;
 }
-.inputContent{
-	margin-right: 40px;
-}
+
 .infoContent{
 	margin-left: 20px;
 	margin-top: 20px;
@@ -199,4 +188,10 @@
     margin-top: 80px;
     padding-right: 8%;
     padding-left: 8%;
+}
+
+
+#mapid{
+    height: 360px;
+    width: 100%;
 }

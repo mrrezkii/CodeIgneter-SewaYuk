@@ -8,6 +8,12 @@
     <link rel="icon" href="<?=base_url()?>assets/global/image/logo.png" type="image/png" width="40px" height="auto">
     <link rel="stylesheet" type="text/css" media="screen" href="<?=base_url()?>assets/global/css/custom/home.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="<?=base_url()?>assets/global/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin="" />
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+        crossorigin=""></script>   
 </head>
 <body>
 
@@ -79,59 +85,60 @@
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-xl-12">
 				<div class="padding-content-kontak">
-					<h1 class="h1-pengguna font-nexa-bold color-white">SewaYuk</h1>
+                    <h1 class="h1-pengguna font-nexa-bold color-white"><img  src="<?=base_url()?>assets/global/image/logo.png" width="70" height="70" alt=""> SewaYuk</h1>
+                    <hr style="background-color:grey; height:2px;">
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 col-xl-6 col-sm-12">
 				<div class="padding-content-kontak inputContent">
 					
-					
+					<div id="mapid"></div>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 col-xl-6 col-sm-12">
 				<div class="padding-content-kontak infoContent">	
 					<div class="row">
 						<div class="col-3">
-							<img class="img-fluid float-right" src="assets/global/image/rounded lokasi.png">
+							<img class="img-fluid float-right" src="assets/global/image/roundedlokasi.png">
 						</div>
 						<div class="col-9">
-							<h2 class="h2-kontak font-nexa-bold text-white">Kantor Pusat Surabaya</h2>
-							<p class="p-kontak font-nexa-light text-white">Jl. Medokan Asri Tengah MA 2 Q-16, Surabaya<br>Indonesia</p>
+							<h2 class="h2-kontak font-nexa-bold text-white">SMK Telkom Malang</h2>
+							<p class="p-kontak font-nexa-light text-white">Jl. Danau Ranau, Sawojajar, Kedungkandang, Kota Malang, Jawa Timur 65139</p>
 						</div>
 						<div class="col-3">
-							<img class="img-fluid float-right" src="assets/global/image/rounded telp.png">
+							<img class="img-fluid float-right" src="assets/global/image/roundedtelp.png">
 						</div>
 						<div class="col-9">
 							<h2 class="h2-kontak font-nexa-bold text-white">Nomer Telepon</h2>
-							<p class="p-kontak font-nexa-light text-white">+62 31 8722719<br>WA: 0812 9000 4560 (WA Only)</p>
+							<p class="p-kontak font-nexa-light text-white">+6281235960100<br>WA: 0812 400 3838 (WA Only)</p>
 						</div>
 						<div class="col-3">
-							<img class="img-fluid float-right" src="assets/global/image/rounded email.png">
+							<img class="img-fluid float-right" src="assets/global/image/roundedemail.png">
 						</div>
 						<div class="col-9">
 							<h2 class="h2-kontak font-nexa-bold text-white">E-mail</h2>
-							<p class="p-kontak font-nexa-light text-white">support@sevima.com</p>
+							<p class="p-kontak font-nexa-light text-white">support@sewayuk.com</p>
 						</div>
-					</div>
+                    </div>
+                    
+                    <br>
 					<div class="row">
-						<div class="col-md-9 offset-md-1">
-							<div class="spacingMediaSosialKontak">
+						<div class="col-md-9 offset-md-1">		
 								<h2 class="h2-kontak font-nexa-bold text-white">Media Sosial</h2>
-							</div>
 						</div>
 						<div class="col-md-9 offset-md-1">
 							<div class="spacingMediaSosialKontak">
 								<a href="https://www.facebook.com/SentraVidyaUtama/">
-									<img class="img-fluid hover-scale" src="assets/global/image/square facebook.png">
+									<img class="img-fluid hover-scale" src="assets/global/image/squarefacebook.png">
 								</a>
 								<a href="http://www.linkedin.com/company/pt-sentra-vidya-utama">
-									<img class="img-fluid hover-scale" src="assets/global/image/square linked in.png">
+									<img class="img-fluid hover-scale" src="assets/global/image/squarelinkedin.png">
 								</a>
 								<a href="https://plus.google.com/+SentraVidyaUtamaSurabaya/">
-									<img class="img-fluid hover-scale" src="assets/global/image/square youtube.png">
+									<img class="img-fluid hover-scale" src="assets/global/image/squareyoutube.png">
 								</a>
 								<a href="https://www.youtube.com/channel/UCDcvqZbhsdaDCnmUURz54uw">
-									<img class="img-fluid hover-scale" src="assets/global/image/square google.png">
+									<img class="img-fluid hover-scale" src="assets/global/image/squaregoogle.png">
 								</a>
 							</div>
 						</div>
@@ -144,4 +151,54 @@
 
 </html>
 </body>
+<script>
+    function onMapClick(e) {
+        // alert("" + e.latlng);
+    }
+
+
+
+    var data = [{
+        container: 'mapid',
+        map: L.map('mapid').setView([-7.9768887, 112.6582897], 16),
+        markers: [
+
+            {
+                coordinate: [-7.9767042, 112.6583408],
+                label: 'SMK Telkom Malang',
+                popup: 'SMK Telkom Malang'
+            }
+        ]
+    }
+    ];
+
+    const accessToken =
+        'pk.eyJ1Ijoic2hpbnlxIiwiYSI6ImNqbWQ2cXlhMTAwZWEzcW1sbjY1YXJqd3QifQ.Ngekb1otgAVz9IFOPBlnSA';
+
+
+
+
+    data.forEach(item => {
+
+        if (item.markers !== undefined) {
+
+            item.markers.forEach(element => {
+                marker = L.marker(element.coordinate).addTo(item.map);
+                marker.bindPopup(element.popup).openPopup();
+            });
+
+        }
+
+        item.map.on('click', onMapClick);
+
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + accessToken, {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 20,
+            id: 'mapbox.streets',
+            accessToken: accessToken
+        }).addTo(item.map);
+    });
+</script>
+
+
 </html>
