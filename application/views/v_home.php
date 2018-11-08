@@ -1,16 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Sewa Yuk</title>
+	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/style.css">
+	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/font-open-sans.css">
+	<script type="text/javascript" src="<?=base_url()?>assets/global/js/jquery/jquery-3.3.1.js"></script>
 	<title>
 		<?= $title ?>
 	</title>
 	<link rel="icon" href="<?=base_url()?>assets/global/image/logo.png" type="image/png" width="40px" height="auto">
 	<link rel="stylesheet" type="text/css" media="screen" href="<?=base_url()?>assets/global/css/custom/home.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="<?=base_url()?>assets/global/css/bootstrap.css" />
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
 	 crossorigin="" />
 
@@ -20,191 +24,191 @@
 </head>
 
 <body>
-
-	<style>
-		body {
-			margin: 0;
-		}
-	</style>
-
-	<!doctype html>
-	<html>
-
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<title>Sewa Yuk</title>
-		<link rel="stylesheet" type="text/css" href="includes/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		<link rel="stylesheet" type="text/css" href="includes/icofont/icofont.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/font-open-sans.css">
-		<script type="text/javascript" src="assets/js/jquery-3.3.1.js"></script>
-	</head>
-
-	<body>
-		<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow">
-			<div class="col-1">
-				<a href="index.php"><img class="img-fluid navbar-brand" src="assets/img/logo.png" alt="Logo Sewa Yuk" width="60px"></a>
-			</div>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-			 aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-						<a data-scroll class="nav-link font-opensans-bold" href="index.html">Beranda</a>
-					</li>
-					<li class="nav-item">
-						<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa</a>
-					</li>
-					<li class="nav-item">
-						<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa</a>
-					</li>
-					<li class="nav-item">
-						<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa</a>
-					</li>
-				</ul>
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#">
-							<img class="img-fluid" src="assets/img/rounded account.png" alt="Rounded account">
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link font-opensans-bold" href="#">Login</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<section id="intro" class="intro-bg">
-			<div class="container-fluid">
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow">
+		<div class="col-1">
+			<a href="index.php"><img class="img-fluid navbar-brand" src="<?=base_url()?>assets/global/image/logo.png" alt="Logo Sewa Yuk"
+				 width="60px"></a>
+		</div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a data-scroll class="nav-link font-opensans-bold" href="index.html">Beranda</a>
+				</li>
+				<li class="nav-item">
+					<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa</a>
+				</li>
+				<li class="nav-item">
+					<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa</a>
+				</li>
+				<li class="nav-item">
+					<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<img class="img-fluid" src="<?=base_url()?>assets/global/image/rounded account.png" alt="Rounded account">
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link font-opensans-bold" href="#">Login</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<section id="intro" class="intro-bg" style="padding-top: 10px;padding-bottom: 10px;">
+		<div class="container-fluid">
+			<div class="center-intro">
 				<div class="row">
-
-
-				</div>
-		</section>
-		<hr>
-		<section id="hotsale" class="hotsale-bg">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12">
-						<h5 class="text-left">Hot Sale</h5>
-					</div>
-					<div class="col-md-3">
-						<h5 class="text-center border border-info">Box 1</h5>
-					</div>
-					<div class="col-md-3">
-						<h5 class="text-center border border-info">Box 2</h5>
-					</div>
-					<div class="col-md-3">
-						<h5 class="text-center border border-info">Box 3</h5>
-					</div>
-					<div class="col-md-3">
-						<h5 class="text-center border border-info">Box 4</h5>
-					</div>
-				</div>
-			</div>
-		</section>
-		<hr>
-		<section id="category" class="category-bg">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12">
-						<h5 class="text-left">Category</h5>
-					</div>
-					<div class="col-md-3 p-0 ">
-						<h5 class="text-center border border-info">Box 1</h5>
-					</div>
-					<div class="col-md-3 p-0">
-						<div class="row">
-							<div class="col-md-12">
-								<h5 class="text-center border border-info">Box 2a</h5>
-							</div>
-							<div class="col-md-12">
-								<h5 class="text-center border border-info">Box 2b</h5>
-							</div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="center-intro-tagline">
+							<h2 class="color-white font-opensans-bold text-uppercase">Sewa Yuk</h2>
+							<h3 class="color-white font-opensans-regular">Sewa Barang Mudah, Praktis dan Asyik</h3>
 						</div>
 					</div>
-					<div class="col-md-3 p-0">
-						<h5 class="text-center border border-info">Box 3</h5>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="center-intro-vector">
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/home.png" alt="">
+						</div>
 					</div>
-					<div class="col-md-3 p-0">
-						<h5 class="text-center border border-info">Box 4</h5>
+					<div>
 					</div>
-					<div class="col-md-12">
-						<p class="text-right">See more</p>
+				</div>
+	</section>
+	<section id="category" class="category-bg" style="padding-top: 10px;padding-bottom: 10px;">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<h5 class="text-left color-blue font-opensans-bold">Kategori</h5>
+				</div>
+				<div class="col-md-3">
+					<center>
+						<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/kamera.png" alt="kamera">
+					</center>
+					<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Kamera</h5>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col-md-12">
+							<img class="img-fluid float-left" src="<?=base_url()?>assets/global/image/kategori/tenda.png" alt="tenda">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Kamera</h5>
+						</div>
+						<div class="col-md-12">
+							<img class="img-fluid float-left" src="<?=base_url()?>assets/global/image/kategori/peralatan dapur.png" alt="dapur">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Peralatan Alat Dapur</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<center>
+						<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+					</center>
+					<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col-md-12">
+							<img class="img-fluid float-left" src="<?=base_url()?>assets/global/image/kategori/speaker.png" alt="speaker">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Speaker</h5>
+						</div>
+						<div class="col-md-12">
+							<img class="img-fluid float-left" src="<?=base_url()?>assets/global/image/kategori/sepeda.png" alt="sepeda">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Sepeda</h5>
+						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-		<hr>
-		<section id="recent" class="recent-bg">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12">
-						<h5 class="text-left">Baru baru di sewa</h5>
-					</div>
-					<div class="col-md-4">
-						<h5 class="text-center border border-info">Box 1</h5>
-					</div>
-					<div class="col-md-4">
-						<h5 class="text-center border border-info">Box 2</h5>
-					</div>
-					<div class="col-md-4">
-						<h5 class="text-center border border-info">Box 3</h5>
-					</div>
-					<div class="col-md-4">
-						<h5 class="text-center border border-info">Box 4</h5>
-					</div>
-					<div class="col-md-4">
-						<h5 class="text-center border border-info">Box 5</h5>
-					</div>
-					<div class="col-md-4">
-						<h5 class="text-center border border-info">Box 6</h5>
-					</div>
-					<div class="col-md-12">
-						<p class="text-center">See more</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<hr>
-		<section id="whyuse" class="whyuse-bg">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12">
-						<h5 class="text-left">Mengapa memilih sewa yuk ?</h5>
-					</div>
-					<div class="col-md-4">
-						<h5 class="text-center border border-info">Box 1</h5>
-					</div>
-					<div class="col-md-4">
-						<h5 class="text-center border border-info">Box 2</h5>
-					</div>
-					<div class="col-md-4">
-						<h5 class="text-center border border-info">Box 3</h5>
-					</div>
-				</div>
-			</div>
-		</section>
-		<hr>
-		<section id="footer" class="footer-bg">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-6 offset-md-3">
-						<h1 class="pt-5 text-center">Footer</h1>
-					</div>
-				</div>
-			</div>
-		</section>
-	</body>
-	<script type="text/javascript" src="includes/bootstrap/js/bootstrap.min.js"></script>
-
-	</html>
 
 
+
+		</div>
+	</section>
+	<hr>
+	<section id="hotsale" class="hotsale-bg">
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-md-3">
+					<h5 class="text-center border border-info">Box 1</h5>
+				</div>
+				<div class="col-md-3">
+					<h5 class="text-center border border-info">Box 2</h5>
+				</div>
+				<div class="col-md-3">
+					<h5 class="text-center border border-info">Box 3</h5>
+				</div>
+				<div class="col-md-3">
+					<h5 class="text-center border border-info">Box 4</h5>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr>
+
+	<hr>
+	<section id="recent" class="recent-bg">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<h5 class="text-left">Baru baru di sewa</h5>
+				</div>
+				<div class="col-md-4">
+					<h5 class="text-center border border-info">Box 1</h5>
+				</div>
+				<div class="col-md-4">
+					<h5 class="text-center border border-info">Box 2</h5>
+				</div>
+				<div class="col-md-4">
+					<h5 class="text-center border border-info">Box 3</h5>
+				</div>
+				<div class="col-md-4">
+					<h5 class="text-center border border-info">Box 4</h5>
+				</div>
+				<div class="col-md-4">
+					<h5 class="text-center border border-info">Box 5</h5>
+				</div>
+				<div class="col-md-4">
+					<h5 class="text-center border border-info">Box 6</h5>
+				</div>
+				<div class="col-md-12">
+					<p class="text-center">See more</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr>
+	<section id="whyuse" class="whyuse-bg">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<h5 class="text-left">Mengapa memilih sewa yuk ?</h5>
+				</div>
+				<div class="col-md-4">
+					<h5 class="text-center border border-info">Box 1</h5>
+				</div>
+				<div class="col-md-4">
+					<h5 class="text-center border border-info">Box 2</h5>
+				</div>
+				<div class="col-md-4">
+					<h5 class="text-center border border-info">Box 3</h5>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr>
+	<section id="footer" class="footer-bg">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<h1 class="pt-5 text-center">Footer</h1>
+				</div>
+			</div>
+		</div>
+	</section>
 	<div class="wrapper tujuan" id="tujuan">
 		<div>
 			<h1>Mengapa Harus SewaYuk ?</h1>
@@ -212,19 +216,22 @@
 				<div class="column" data-aos-delay="500" data-aos="fade-right" data-aos-duration="1000"><img class="img-center" src="<?=base_url()?>assets/global/image/goods.png"
 					 width="100" height="100" alt="">
 					<h4><strong>Berbagai Barang Terlengkap</strong></h4>
-					<p>Jelajahi Berbagai Macam Jenis Barang Yang Di Tawarkan Oleh Kami. Mulai dari mobil, motor, kamera, perlengkapan camping,
+					<p>Jelajahi Berbagai Macam Jenis Barang Yang Di Tawarkan Oleh Kami. Mulai dari mobil, motor, kamera, perlengkapan
+						camping,
 						kaset DVD, dan masih banyak lagi barang menarik lainnya.</p>
 				</div>
-				<div class="column" data-aos-delay="1500" data-aos="fade-right" data-aos-duration="1000"><img class="img-center" src="<?=base_url()?>assets/global/image/shield.png"
-					 width="100" height="100" alt="hutan-hijau">
+				<div class="column" data-aos-delay="1500" data-aos="fade-right" data-aos-duration="1000"><img class="img-center"
+					 src="<?=base_url()?>assets/global/image/shield.png" width="100" height="100" alt="hutan-hijau">
 					<h4><strong>Transaksi Paling Aman</strong></h4>
-					<p>Semua transaksi di SewaYuk terjamin keamanannya baik dari sisi penyewa maupun pengguna semua mitra / pemilik toko
+					<p>Semua transaksi di SewaYuk terjamin keamanannya baik dari sisi penyewa maupun pengguna semua mitra / pemilik
+						toko
 						rental wajib terverifikasi sebelum melakukan transaksi.</p>
 				</div>
-				<div class="column" data-aos-delay="2500" data-aos="fade-right" data-aos-duration="1200"><img class="img-center" src="<?=base_url()?>assets/global/image/pay-per-click.png"
-					 width="100" height="100" alt="hutan-hijau">
+				<div class="column" data-aos-delay="2500" data-aos="fade-right" data-aos-duration="1200"><img class="img-center"
+					 src="<?=base_url()?>assets/global/image/pay-per-click.png" width="100" height="100" alt="hutan-hijau">
 					<h4><strong>Harga Yang Terjangkau</strong></h4>
-					<p>Dapatkan berbagai jenis barang yang disewakan dengan harga yang terjangkau dan tidak akan menguras isi dompet anda,
+					<p>Dapatkan berbagai jenis barang yang disewakan dengan harga yang terjangkau dan tidak akan menguras isi dompet
+						anda,
 						gunakan fitur untuk menyesuaikan sesuai dengan modal anda.</p>
 				</div>
 			</section>
@@ -299,7 +306,8 @@
 							</div>
 							<div class="col-9">
 								<h2 class="h2-kontak font-nexa-bold text-white">SMK Telkom Malang</h2>
-								<p class="p-kontak font-nexa-light text-white">Jl. Danau Ranau, Sawojajar, Kedungkandang, Kota Malang, Jawa Timur
+								<p class="p-kontak font-nexa-light text-white">Jl. Danau Ranau, Sawojajar, Kedungkandang, Kota Malang, Jawa
+									Timur
 									65139
 								</p>
 							</div>
@@ -349,6 +357,7 @@
 
 </html>
 </body>
+<script type="text/javascript" src="<?=base_url()?>assets/global/js/bootstrap/js/bootstrap.min.js"></script>
 <script>
 	function onMapClick(e) {
 		// alert("" + e.latlng);
@@ -367,8 +376,7 @@
 				popup: 'SMK Telkom Malang'
 			}
 		]
-	}
-	];
+	}];
 
 	const accessToken =
 		'pk.eyJ1Ijoic2hpbnlxIiwiYSI6ImNqbWQ2cXlhMTAwZWEzcW1sbjY1YXJqd3QifQ.Ngekb1otgAVz9IFOPBlnSA';
