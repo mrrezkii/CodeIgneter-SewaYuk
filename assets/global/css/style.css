@@ -75,3 +75,25 @@ section{
 .category-bg h5, .category-bg.img{
 	padding: 10px;
 }
+
+/* Hot Sale */
+
+.hotsale-bg{
+	background-color: #3F51B5;
+	height: 400px;
+}
+.box-hotsale{
+	background-color: #F5F5F5;
+	height: 238px;
+	border-radius: 20px;
+	margin-top: 50px;
+}
+
+/* Recent */
+
+.box-recent{
+	background-color: #F5F5F5;
+	height: 238px;
+	border-radius: 20px;
+	margin: 10px;
+}

@@ -122,89 +122,52 @@
 					</div>
 				</div>
 			</div>
-
-
-
 		</div>
 	</section>
-	<hr>
 	<section id="hotsale" class="hotsale-bg">
 		<div class="container-fluid">
 			<div class="row">
+				<div class="col-md-12">
+					<h5 class="text-left color-white font-opensans-bold float-left">Hot Sale</h5>&nbsp;&nbsp;&nbsp;
+					<img src="<?=base_url()?>assets/global/image/fire.png" alt="hot">
+				</div>
+				<div class="col-md-8 offset-md-2">
+					<div class="box-hotsale">
 
-				<div class="col-md-3">
-					<h5 class="text-center border border-info">Box 1</h5>
-				</div>
-				<div class="col-md-3">
-					<h5 class="text-center border border-info">Box 2</h5>
-				</div>
-				<div class="col-md-3">
-					<h5 class="text-center border border-info">Box 3</h5>
-				</div>
-				<div class="col-md-3">
-					<h5 class="text-center border border-info">Box 4</h5>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<hr>
-
-	<hr>
 	<section id="recent" class="recent-bg">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
-					<h5 class="text-left">Baru baru di sewa</h5>
+					<h5 class="text-left color-blue font-opensans-bold">Baru Disewa</h5>
 				</div>
 				<div class="col-md-4">
-					<h5 class="text-center border border-info">Box 1</h5>
+					<div class="box-recent">
+					</div>
 				</div>
 				<div class="col-md-4">
-					<h5 class="text-center border border-info">Box 2</h5>
+					<div class="box-recent">
+					</div>
 				</div>
 				<div class="col-md-4">
-					<h5 class="text-center border border-info">Box 3</h5>
+					<div class="box-recent">
+					</div>
 				</div>
 				<div class="col-md-4">
-					<h5 class="text-center border border-info">Box 4</h5>
+					<div class="box-recent">
+					</div>
 				</div>
 				<div class="col-md-4">
-					<h5 class="text-center border border-info">Box 5</h5>
+					<div class="box-recent">
+					</div>
 				</div>
 				<div class="col-md-4">
-					<h5 class="text-center border border-info">Box 6</h5>
-				</div>
-				<div class="col-md-12">
-					<p class="text-center">See more</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<hr>
-	<section id="whyuse" class="whyuse-bg">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-12">
-					<h5 class="text-left">Mengapa memilih sewa yuk ?</h5>
-				</div>
-				<div class="col-md-4">
-					<h5 class="text-center border border-info">Box 1</h5>
-				</div>
-				<div class="col-md-4">
-					<h5 class="text-center border border-info">Box 2</h5>
-				</div>
-				<div class="col-md-4">
-					<h5 class="text-center border border-info">Box 3</h5>
-				</div>
-			</div>
-		</div>
-	</section>
-	<hr>
-	<section id="footer" class="footer-bg">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-6 offset-md-3">
-					<h1 class="pt-5 text-center">Footer</h1>
+					<div class="box-recent">
+					</div>
 				</div>
 			</div>
 		</div>
