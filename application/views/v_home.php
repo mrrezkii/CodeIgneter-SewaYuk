@@ -9,7 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/style.css">
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/font-open-sans.css">
-	<script type="text/javascript" src="<?=base_url()?>assets/global/js/jquery/jquery-3.3.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/owl.theme.default.min.css">
 	<title>
 		<?= $title ?>
 	</title>
@@ -18,6 +19,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
 	 crossorigin="" />
 
+	 <script type="text/javascript" src="<?=base_url()?>assets/global/js/jquery/jquery-3.3.1.js"></script>
 	<!-- Make sure you put this AFTER Leaflet's CSS -->
 	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
 	 crossorigin=""></script>
@@ -124,7 +126,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="hotsale" class="hotsale-bg">
+	<section id="hotsale" class="hotsale-bg" style="padding-top: 10px;padding-bottom: 10px;">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
@@ -133,13 +135,62 @@
 				</div>
 				<div class="col-md-8 offset-md-2">
 					<div class="box-hotsale">
+					<!-- Set up your HTML -->
+						<div class="owl-carousel">
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+							
+							
 
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section id="recent" class="recent-bg">
+	<section id="recent" class="recent-bg" style="padding-top: 10px;padding-bottom: 10px;">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
@@ -320,7 +371,8 @@
 
 </html>
 </body>
-<script type="text/javascript" src="<?=base_url()?>assets/global/js/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?=base_url()?>assets/global/js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?=base_url()?>assets/global/js/owl-carousel/owl.carousel.min.js"></script>
 <script>
 	function onMapClick(e) {
 		// alert("" + e.latlng);
@@ -367,6 +419,28 @@
 			accessToken: accessToken
 		}).addTo(item.map);
 	});
+</script>
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+})
 </script>
 
 

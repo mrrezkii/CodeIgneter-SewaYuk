@@ -97,3 +97,6 @@ section{
 	border-radius: 20px;
 	margin: 10px;
 }
+.owl-carousel{
+	padding-top: 10px!important;
+}
