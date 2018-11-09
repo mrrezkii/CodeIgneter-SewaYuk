@@ -79,8 +79,6 @@
 								<option value="Laki-Laki">Laki-Laki</option>
 							</select>
 							<?php endif ?>
-							
-					
 						</p>
 					</div>
 					<div class="content-profile">

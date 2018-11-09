@@ -6,9 +6,9 @@ class User extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->model('m_user','user');
-        // if ($this->session->userdata('login')==TRUE) {
-        //         redirect('home','refresh');
-        // }
+        if ($this->session->userdata('login')==TRUE) {
+                redirect('home','refresh');
+        }
     
     }
 
@@ -17,7 +17,6 @@ class User extends CI_Controller {
 		$data['title']="Login Akun";
 		$this->load->view('v_login',$data);
     }
-
 
     public function proses_login(){
         if($this->input->post('submit')){
@@ -105,7 +104,7 @@ class User extends CI_Controller {
 		$this->load->view('v_profil',$data);
 	}
 	
-	public function edit_profil()
+	public function edit_profil($id)
 	{
         $data['title']="Edit Data Akun Pengguna";
         $data['data_user']= $this->user->detail_user($id);

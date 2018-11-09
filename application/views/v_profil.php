@@ -15,6 +15,7 @@
 </head>
 <body>
 <div class="container container-profile">
+<?php foreach($data_user as $data): ?>
     <span style="color: white">
         <a href="<?= base_url() ?>">
         <font color="white"><i class="fa fa-arrow-left"></i> <b>Kembali</b></font>
@@ -90,5 +91,6 @@
         </div>
     </div>
 </div>
+<?php endforeach ?>
 </body>
 </html>

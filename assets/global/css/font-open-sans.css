@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: OpenSans_Bold;
+	src: url(../fonts/open-sans/OpenSans-Bold.ttf);
+}
+@font-face {
+	font-family: OpenSans_Italic;
+	src: url(../fonts/open-sans/OpenSans-Italic.ttf);
+}
+@font-face {
+	font-family: OpenSans_Light;
+	src: url(../fonts/open-sans/OpenSans-Light.ttf);
+}
+@font-face {
+	font-family: OpenSans_Regular;
+	src: url(../fonts/open-sans/OpenSans-Regular.ttf);
+}
+.font-opensans-bold{
+	font-family: OpenSans_Bold;
+}
+.font-opensans-italic{
+	font-family: OpenSans_Italic;
+}
+.font-opensans-light{
+	font-family: OpenSans_Light;
+}
+.font-opensans-regular{
+	font-family: OpenSans_Regular;
+}
