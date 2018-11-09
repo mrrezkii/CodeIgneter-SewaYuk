@@ -9,57 +9,79 @@
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/style.css">
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/font-open-sans.css">
-	<script type="text/javascript" src="<?=base_url()?>assets/global/js/jquery/jquery-3.3.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="<?= base_url() ?>assets/global/css/hamburgers/hamburgers.min.css" />
 	<title>
 		<?= $title ?>
 	</title>
 	<link rel="icon" href="<?=base_url()?>assets/global/image/logo.png" type="image/png" width="40px" height="auto">
 	<link rel="stylesheet" type="text/css" media="screen" href="<?=base_url()?>assets/global/css/custom/home.css" />
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+	<!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
 	 crossorigin="" />
 
-	<!-- Make sure you put this AFTER Leaflet's CSS -->
 	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
-	 crossorigin=""></script>
+	 crossorigin=""></script> -->
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow">
-		<div class="col-1">
-			<a href="index.php"><img class="img-fluid navbar-brand" src="<?=base_url()?>assets/global/image/logo.png" alt="Logo Sewa Yuk"
-				 width="60px"></a>
-		</div>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-		 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a data-scroll class="nav-link font-opensans-bold" href="index.html">Beranda</a>
-				</li>
-				<li class="nav-item">
-					<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa</a>
-				</li>
-				<li class="nav-item">
-					<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa</a>
-				</li>
-				<li class="nav-item">
-					<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa</a>
-				</li>
-			</ul>
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<img class="img-fluid" src="<?=base_url()?>assets/global/image/rounded account.png" alt="Rounded account">
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link font-opensans-bold" href="#">Login</a>
-				</li>
-			</ul>
-		</div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top ">
+		<ul class="nav ml-auto">
+			<li class="nav-item">
+				<button class="hamburger hamburger--spring" id="navigation-button" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+			</li>
+		</ul>
 	</nav>
+
+	<div class="navigation">
+		<div class="bgblue">
+		</div>
+		<div class="nav-bar">
+			<img class="navbar-brand" src="<?= base_url() ?>assets/global/image/logo-asli2.png" width=200px alt="Icon">
+			<ul class="nav flex-column">
+				<li class="nav-item">
+					<a class="nav-link active" href="#">Museum</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Promo</a>
+				</li>
+				<li class="nav-item">
+					<div id="accordion">
+
+						<a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							Cek Pesanan <i style="font-size: 12px" class="fa fa-chevron-down"></i>
+						</a>
+						<div id="collapseOne" class="ml-4 collapse" aria-labelledby="headingOne" data-parent="#accordion">
+							<ul class="nav flex-column">
+								<li class="nav-item">
+                                    <a class="nav-link active" href="#">Transaksi</a>
+								</li>
+								<li class="nav-item">
+                                    <a class="nav-link" href="#">Keranjang</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="<?=base_url('user/login')?>">Masuk Akun <i class="fa fa-chevron-circle-right"></i></a>
+				</li>
+			</ul>
+			<div class="container footer-nav">
+				<p>let's explore the museum of Indonesia together!</p>
+				<h1></h1>
+			</div>
+		</div>
+	</div>
+
 	<section id="intro" class="intro-bg" style="padding-top: 10px;padding-bottom: 10px;">
 		<div class="container-fluid">
 			<div class="center-intro">
@@ -124,55 +146,106 @@
 			</div>
 		</div>
 	</section>
-	<hr>
-	<section id="hotsale" class="hotsale-bg">
+	<section id="hotsale" class="hotsale-bg" style="padding-top: 10px;padding-bottom: 10px;">
 		<div class="container-fluid">
 			<div class="row">
-
-				<div class="col-md-3">
-					<h5 class="text-center border border-info">Box 1</h5>
+				<div class="col-md-12">
+					<h5 class="text-left color-white font-opensans-bold float-left">Hot Sale</h5>&nbsp;&nbsp;&nbsp;
+					<img src="<?=base_url()?>assets/global/image/fire.png" alt="hot">
 				</div>
-				<div class="col-md-3">
-					<h5 class="text-center border border-info">Box 2</h5>
-				</div>
-				<div class="col-md-3">
-					<h5 class="text-center border border-info">Box 3</h5>
-				</div>
-				<div class="col-md-3">
-					<h5 class="text-center border border-info">Box 4</h5>
+				<div class="col-md-8 offset-md-2">
+					<div class="box-hotsale">
+					<!-- Set up your HTML -->
+						<div class="owl-carousel">
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+							<div>
+							<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<hr>
-
-	<hr>
 	<section id="recent" class="recent-bg">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
-					<h5 class="text-left">Baru baru di sewa</h5>
+					<h5 class="text-left color-blue font-opensans-bold">Baru Disewa</h5>
 				</div>
-				<div class="col-md-4">
-					<h5 class="text-center border border-info">Box 1</h5>
+				<div class="col-md-3">
+					<div class="box-recent">
+					</div>
 				</div>
-				<div class="col-md-4">
-					<h5 class="text-center border border-info">Box 2</h5>
+				<div class="col-md-3">
+					<div class="box-recent">
+					</div>
 				</div>
-				<div class="col-md-4">
-					<h5 class="text-center border border-info">Box 3</h5>
+				<div class="col-md-3">
+					<div class="box-recent">
+					</div>
 				</div>
-				<div class="col-md-4">
-					<h5 class="text-center border border-info">Box 4</h5>
+				<div class="col-md-3">
+					<div class="box-recent">
+					</div>
 				</div>
-				<div class="col-md-4">
-					<h5 class="text-center border border-info">Box 5</h5>
+				<div class="col-md-3">
+					<div class="box-recent">
+					</div>
 				</div>
-				<div class="col-md-4">
-					<h5 class="text-center border border-info">Box 6</h5>
+				<div class="col-md-3">
+					<div class="box-recent">
+					</div>
 				</div>
-				<div class="col-md-12">
-					<p class="text-center">See more</p>
+
+				<div class="col-md-3">
+					<div class="box-recent">
+					</div>
+				</div>
+				
+				<div class="col-md-3">
+					<div class="box-recent">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -324,7 +397,20 @@
 
 </html>
 </body>
-<script type="text/javascript" src="<?=base_url()?>assets/global/js/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?=base_url()?>assets/global/js/jquery/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="<?=base_url()?>assets/global/js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?=base_url()?>assets/global/js/owl-carousel/owl.carousel.min.js"></script>
+
+<script>
+	$(document).ready(function () {
+		$("#navigation-button").click(function () {
+			$("#notification-number").toggleClass("notification-hide");
+			$(".nav-bar").toggleClass("nav-bar-hide");
+			$(".bgblue").toggleClass("bgblue-show");
+			$(".hamburger").toggleClass("is-active");
+		});
+	});
+</script>
 <script>
 	function onMapClick(e) {
 		// alert("" + e.latlng);
@@ -371,6 +457,29 @@
 			accessToken: accessToken
 		}).addTo(item.map);
 	});
+
+</script>
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+})
 </script>
 
 
