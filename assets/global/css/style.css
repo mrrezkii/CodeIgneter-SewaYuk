@@ -102,6 +102,9 @@ section{
 	border-radius: 20px;
 	margin-top: 50px;
 }
+.owl-carousel{
+	padding-top: 10px!important;
+}
 
 /* Recent */
 .recent-bg{
@@ -117,9 +120,10 @@ section{
 	border-radius: 10px;
 	margin: 20px 5px 5px 5px;
 }
-.owl-carousel{
-	padding-top: 10px!important;
+.h5-recent{
+	font-size: 15px;
 }
+
 
 
 /*------------------- NAVBAR--------------------------*/
