@@ -9,14 +9,12 @@ class m_user extends CI_Model {
         $email=$this->input->post('email');
         $telepon=$this->input->post('telepon');
         $tanggal_lahir=$this->input->post('tanggal_lahir');
-        $username=$this->input->post('username');
         $password=$this->input->post('password');
         $datasimpan=array(
             'nama_user'=>$nama_user,
             'email'=>$email,
             'telepon'=>$telepon,
             'tanggal_lahir'=>$tanggal_lahir,
-            'username'=>$username,
             'password'=>$password,
             'status'=> "User"
         );
@@ -31,7 +29,7 @@ class m_user extends CI_Model {
     public function get_login(){
         $this->db->select('*');
         $this->db->from('user');
-        $this->db->where('username', $this->input->post('username'));
+        $this->db->where('email', $this->input->post('email'));
         $this->db->where('password', $this->input->post('password'));
         return $this->db->get();
     }  

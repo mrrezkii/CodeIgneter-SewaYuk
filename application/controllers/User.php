@@ -20,7 +20,7 @@ class User extends CI_Controller {
 
     public function proses_login(){
         if($this->input->post('submit')){
-            $this->form_validation->set_rules('username','username', 'trim|required');
+            $this->form_validation->set_rules('email','email', 'trim|required');
             $this->form_validation->set_rules('password','password', 'trim|required');
             if($this->form_validation->run() ==TRUE){
                if($this->user->get_login()->num_rows()>0){
@@ -29,7 +29,6 @@ class User extends CI_Controller {
                         'login'=> TRUE,
                         'nama_user'=>$data->nama_user,
                         'tanggal_lahir'=>$data->tanggal_lahir,
-                        'username'=>$data->username,
                         'password'=>$data->password,
                         'alamat'=>$data->alamat,
                         'jenis_kelamin'=>$data->jenis_kelamin,

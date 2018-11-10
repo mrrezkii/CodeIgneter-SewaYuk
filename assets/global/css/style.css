@@ -6,12 +6,8 @@ body{
 	padding: 0 auto;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-<<<<<<< HEAD
     background-color: #F5F5F5;
     list-style:none;
-=======
-    background-color: #FFFFFF;
->>>>>>> 9b8134151d84392e49aec64184fcbc9263dd0358
 }
 
 /* Atrribute */
