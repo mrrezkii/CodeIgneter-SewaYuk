@@ -223,39 +223,48 @@
 				<div class="col-md-12">
 					<h5 class="text-left color-blue font-opensans-bold">Kategori</h5>
 				</div>
-				<div class="col-md-3">
-					<center>
-						<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/kamera.png" alt="kamera">
-					</center>
-					<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Kamera</h5>
-				</div>
-				<div class="col-md-3">
+				<div class="content-category">
 					<div class="row">
 						<div class="col-md-12">
-							<img class="img-fluid float-left" src="<?=base_url()?>assets/global/image/kategori/tenda.png" alt="tenda">
+							<a href="#">
+								<p class="p-kategori text-right color-orange font-opensans-bold">Lihat Semua Kategori</p>
+							</a>
+						</div>
+						<div class="col-md-3 border-line center-content">
+							<center>
+								<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/kamera.png" alt="kamera">
+							</center>
 							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Kamera</h5>
 						</div>
-						<div class="col-md-12">
-							<img class="img-fluid float-left" src="<?=base_url()?>assets/global/image/kategori/peralatan dapur.png" alt="dapur">
-							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Peralatan Alat Dapur</h5>
+						<div class="col-md-3 border-line">
+							<div class="row">
+								<div class="col-md-12 center-content border-line-bottom">
+									<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/tenda.png" alt="tenda">
+									<h6 class="h5-kategori color-black font-opensans-bold text-center">Sewa Kamera</h5>
+								</div>
+								<div class="col-md-12 center-content">
+									<img class="img-fluid float-left" src="<?=base_url()?>assets/global/image/kategori/peralatan dapur.png" alt="dapur">
+									<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Alat Dapur</h5>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<center>
-						<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
-					</center>
-					<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
-				</div>
-				<div class="col-md-3">
-					<div class="row">
-						<div class="col-md-12">
-							<img class="img-fluid float-left" src="<?=base_url()?>assets/global/image/kategori/speaker.png" alt="speaker">
-							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Speaker</h5>
+						<div class="col-md-3 border-line center-content">		
+							<center>
+								<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
+							</center>
+							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
 						</div>
-						<div class="col-md-12">
-							<img class="img-fluid float-left" src="<?=base_url()?>assets/global/image/kategori/sepeda.png" alt="sepeda">
-							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Sepeda</h5>
+						<div class="col-md-3 border-line">
+							<div class="row">
+								<div class="col-md-12 center-content border-line-bottom">
+									<img class="img-fluid float-left" src="<?=base_url()?>assets/global/image/kategori/speaker.png" alt="speaker">
+									<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Speaker</h5>
+								</div>
+								<div class="col-md-12 center-content">
+									<img class="img-fluid float-left" src="<?=base_url()?>assets/global/image/kategori/sepeda.png" alt="sepeda">
+									<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Sepeda</h5>	
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -578,6 +587,7 @@
 <script>
 $('.owl-carousel').owlCarousel({
     loop:true,
+	nav:false,
     margin:10,
     responsiveClass:true,
     responsive:{
