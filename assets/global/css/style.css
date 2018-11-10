@@ -105,6 +105,15 @@ section{
 .owl-carousel{
 	padding-top: 10px!important;
 }
+.owl-prev {
+   display: none;
+}
+.owl-next {
+   display: none;
+}
+.disabled {
+   display: none !important;
+}
 
 /* Recent */
 .recent-bg{

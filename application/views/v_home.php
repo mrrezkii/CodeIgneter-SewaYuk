@@ -359,32 +359,130 @@
 				</div>
 				<div class="col-md-3">
 					<div class="box-recent">
+						<div class="row">
+							<div class="col-md-12">
+								<center>
+									<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d" width="150px">
+								</center>
+							</div>
+							<div class="col-md-12">
+								<hr>
+								<h5 class="h5-recent color-black font-opensans-bold text-center">Kamera Canon 700D</h5>
+							</div>
+							<div class="col-md-12">
+								<h5 class="h5-recent color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</h5>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-3">
 					<div class="box-recent">
+						<div class="row">
+							<div class="col-md-12">
+								<center>
+									<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d" width="150px">
+								</center>
+							</div>
+							<div class="col-md-12">
+								<hr>
+								<h5 class="h5-recent color-black font-opensans-bold text-center">Kamera Canon 700D</h5>
+							</div>
+							<div class="col-md-12">
+								<h5 class="h5-recent color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</h5>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-3">
 					<div class="box-recent">
+						<div class="row">
+							<div class="col-md-12">
+								<center>
+									<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d" width="150px">
+								</center>
+							</div>
+							<div class="col-md-12">
+								<hr>
+								<h5 class="h5-recent color-black font-opensans-bold text-center">Kamera Canon 700D</h5>
+							</div>
+							<div class="col-md-12">
+								<h5 class="h5-recent color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</h5>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-3">
 					<div class="box-recent">
+						<div class="row">
+							<div class="col-md-12">
+								<center>
+									<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d" width="150px">
+								</center>
+							</div>
+							<div class="col-md-12">
+								<hr>
+								<h5 class="h5-recent color-black font-opensans-bold text-center">Kamera Canon 700D</h5>
+							</div>
+							<div class="col-md-12">
+								<h5 class="h5-recent color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</h5>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-3">
 					<div class="box-recent">
+						<div class="row">
+							<div class="col-md-12">
+								<center>
+									<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d" width="150px">
+								</center>
+							</div>
+							<div class="col-md-12">
+								<hr>
+								<h5 class="h5-recent color-black font-opensans-bold text-center">Kamera Canon 700D</h5>
+							</div>
+							<div class="col-md-12">
+								<h5 class="h5-recent color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</h5>
+							</div>
+						</div>
 					</div>
 				</div>
 
 				<div class="col-md-3">
 					<div class="box-recent">
+						<div class="row">
+							<div class="col-md-12">
+								<center>
+									<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d" width="150px">
+								</center>
+							</div>
+							<div class="col-md-12">
+								<hr>
+								<h5 class="h5-recent color-black font-opensans-bold text-center">Kamera Canon 700D</h5>
+							</div>
+							<div class="col-md-12">
+								<h5 class="h5-recent color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</h5>
+							</div>
+						</div>
 					</div>
 				</div>
 				
 				<div class="col-md-3">
 					<div class="box-recent">
+						<div class="row">
+							<div class="col-md-12">
+								<center>
+									<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d" width="150px">
+								</center>
+							</div>
+							<div class="col-md-12">
+								<hr>
+								<h5 class="h5-recent color-black font-opensans-bold text-center">Kamera Canon 700D</h5>
+							</div>
+							<div class="col-md-12">
+								<h5 class="h5-recent color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</h5>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -602,6 +700,7 @@
 <script>
 $('.owl-carousel').owlCarousel({
     loop:true,
+	navigation : false,
 	nav:false,
     margin:10,
     responsiveClass:true,
@@ -621,6 +720,8 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+    $('.owl-next', element).toggleClass('disabled', current === carousel.maximum());
+    $('.owl-prev', element).toggleClass('disabled', current === carousel.minimum());
 </script>
 
 
