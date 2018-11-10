@@ -6,7 +6,7 @@ body{
 	padding: 0 auto;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #F5F5F5;
+    background-color: #FFFFFF;
 }
 
 /* Atrribute */
@@ -20,6 +20,9 @@ section{
 }
 .color-blue2{
 	color: #3F51B5;
+}
+.color-orange{
+	color: #F56954;
 }
 .color-white{
 	color: #f5f5f5;
@@ -50,12 +53,40 @@ section{
 }
 
 /* Category */
+.category-bg{
+	padding-top: 50px!important;
+	padding-bottom: 50px!important;
+	background-color: #fff;
+}
 
 .h5-kategori {
-	font-size: 25px;
+	font-size: 18px;
 }
 .category-bg h5, .category-bg.img{
 	padding: 10px;
+}
+.content-category{
+	background-color: #f5f5f5;
+	padding: 30px 30px 30px 30px;
+}
+.center-content{
+    display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+.center-content a{
+	text-decoration-line: none;
+	
+}
+.border-line{
+	border: solid #E0E0E0 2px;
+}
+.border-line-bottom{
+	border-bottom: solid #E0E0E0 2px;
+}
+.p-kategori{
+	font-size: 18px;
+	word-break: break-all;
 }
 
 /* Hot Sale */
