@@ -25,6 +25,8 @@
 </head>
 
 <body>
+
+	<?php if($this->session->userdata('login')!=TRUE): ?>
 	<nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top ">
 		<ul class="nav ml-auto">
 			<li class="nav-item">
@@ -81,6 +83,120 @@
 			</div>
 		</div>
 	</div>
+
+	<?php else:?>
+	<nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top ">
+		<ul class="nav ml-auto">
+			<li class="nav-item">
+
+				<button class="hamburger hamburger--spring" id="navigation-button" type="button">
+                    <!-- <span id="notification-number" class="badge badge-pill badge-danger"
+                          style="position: absolute; z-index: 99 ; right: 0;top: 0">0</span> -->
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+			</li>
+		</ul>
+	</nav>
+	<div class="navigation">
+		<div class="bgblue">
+		</div>
+		<div class="nav-bar">
+			<img class="navbar-brand" src="<?= base_url() ?>assets/global/image/logo-asli2.png" width=200px alt="Icon">
+			<br><br>
+			<div class="profil-user" style="text-align:center;">
+				<li class="nav-item">
+					<?php if($this->session->userdata('foto_profil')!=NULL)  :?>
+                        <img src="<?= base_url("assets/user/foto/profil/" . $this->session->userdata('foto_profil')) ?>"
+                             alt="..."
+                             style="border-radius:100%;" width="22%">
+					<?php else: ?>
+					<img src="<?= base_url() ?>assets/admin/images/user.png" alt="..." style="border-radius:100%;" width="22%">
+					<?php endif?>
+
+				<li class="nav-item" style="margin-top:10px;">
+					<h5>
+						<?= $this->session->userdata('nama_user') ?>
+					</h5>
+					<?php if($this->session->userdata('status')=='Admin'): ?>
+					<a style="font-size:16px;" href="<?=base_url('admin')?>">Halaman Admin <i style="font-size: 12px" class="fa fa-chevron-right"></i></a>
+					<?php endif ?>
+				</li>
+				</li>
+
+				<hr>
+			</div>
+
+
+			<ul class="nav flex-column">
+
+				<li class="nav-item">
+					<div id="accordion">
+
+						<a class="nav-link" href="#" data-toggle="collapse" data-target="#home" aria-expanded="true" aria-controls="collapseOne">
+							Home <i style="font-size: 12px" class="fa fa-chevron-down"></i>
+						</a>
+						<div id="home" class="ml-4 collapse" aria-labelledby="headingOne" data-parent="#accordion">
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link active" href="#">Fitur</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Tujuan</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Menu Utama</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="#">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="<?=base_url('user/profil/' . $this->session->userdata('id_user'))?>">Profil</a>
+				</li>
+
+				<li class="nav-item">
+					<div id="accordion">
+
+						<a class="nav-link" href="#" data-toggle="collapse" data-target="#pesanan" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="badge badge-pill badge-danger" style=" color:white;">0</div>
+							Cek Pesanan <i style="font-size: 12px" class="fa fa-chevron-down"></i>
+						</a>
+						<div id="pesanan" class="ml-4 collapse" aria-labelledby="headingOne" data-parent="#accordion">
+							<ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="<?= base_url() ?>transaksi/status">Transaksi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Keranjang &nbsp
+                                        <div class="badge badge-pill badge-danger" style=" color:white;">0</div>
+                                    </a>
+                                </li>
+							</ul>
+						</div>
+					</div>
+					<div>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="<?=base_url('user/logout')?>">Log Out</a>
+				</li>
+			</ul>
+			<div class="container footer-nav">
+				<p>let's explore the museum of Indonesia together!</p>
+				<h1></h1>
+			</div>
+		</div>
+	</div>
+
+	<?php endif?>
 
 	<section id="intro" class="intro-bg" style="padding-top: 10px;padding-bottom: 10px;">
 		<div class="container-fluid">

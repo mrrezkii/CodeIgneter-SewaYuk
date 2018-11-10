@@ -38,10 +38,10 @@ class m_user extends CI_Model {
 
     public function detail_user($a)
     {
-        return $this->db
-                    ->where('id_user', $a)
-                    ->get('user')
-                    ->row();
+        $this->db->select('*');
+        $this->db->from('user');
+        $this->db->where('id_user', $a);
+        return $this->db->get()->result();
     }
 }
 

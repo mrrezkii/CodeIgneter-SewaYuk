@@ -7,81 +7,82 @@
     <title><?= $title ?></title>
     <link rel="icon" href="<?= base_url() ?>assets/image/icon.png" type="image/png" width="40px" height="auto">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="<?= base_url() ?>assets/global/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="<?= base_url() ?>assets/global/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="<?= base_url() ?>assets/global/css/animate.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="<?= base_url() ?>assets/global/css/fonts.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="<?= base_url() ?>assets/global/css/font-awesome.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="<?= base_url() ?>assets/global/css/custom/profile.css"/>
 </head>
 <body>
+<?php foreach($data_user as $user): ?>
 <div class="container container-profile">
-<?php foreach($data_user as $data): ?>
     <span style="color: white">
         <a href="<?= base_url() ?>">
         <font color="white"><i class="fa fa-arrow-left"></i> <b>Kembali</b></font>
         </a>
     </span>
 
-    <div class="image-profile">
-        <?php if ($this->session->userdata('foto') != NULL)  : ?>
+      <div class="image-profile">
+        <?php if ($user->foto_profil != NULL): ?>
             <img class="rounded-circle"
-                 src="<?= base_url("assets/user/profil/foto/" . $this->session->userdata('foto')) ?>" alt="profil">
+                 src="<?= base_url("assets/user/foto/profil/".$user->foto_profil) ?>" alt="profil">
         <?php else: ?>
             <img src="<?= base_url() ?>assets/admin/images/user.png" alt="..." style="border-radius:100%;">
         <?php endif ?>
     </div>
 
+
     <div class="card-profile">
         <div class="row">
             <div class="col-12">
-                <p class="nama-profil"><b><?= $this->session->userdata('nama_user') ?></b></p>
+                <p class="nama-profil"><b><?= $user->nama_user ?></b></p>
                 <hr class="hr-profile">
             </div>
             
             <div class="col-12">
-                <center><a href="<?= base_url() ?>home/edit_profil"><button class="btn btn-primary"><b>Edit Data</b></button></a></center>
+                <center><a href="<?= base_url("user/edit_profil/".$user->id_user) ?>"><button class="btn btn-primary"><b>Edit Data</b></button></a></center>
             </div>
             <br><br>
 
             <div class="col-md-6">
                 <div class="content-profile">
                     <h4>Email :</h4>
-                    <p class="background"><?= $this->session->userdata('email') ?></p>
+                    <p class="background"><?= $user->email ?></p>
                 </div>
                 <div class="content-profile">
                     <h4>Telepon :</h4>
-                    <p><?= $this->session->userdata('telepon') ?></p>
+                    <p><?= $user->telepon ?></p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="content-profile">
-                    <h4>Username :</h4>
-                    <p><?= $this->session->userdata('username') ?></p>
+                    <h4>Password :</h4>
+                    <p><?= $user->password ?></p>
                 </div>
                 <div class="content-profile">
                     <h4>Tanggal Lahir : </h4>
-                    <p><?= $this->session->userdata('tanggal_lahir') ?></p>
+                    <p><?= $user->tanggal_lahir ?></p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="content-profile">
                     <h4>Jenis Kelamin :</h4>
-                    <p><?= $this->session->userdata('jenis_kelamin') ?></p>
+                    <p><?= $user->jenis_kelamin ?></p>
                 </div>
                 <div class="content-profile">
                     <h4>NIK :</h4>
-                    <p><?= $this->session->userdata('NIK') ?></p>
+                    <p><?= $user->NIK ?></p>
                 </div>
             </div>
              <div class="col-md-6">
                 <div class="content-profile">
                     <h4>Alamat :</h4>
-                    <p><?= $this->session->userdata('alamat') ?></p>
+                    <p><?= $user->alamat ?></p>
                 </div>
                 <div class="content-profile">
                     <br>
                     <h4>Kartu Tanda Pengenal:</h4>            
-                        <?php if( $this->session->userdata('foto_identitas') == null): ?>
+                        <?php if( $user->foto_identitas == null): ?>
                         <font color="red"><b><i class="fa fa-close"></i> Belum Diupload Atau Diverifikasi</b></font>                     
                         <?php else: ?>
                             <font color="#108410"><b><i class="fa fa-check"></i> Sudah Di Upload</font>   

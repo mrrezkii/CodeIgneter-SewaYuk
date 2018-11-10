@@ -99,3 +99,7 @@ h4 {
     height: 40px;
     border-radius: 5px;
 }
+
+.content-profile input, select > p{
+    background-color:none!important; 
+}
