@@ -31,6 +31,10 @@ section{
 .color-black{
 	color: #212121;
 }
+.p-semua{
+	font-size: 18px;
+	word-break: break-all;
+}
 
 /* Intro */
 
@@ -85,10 +89,6 @@ section{
 .border-line-bottom{
 	border-bottom: solid #E0E0E0 2px;
 }
-.p-kategori{
-	font-size: 18px;
-	word-break: break-all;
-}
 
 /* Hot Sale */
 
@@ -101,6 +101,21 @@ section{
 	height: 238px;
 	border-radius: 20px;
 	margin-top: 50px;
+}
+.owl-carousel{
+	padding-top: 10px!important;
+}
+.owl-prev {
+   display: none;
+}
+.owl-next {
+   display: none;
+}
+.disabled {
+   display: none !important;
+}
+.content-hotsale{
+	border: 2px #EEEEEE solid;
 }
 
 /* Recent */
@@ -117,9 +132,10 @@ section{
 	border-radius: 10px;
 	margin: 20px 5px 5px 5px;
 }
-.owl-carousel{
-	padding-top: 10px!important;
+.h5-recent{
+	font-size: 15px;
 }
+
 
 
 /*------------------- NAVBAR--------------------------*/
