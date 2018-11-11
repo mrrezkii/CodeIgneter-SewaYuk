@@ -41,6 +41,44 @@ class m_user extends CI_Model {
         $this->db->where('id_user', $a);
         return $this->db->get()->result();
     }
+
+    public function edit_profil()
+    {
+        $data = array(
+            'id_user' => $this->input->post('id_user'),
+            'nama_user' => $this->input->post('nama_user'),
+            'tanggal_lahir' => $this->input->post('tanggal_lahir'),
+            'telepon' => $this->input->post('telepon'),
+            'email' => $this->input->post('email'),
+            'alamat' => $this->input->post('alamat'),
+            'jenis_kelamin' => $this->input->post('jenis_kelamin'),
+            'NIK' => $this->input->post('NIK'),
+            'password' => $this->input->post('password')
+        );
+
+        return $this->db->where('id_user', $this->input->post('id_user'))
+            ->update('user', $data);
+    }
+
+    public function edit_profil_dengan_identitas($foto_identitas)
+    {
+        $data = array(
+                'id_user' => $this->input->post('id_user'),
+                'nama_user' => $this->input->post('nama_user'),
+                'tanggal_lahir' => $this->input->post('tanggal_lahir'),
+                'telepon' => $this->input->post('telepon'),
+                'email' => $this->input->post('email'),
+                'alamat' => $this->input->post('alamat'),
+                'jenis_kelamin' => $this->input->post('jenis_kelamin'),
+                'NIK' => $this->input->post('NIK'),
+                'password' => $this->input->post('password'),
+                'foto_identitas' => $foto_identitas
+        );
+
+        return $this->db->where('id_user', $this->input->post('id_user'))
+        ->update('user', $data);
+    }
+
 }
 
 

@@ -101,6 +101,10 @@ class User extends CI_Controller {
         if ($this->session->userdata('login')==FALSE) {
                redirect('user/login','refresh');
         }
+
+        if ($this->session->userdata('id_user')!= $id) {
+            redirect('user/profil/'. $this->session->userdata('id_user'),'refresh');
+         }
 		$data['title']="Data Akun Pengguna";
 		$data['data_user']= $this->user->detail_user($id);
 		$this->load->view('v_profil',$data);
@@ -108,11 +112,56 @@ class User extends CI_Controller {
 	
 	public function edit_profil($id)
 	{
+        if ($this->session->userdata('login')==FALSE) {
+            redirect('user/login','refresh');
+     }
+        if ($this->session->userdata('id_user')!= $id) {
+            redirect('user/edit_profil/'. $this->session->userdata('id_user'),'refresh');
+         }
         $data['title']="Edit Data Akun Pengguna";
         $data['data_user']= $this->user->detail_user($id);
 		$this->load->view('v_edit_profil',$data);
     }
 
+    public function update_profil(){
+        if($this->input->post('edit')){
+			if($_FILES['foto_identitas']['name'] ==""){
+				if($this->user->edit_profil()){
+					$this->session->set_flashdata('pesan_sukses', 'Sukses Mengubah Data');
+                    redirect('user/profil/'. $this->session->userdata('id_user'),'refresh');
+				} else {
+					$this->session->set_flashdata('pesan_gagal', 'Gagal Update Data Museum');
+                    redirect('user/profil/'. $this->session->userdata('id_user'),'refresh');
+                }
+                
+            }
+
+            else {
+				$config['upload_path'] = './assets/user/foto/identitas/';
+				$config['allowed_types'] = 'gif|jpg|png';
+				$config['max_size']  = '5000';
+				$config['max_width']  = '5000';
+				$config['max_height']  = '5000';
+				
+				$this->load->library('upload', $config);
+				
+				if ( ! $this->upload->do_upload('foto_identitas')){
+					$this->session->set_flashdata('pesan_gagal', 'Gagal Upload Foto Identitas');
+                    redirect('user/profil/'. $this->session->userdata('id_user'),'refresh');
+				}
+				else{
+					if($this->user->edit_profil_dengan_identitas($this->upload->data('file_name'))){
+						$this->session->set_flashdata('pesan_sukses', 'Sukses Update Data');
+                        redirect('user/profil/'. $this->session->userdata('id_user'),'refresh');
+					} else {
+						$this->session->set_flashdata('pesan_gagal', 'Gagal Update Data');
+                        redirect('user/profil/'. $this->session->userdata('id_user'),'refresh');
+					}
+				}
+			}
+			
+		}
+    }
     
     public function logout()
     {

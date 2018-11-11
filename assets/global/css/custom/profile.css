@@ -17,7 +17,7 @@ h4 {
     z-index: 99;
     max-width: 170px;
     position: absolute;
-    top: 160px;
+    top: 120px;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -46,12 +46,12 @@ h4 {
 }
 
 .container-profile {
-    margin-top: 64px;
+    margin-top: 44px;
 }
 
 .card-profile {
     position: relative;
-    margin-top: 150px;
+    margin-top: 120px;
     width: 100%;
     min-height: 20px;
     background: white;
@@ -102,4 +102,12 @@ h4 {
 
 .content-profile input, select > p{
     background-color:none!important; 
+}
+
+.btn-primary {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #3F51B5;
+    border-color: #3F51B5;
+
 }
