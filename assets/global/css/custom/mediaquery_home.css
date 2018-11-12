@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width: 768px){
+	.intro-bg{
+		height: auto;
+	}
+	.center-intro{
+		padding-top: 20px;
+	}
+	.center-intro-vector{
+		padding-top: 0px;
+		padding-left: 0px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.center-intro-vector img{
+		width: 300px;
+	}
+	.center-intro-tagline{
+		padding-top: 50px;
+		padding-left: 0px;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .nav-bar {
+        padding-top: 52px;
+        padding-left: 29px;
+        width: 100%;
+        position: fixed;
+        height: 100vh;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+    .wrapperLanding {
+        margin: 0;
+    }
+
+    .columns .column {
+        margin-bottom: 5px;
+        flex-basis: 40%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .columns .column {
+        flex-basis: 100%;
+        margin: 0 0 20px 0;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 414px) {
+    .tujuan h1 {
+        padding-top: 20%;
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+    .tujuan h1 {
+        padding-top: 15%;
+    }
+}

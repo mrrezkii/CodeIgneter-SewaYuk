@@ -23,9 +23,233 @@
     src: url('../../fonts/poppins/Poppins-Medium.ttf');
 }
 
+body{
+	margin: 0 auto;
+	padding: 0 auto;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    list-style:none;
+}
+
 * {
     box-sizing: border-box;
 }
+
+/* Atrribute */
+
+section{
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.color-blue{
+	color: #283593;
+}
+.color-blue2{
+	color: #3F51B5;
+}
+.color-orange{
+	color: #F56954;
+}
+.color-white{
+	color: #f5f5f5;
+}
+.color-black{
+	color: #212121;
+}
+.p-semua{
+	font-size: 18px;
+	word-break: break-all;
+}
+
+/* Intro */
+
+.intro-bg {
+	background-image: url(../../image/banner_home.png);
+	background-attachment: fixed;
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 700px;
+}
+.center-intro{
+	padding-top: 150px;
+}
+.center-intro-tagline{
+	padding-top: 150px;
+	padding-left: 20px;
+}
+.center-intro-vector{
+	padding-left: 20px;
+}
+
+/* Category */
+.category-bg{
+	padding-top: 50px!important;
+	padding-bottom: 50px!important;
+	background-color: #fff;
+}
+
+.h5-kategori {
+	font-size: 18px;
+}
+.category-bg h5, .category-bg.img{
+	padding: 10px;
+}
+.content-category{
+	background-color: #f5f5f5;
+	padding: 30px 30px 30px 30px;
+}
+.center-content{
+    display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+.center-content a{
+	text-decoration-line: none;
+	
+}
+.border-line{
+	border: solid #E0E0E0 2px;
+}
+.border-line-bottom{
+	border-bottom: solid #E0E0E0 2px;
+}
+
+/* Hot Sale */
+
+.hotsale-bg{
+	background-color: #3F51B5;
+	height: 400px;
+}
+.box-hotsale{
+	background-color: #F5F5F5;
+	height: 238px;
+	border-radius: 20px;
+	margin-top: 50px;
+}
+.owl-carousel{
+	padding-top: 10px!important;
+}
+.owl-prev {
+   display: none;
+}
+.owl-next {
+   display: none;
+}
+.disabled {
+   display: none !important;
+}
+.content-hotsale{
+	border: 2px #EEEEEE solid;
+}
+
+/* Recent */
+.recent-bg{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.box-recent{
+	background-color: #f5f5f5;
+	height: 250px;
+	border-radius: 10px;
+	margin: 20px 5px 5px 5px;
+}
+.h5-recent{
+	font-size: 15px;
+}
+
+
+
+/*------------------- NAVBAR--------------------------*/
+button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+iframe {
+    border: none !important;
+}
+
+
+.nav-bar {
+    z-index: 999;
+}
+
+.bgblue {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #449bff;
+    position: fixed;
+    display: none;
+    transition: all 0.3s;
+}
+
+.nav-bar {
+	padding-top: 52px;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 35%;
+	position: fixed;
+	background: white;
+	right: -700px;
+	height: 100vh;
+	transition: right 0.3s;
+}
+
+.nav-bar-hide {
+    right: 0;
+    transition: right 0.3s;
+}
+
+.bgblue-show {
+    z-index: 99;
+    display: block;
+    transition: all 0.3s;
+    opacity: 0.8;
+}
+
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before {
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    transition-timing-function: ease;
+    transition-duration: .15s;
+    transition-property: transform;
+    border-radius: 4px;
+    background: #ff9100;
+}
+
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner:after,
+.hamburger.is-active .hamburger-inner:before {
+    background-color: grey !important;
+}
+
+.hamburger--spring.is-active .hamburger-inner {
+    transition-delay: .22s;
+    background-color: transparent !important;
+}
+
+.hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
+    background-color: #ff9100!important;
+}
+
+.hamburger-inner:hover {
+    background-color: #fffde7!important;
+}
+
 
 .tujuan {
     background-color: #3F51B5;
@@ -90,36 +314,6 @@
 
 .column h4 {
     margin-top: 10px;
-}
-
-@media screen and (max-width: 980px) {
-    .wrapperLanding {
-        margin: 0;
-    }
-
-    .columns .column {
-        margin-bottom: 5px;
-        flex-basis: 40%;
-    }
-}
-
-@media screen and (max-width: 680px) {
-    .columns .column {
-        flex-basis: 100%;
-        margin: 0 0 20px 0;
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 414px) {
-    .tujuan h1 {
-        padding-top: 20%;
-    }
-}
-
-@media screen and (min-width: 760px) and (max-width: 1024px) {
-    .tujuan h1 {
-        padding-top: 15%;
-    }
 }
 
 

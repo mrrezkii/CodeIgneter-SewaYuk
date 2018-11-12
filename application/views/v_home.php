@@ -7,7 +7,6 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Sewa Yuk</title>
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/style.css">
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/font-open-sans.css">
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/owl.theme.default.min.css">
@@ -17,6 +16,7 @@
 	</title>
 	<link rel="icon" href="<?=base_url()?>assets/global/image/logo.png" type="image/png" width="40px" height="auto">
 	<link rel="stylesheet" type="text/css" media="screen" href="<?=base_url()?>assets/global/css/custom/home.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="<?=base_url()?>assets/global/css/custom/mediaquery_home.css" />
 	
 	<!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
 	 crossorigin="" />
@@ -226,42 +226,42 @@
 				</div>
 				<div class="content-category">
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-lg-12 col-md-12 col-sm-12">
 							<a href="#">
 								<p class="p-semua text-right color-orange font-opensans-bold">Lihat Semua</p>
 							</a>
 						</div>
-						<div class="col-md-3 border-line center-content">
+						<div class="col-lg-3 col-md-3 col-sm-12 border-line center-content">
 							<center>
 								<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/kamera.png" alt="kamera">
 							</center>
 							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Kamera</h5>
 						</div>
-						<div class="col-md-3 border-line">
+						<div class="col-lg-3 col-md-3 col-sm-12 border-line">
 							<div class="row">
-								<div class="col-md-12 center-content border-line-bottom">
+								<div class="col-lg-12 col-md-12 col-sm-12 center-content border-line-bottom">
 									<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/tenda.png" alt="tenda">
 									<h6 class="h5-kategori color-black font-opensans-bold text-center">Sewa Kamera</h5>
 								</div>
-								<div class="col-md-12 center-content">
+								<div class="col-lg-12 col-md-12 col-sm-12 center-content">
 									<img class="img-fluid float-left" src="<?=base_url()?>assets/global/image/kategori/peralatan dapur.png" alt="dapur">
 									<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Alat Dapur</h5>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-3 border-line center-content">		
+						<div class="col-lg-3 col-md-3 col-sm-12 border-line center-content">		
 							<center>
 								<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/baju.png" alt="baju">
 							</center>
 							<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Baju</h5>
 						</div>
-						<div class="col-md-3 border-line">
+						<div class="col-lg-3 col-md-3 col-sm-12 border-line">
 							<div class="row">
-								<div class="col-md-12 center-content border-line-bottom">
+								<div class="col-lg-12 col-md-12 col-sm-12 center-content border-line-bottom">
 									<img class="img-fluid float-left" src="<?=base_url()?>assets/global/image/kategori/speaker.png" alt="speaker">
 									<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Speaker</h5>
 								</div>
-								<div class="col-md-12 center-content">
+								<div class="col-lg-12 col-md-12 col-sm-12 center-content">
 									<img class="img-fluid float-left" src="<?=base_url()?>assets/global/image/kategori/sepeda.png" alt="sepeda">
 									<h5 class="h5-kategori color-black font-opensans-bold text-center">Sewa Sepeda</h5>	
 								</div>
@@ -275,12 +275,12 @@
 	<section id="hotsale" class="hotsale-bg" style="padding-top: 10px;padding-bottom: 10px;">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12 col-md-12 col-sm-12">
 					<h5 class="text-left color-white font-opensans-bold float-left">Hot Sale</h5>&nbsp;&nbsp;&nbsp;
 					<img src="<?=base_url()?>assets/global/image/fire.png" alt="hot">
 				</div>
 				<div class="col-md-8 offset-md-2">
-					<div class="box-hotsale">
+					<div class="box-hotsale col-lg-12 col-md-12 col-sm-12">
 					<!-- Set up your HTML -->
 						<div class="owl-carousel pl-2 pr-2">
 							<div class="content-hotsale">
@@ -355,7 +355,7 @@
 						<p class="p-semua text-right color-orange font-opensans-bold">Lihat Semua</p>
 					</a>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-3 col-sm-6">
 					<div class="box-recent">
 						<div class="row">
 							<div class="col-md-12">
@@ -373,7 +373,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-3 col-sm-6">
 					<div class="box-recent">
 						<div class="row">
 							<div class="col-md-12">
@@ -391,7 +391,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-3 col-sm-6">
 					<div class="box-recent">
 						<div class="row">
 							<div class="col-md-12">
@@ -409,7 +409,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-3 col-sm-6">
 					<div class="box-recent">
 						<div class="row">
 							<div class="col-md-12">
@@ -427,7 +427,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-3 col-sm-6">
 					<div class="box-recent">
 						<div class="row">
 							<div class="col-md-12">
@@ -445,7 +445,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-3 col-sm-6">
 					<div class="box-recent">
 						<div class="row">
 							<div class="col-md-12">
@@ -464,7 +464,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-3 col-sm-6">
 					<div class="box-recent">
 						<div class="row">
 							<div class="col-md-12">
@@ -483,7 +483,7 @@
 					</div>
 				</div>
 				
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-3 col-sm-6">
 					<div class="box-recent">
 						<div class="row">
 							<div class="col-md-12">
