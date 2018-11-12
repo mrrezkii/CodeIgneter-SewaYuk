@@ -125,8 +125,8 @@ section{
 	height: 400px;
 }
 .box-hotsale{
-	background-color: #F5F5F5;
-	height: 238px;
+	background-color: #FFFFFF;
+	height: 258px;
 	border-radius: 20px;
 	margin-top: 50px;
 }
@@ -143,7 +143,36 @@ section{
    display: none !important;
 }
 .content-hotsale{
-	border: 2px #EEEEEE solid;
+	background-color: #FFFFFF;
+	border: 2px #FFFFFF solid;
+	border-radius: 10px;
+	text-align: center;
+}
+.content-hotsale img{
+	width: 150px!important;
+}
+.h5-hotsale{
+	margin-top: 10px;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+}
+.h5-hotsale-harga{
+	font-size: 14px;
+	font-weight: 600;
+	text-align: center;
+}
+.btn-hotsale{
+	background-color: #F56954;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	width: 100%;
+}
+.btn-hotsale:hover{
+	background-color: #FFFFFF;
+	border: 1px #F56954 solid; 
+	color: #F56954;
 }
 
 /* Recent */

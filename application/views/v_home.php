@@ -279,64 +279,69 @@
 					<h5 class="text-left color-white font-opensans-bold float-left">Hot Sale</h5>&nbsp;&nbsp;&nbsp;
 					<img src="<?=base_url()?>assets/global/image/fire.png" alt="hot">
 				</div>
-				<div class="col-md-8 offset-md-2">
+				<div class="col-md-10 offset-md-1">
 					<div class="box-hotsale col-lg-12 col-md-12 col-sm-12">
 					<!-- Set up your HTML -->
 						<div class="owl-carousel pl-2 pr-2">
 							<div class="content-hotsale">
-								<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
-								<h5 class="h5-recent color-black font-opensans-bold text-center">Kamera Canon 700D</h5>
-								<h5 class="h5-recent color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</h5>
+								<center>
+									<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
+								</center>
+								<h5 class="h5-hotsale color-black font-opensans-regular">Kamera Canon 700D</h5>
+								<h5 class="h5-hotsale-harga color-orange font-opensans-regular">Rp. 100.000 / 24 jam</h5>
+								<a href="#">
+									<button type="button" class="btn btn-hotsale font-opensans-bold">Lihat</button>
+								</a>
 							</div>
 							<div class="content-hotsale">
-							<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
-								<h5 class="h5-recent color-black font-opensans-bold text-center">Kamera Canon 700D</h5>
-								<h5 class="h5-recent color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</h5>
+								<center>
+									<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
+								</center>
+								<h5 class="h5-hotsale color-black font-opensans-regular">Kamera Canon 700D</h5>
+								<h5 class="h5-hotsale-harga color-orange font-opensans-regular">Rp. 100.000 / 24 jam</h5>
+								<a href="#">
+									<button type="button" class="btn btn-hotsale font-opensans-bold">Lihat</button>
+								</a>
 							</div>
 							<div class="content-hotsale">
-							<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
-								<h5 class="h5-recent color-black font-opensans-bold text-center">Kamera Canon 700D</h5>
-								<h5 class="h5-recent color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</h5>
+								<center>
+									<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
+								</center>
+								<h5 class="h5-hotsale color-black font-opensans-regular">Kamera Canon 700D</h5>
+								<h5 class="h5-hotsale-harga color-orange font-opensans-regular">Rp. 100.000 / 24 jam</h5>
+								<a href="#">
+									<button type="button" class="btn btn-hotsale font-opensans-bold">Lihat</button>
+								</a>
 							</div>
 							<div class="content-hotsale">
-							<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
-								<h5 class="h5-recent color-black font-opensans-bold text-center">Kamera Canon 700D</h5>
-								<h5 class="h5-recent color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</h5>
+								<center>
+									<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
+								</center>
+								<h5 class="h5-hotsale color-black font-opensans-regular">Kamera Canon 700D</h5>
+								<h5 class="h5-hotsale-harga color-orange font-opensans-regular">Rp. 100.000 / 24 jam</h5>
+								<a href="#">
+									<button type="button" class="btn btn-hotsale font-opensans-bold">Lihat</button>
+								</a>
 							</div>
 							<div class="content-hotsale">
-							<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
-								<h5 class="h5-recent color-black font-opensans-bold text-center">Kamera Canon 700D</h5>
-								<h5 class="h5-recent color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</h5>
+								<center>
+									<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
+								</center>
+								<h5 class="h5-hotsale color-black font-opensans-regular">Kamera Canon 700D</h5>
+								<h5 class="h5-hotsale-harga color-orange font-opensans-regular">Rp. 100.000 / 24 jam</h5>
+								<a href="#">
+									<button type="button" class="btn btn-hotsale font-opensans-bold">Lihat</button>
+								</a>
 							</div>
 							<div class="content-hotsale">
-							<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
-								<h5 class="h5-recent color-black font-opensans-bold text-center">Kamera Canon 700D</h5>
-								<h5 class="h5-recent color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</h5>
-							</div>
-							<div class="content-hotsale">
-							<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
-								<h5 class="h5-recent color-black font-opensans-bold text-center">Kamera Canon 700D</h5>
-								<h5 class="h5-recent color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</h5>
-							</div>
-							<div class="content-hotsale">
-							<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
-								<h5 class="h5-recent color-black font-opensans-bold text-center">Kamera Canon 700D</h5>
-								<h5 class="h5-recent color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</h5>
-							</div>
-							<div class="content-hotsale">
-							<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
-								<h5 class="h5-recent color-black font-opensans-bold text-center">Kamera Canon 700D</h5>
-								<h5 class="h5-recent color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</h5>
-							</div>
-							<div class="content-hotsale">
-							<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
-								<h5 class="h5-recent color-black font-opensans-bold text-center">Kamera Canon 700D</h5>
-								<h5 class="h5-recent color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</h5>
-							</div>
-							<div class="content-hotsale">
-							<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
-								<h5 class="h5-recent color-black font-opensans-bold text-center">Kamera Canon 700D</h5>
-								<h5 class="h5-recent color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</h5>
+								<center>
+									<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
+								</center>
+								<h5 class="h5-hotsale color-black font-opensans-regular">Kamera Canon 700D</h5>
+								<h5 class="h5-hotsale-harga color-orange font-opensans-regular">Rp. 100.000 / 24 jam</h5>
+								<a href="#">
+									<button type="button" class="btn btn-hotsale font-opensans-bold">Lihat</button>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -716,10 +721,13 @@
 <script>
 $('.owl-carousel').owlCarousel({
     loop:true,
-	navigation : false,
+	navigation:false,
 	nav:false,
-    margin:10,
+    margin:25,
     responsiveClass:true,
+	autoplay:true,
+    autoplayTimeout:1500,
+    autoplayHoverPause:true,
     responsive:{
         0:{
             items:1,
@@ -727,12 +735,12 @@ $('.owl-carousel').owlCarousel({
         },
         600:{
             items:3,
-            nav:false
+            nav:true
         },
         1000:{
             items:5,
             nav:true,
-            loop:false
+            loop:true
         }
     }
 })
