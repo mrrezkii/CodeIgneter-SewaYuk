@@ -141,7 +141,7 @@
 						<div id="home" class="ml-4 collapse" aria-labelledby="headingOne" data-parent="#accordion">
 							<ul class="nav flex-column">
 								<li class="nav-item">
-									<a class="nav-link active" href="#">Fitur</a>
+									<a class="nav-link active" href="#kategori">Kategori Sewa</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="#">Tujuan</a>
@@ -218,7 +218,7 @@
 					</div>
 				</div>
 	</section>
-	<section id="category" class="category-bg" style="padding-top: 10px;padding-bottom: 10px;">
+	<section id="kategori" class="category-bg" style="padding-top: 10px;padding-bottom: 10px;">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
@@ -528,7 +528,7 @@
 					<h4><strong>Harga Yang Terjangkau</strong></h4>
 					<p>Dapatkan berbagai jenis barang yang disewakan dengan harga yang terjangkau dan tidak akan menguras isi dompet
 						anda,
-						gunakan fitur untuk menyesuaikan sesuai dengan modal anda.</p>
+						gunakan Kategori Sewa untuk menyesuaikan sesuai dengan modal anda.</p>
 				</div>
 			</section>
 		</div>

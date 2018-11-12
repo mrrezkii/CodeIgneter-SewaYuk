@@ -8,12 +8,18 @@ class m_user extends CI_Model {
         $nama_user=$this->input->post('nama_user');
         $email=$this->input->post('email');
         $telepon=$this->input->post('telepon');
+        $jenis_kelamin=$this->input->post('jenis_kelamin');
+        $provinsi=$this->input->post('provinsi');
+        $kota=$this->input->post('kota');
         $tanggal_lahir=$this->input->post('tanggal_lahir');
         $password=$this->input->post('password');
         $datasimpan=array(
             'nama_user'=>$nama_user,
             'email'=>$email,
             'telepon'=>$telepon,
+            'jenis_kelamin'=>$jenis_kelamin,
+            'provinsi'=>$provinsi,
+            'kota'=>$kota,
             'tanggal_lahir'=>$tanggal_lahir,
             'password'=>$password,
             'status'=> "User"
@@ -77,6 +83,18 @@ class m_user extends CI_Model {
 
         return $this->db->where('id_user', $this->input->post('id_user'))
         ->update('user', $data);
+    }
+
+    public function get_provinsi(){
+        $this->db->select('*');
+        $this->db->from('provinsi');
+        return $this->db->get()->result();
+    }
+
+    public function get_kota(){
+        $this->db->select('*');
+        $this->db->from('kabupaten');
+        return $this->db->get()->result();
     }
 
 }

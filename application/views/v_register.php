@@ -18,7 +18,7 @@
 	<div class="limiter">
 		<div class="container-register">
 			<div class="wrap-register">
-				<form class="register-form" action="<?=base_url('index.php/user/register_akun')?>" method="post">
+				<form class="register-form" action="<?=base_url('user/register_akun')?>" method="post">
 					<span class="register-form-title">
 					<img src="<?= base_url() ?>assets/global/image/logo-kata.png" width=130px alt="logo">
 					</span>
@@ -34,6 +34,43 @@
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input">
+					<select  class="input100" name="jenis_kelamin" style="border:none;">
+								<option value="Laki-Laki">Laki-Laki</option>
+								<option value="Perempuan">Perempuan</option>
+				   </select>
+				   <span class="focus-input100"></span>
+				   <span class="symbol-input100">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input">
+					<select  class="input100" name="provinsi" style="border:none;">
+								<option>Provinsi</option>
+								<?php foreach($get_provinsi as $provinsi): ?>
+									<option value="<?=$provinsi->nama?>"><?=$provinsi->nama?></option>
+								<?php endforeach?>
+				   </select>
+				   <span class="focus-input100"></span>
+				   <span class="symbol-input100">
+							<i class="fa fa-globe" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input">
+					<select  id="kota" class="input100" name="kota" style="border:none;">
+					<option>kota</option>
+					<?php foreach($get_kota as $kota): ?>
+									<option value="<?=$kota->nama?>"><?= $kota->nama ?></option>
+					<?php endforeach?>
+				   </select>
+				   <span class="focus-input100"></span>
+				   <span class="symbol-input100">
+							<i class="fa fa-home" aria-hidden="true"></i>
 						</span>
 					</div>
 
@@ -64,8 +101,9 @@
 					<div class="container-login-form-btn">
 						<input class="login-form-btn" type="submit" name="submit" id="submit" value="Daftar" class="btn">
 					</div>
+
 					<div class="text-center p-t-136">
-                        <a class="txt2" href="<?=base_url('index.php/user/login')?>">
+                        <a class="txt2" href="<?=base_url('user/login')?>">
                         <i class="fa fa-long-arrow-left m-l-5" aria-hidden="true"></i>
 						Back to login 
 						</a>
@@ -74,7 +112,7 @@
 			</div>
 		</div>
 	</div>
-
+	
 </body>
 </html>
 

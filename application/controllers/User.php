@@ -56,7 +56,9 @@ class User extends CI_Controller {
 
     public function register()
 	{
-		$data['title']="Resgistrasi Akun";
+        $data['title']="Resgistrasi Akun";
+        $data['get_provinsi']=$this->user->get_provinsi();
+        $data['get_kota']=$this->user->get_kota();
 		$this->load->view('v_register',$data);
     }
 
@@ -67,11 +69,12 @@ class User extends CI_Controller {
 			$this->form_validation->set_rules('nama_user', 'nama_user', 'trim|required|min_length[3]');
 			$this->form_validation->set_rules('email', 'email', 'trim|required');
             $this->form_validation->set_rules('telepon', 'telepon', 'trim|required');
-            $this->form_validation->set_rules('tanggal_lahir', 'tanggal_lahir', 'trim|required');
-			$this->form_validation->set_rules('username', 'username', 'trim|required');		
+            $this->form_validation->set_rules('jenis_kelamin', 'jenis_kelamin', 'trim|required');
+            $this->form_validation->set_rules('provinsi', 'provinsi', 'trim|required');
+            $this->form_validation->set_rules('kota', 'kota', 'trim|required');
+            $this->form_validation->set_rules('tanggal_lahir', 'tanggal_lahir', 'trim|required');		
             $this->form_validation->set_rules('password', 'password', 'trim|required');
             
-
 			if ($this->form_validation->run() == TRUE) {
 				
 				if($this->user->masuk()==TRUE){
@@ -82,14 +85,14 @@ class User extends CI_Controller {
 			
 				else{
 				$this->session->set_flashdata('pesan_gagal', 'Gagal Menyimpan Data Anda');
-				$this->load->view('user/register');
+				$this->load->view('user/register','refresh');
 				}
 
 			} 
 			
 			else {
 					$this->session->set_flashdata('pesan_gagal', validation_errors());
-					$this->load->view('user/register','refresh');
+					$this->load->view('user/bangsat','refresh');
 				 }
 
 		}
@@ -170,4 +173,7 @@ class User extends CI_Controller {
         $this->session->set_flashdata('pesan', 'Sukses Keluar Akun');
         redirect('home','refresh');
     }
+	
+
+
 }

@@ -120,10 +120,10 @@
 						<div class="content-profile">
 							<br>
 							<h4>Kartu Tanda Pengenal:</h4>
-							<?php if( $user->foto_identitas == null): ?>
+							<?php if($user->foto_identitas == null): ?>
 							<font color="red"><b><i class="fa fa-close"></i> Belum Diupload Atau Diverifikasi</b></font>
 							<input type="file" name="foto_identitas">
-							<?php elseif( $user->verifikasi == 0): ?>
+							<?php elseif($user->verifikasi == 0 && $user->foto_identitas != null): ?>
 							<font color="#ffa42d"><b>Belum Di Verifikasi</font>
 							<div style="visibility:hidden"><input type="file" name="foto_identitas"></div>
 							<?php else: ?>
