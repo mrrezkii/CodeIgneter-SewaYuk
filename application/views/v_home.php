@@ -17,7 +17,7 @@
 	<link rel="icon" href="<?=base_url()?>assets/global/image/logo.png" type="image/png" width="40px" height="auto">
 	<link rel="stylesheet" type="text/css" media="screen" href="<?=base_url()?>assets/global/css/custom/home.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="<?=base_url()?>assets/global/css/custom/mediaquery_home.css" />
-	
+	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/fonts/icofont/icofont.min.css" />
 	<!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
 	 crossorigin="" />
 
@@ -289,6 +289,7 @@
 								</center>
 								<h5 class="h5-hotsale color-black font-opensans-regular">Kamera Canon 700D</h5>
 								<h5 class="h5-hotsale-harga color-orange font-opensans-regular">Rp. 100.000 / 24 jam</h5>
+								<p class="p-kota-hotsale font-opensans-light"><i class="icofont-location-pin">Kota Kediri</i></p>
 								<a href="#">
 									<button type="button" class="btn btn-hotsale font-opensans-bold">Lihat</button>
 								</a>
@@ -299,6 +300,7 @@
 								</center>
 								<h5 class="h5-hotsale color-black font-opensans-regular">Kamera Canon 700D</h5>
 								<h5 class="h5-hotsale-harga color-orange font-opensans-regular">Rp. 100.000 / 24 jam</h5>
+								<p class="p-kota-hotsale font-opensans-light"><i class="icofont-location-pin">Kota Kediri</i></p>
 								<a href="#">
 									<button type="button" class="btn btn-hotsale font-opensans-bold">Lihat</button>
 								</a>
@@ -309,6 +311,7 @@
 								</center>
 								<h5 class="h5-hotsale color-black font-opensans-regular">Kamera Canon 700D</h5>
 								<h5 class="h5-hotsale-harga color-orange font-opensans-regular">Rp. 100.000 / 24 jam</h5>
+								<p class="p-kota-hotsale font-opensans-light"><i class="icofont-location-pin">Kota Kediri</i></p>
 								<a href="#">
 									<button type="button" class="btn btn-hotsale font-opensans-bold">Lihat</button>
 								</a>
@@ -319,6 +322,7 @@
 								</center>
 								<h5 class="h5-hotsale color-black font-opensans-regular">Kamera Canon 700D</h5>
 								<h5 class="h5-hotsale-harga color-orange font-opensans-regular">Rp. 100.000 / 24 jam</h5>
+								<p class="p-kota-hotsale font-opensans-light"><i class="icofont-location-pin">Kota Kediri</i></p>
 								<a href="#">
 									<button type="button" class="btn btn-hotsale font-opensans-bold">Lihat</button>
 								</a>
@@ -329,6 +333,7 @@
 								</center>
 								<h5 class="h5-hotsale color-black font-opensans-regular">Kamera Canon 700D</h5>
 								<h5 class="h5-hotsale-harga color-orange font-opensans-regular">Rp. 100.000 / 24 jam</h5>
+								<p class="p-kota-hotsale font-opensans-light"><i class="icofont-location-pin">Kota Kediri</i></p>
 								<a href="#">
 									<button type="button" class="btn btn-hotsale font-opensans-bold">Lihat</button>
 								</a>
@@ -339,6 +344,7 @@
 								</center>
 								<h5 class="h5-hotsale color-black font-opensans-regular">Kamera Canon 700D</h5>
 								<h5 class="h5-hotsale-harga color-orange font-opensans-regular">Rp. 100.000 / 24 jam</h5>
+								<p class="p-kota-hotsale font-opensans-light"><i class="icofont-location-pin">Kota Kediri</i></p>
 								<a href="#">
 									<button type="button" class="btn btn-hotsale font-opensans-bold">Lihat</button>
 								</a>

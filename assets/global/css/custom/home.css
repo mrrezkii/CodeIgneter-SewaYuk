@@ -126,7 +126,7 @@ section{
 }
 .box-hotsale{
 	background-color: #FFFFFF;
-	height: 258px;
+	height: 268px;
 	border-radius: 20px;
 	margin-top: 50px;
 }
@@ -149,10 +149,10 @@ section{
 	text-align: center;
 }
 .content-hotsale img{
-	width: 150px!important;
+	width: 120px!important;
 }
 .h5-hotsale{
-	margin-top: 10px;
+	margin-top: 15px;
 	font-size: 14px;
 	font-weight: 400;
 	text-align: center;
@@ -161,6 +161,10 @@ section{
 	font-size: 14px;
 	font-weight: 600;
 	text-align: center;
+}
+.p-kota-hotsale{
+	font-size: 13px;
+	color: #757575;
 }
 .btn-hotsale{
 	background-color: #F56954;
