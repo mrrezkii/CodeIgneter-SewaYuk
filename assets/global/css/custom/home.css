@@ -92,8 +92,11 @@ section{
 .h5-kategori {
 	font-size: 18px;
 }
-.category-bg h5, .category-bg.img{
+.category-bg h5{
 	padding: 10px;
+}
+.category-bg img{
+	margin: 15px;
 }
 .content-category{
 	background-color: #f5f5f5;
