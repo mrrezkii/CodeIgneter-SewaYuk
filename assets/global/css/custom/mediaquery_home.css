@@ -1,6 +1,30 @@
 @charset "utf-8";
 /* CSS Document */
 
+@media screen and (max-width: 768px){
+	.intro-bg{
+		height: auto;
+	}
+	.center-intro{
+		padding-top: 20px;
+	}
+	.center-intro-vector{
+		padding-top: 0px;
+		padding-left: 0px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.center-intro-vector img{
+		width: 300px;
+	}
+	.center-intro-tagline{
+		padding-top: 50px;
+		padding-left: 0px;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
 @media (max-width: 600px) {
     .navbar {
         padding-right: 10px;
