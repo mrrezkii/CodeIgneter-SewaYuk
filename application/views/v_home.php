@@ -7,7 +7,6 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Sewa Yuk</title>
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/style.css">
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/font-open-sans.css">
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/owl.theme.default.min.css">
