@@ -61,6 +61,13 @@ section{
 	word-break: break-all;
 }
 
+.title{
+    color: #2d2d2d;
+    text-align: center;
+    font-size: 35px;
+    font-family: gotham-bold;
+    letter-spacing: 6px;
+}
 /* Intro */
 
 .intro-bg {
@@ -86,7 +93,6 @@ section{
 .category-bg{
 	padding-top: 50px!important;
 	padding-bottom: 50px!important;
-	background-color: #fff;
 }
 
 .h5-kategori {
@@ -122,13 +128,17 @@ section{
 
 .hotsale-bg{
 	background-color: #3F51B5;
-	height: 400px;
+    height: auto;
+    padding-top:6%;
+    padding-bottom: 6%;
 }
 .box-hotsale{
+    width: 100%;
 	background-color: #FFFFFF;
-	height: 268px;
+    height: auto;
+    padding-top: 10px;
 	border-radius: 20px;
-	margin-top: 50px;
+	margin-top: 40px;
 }
 .owl-carousel{
 	padding-top: 10px!important;

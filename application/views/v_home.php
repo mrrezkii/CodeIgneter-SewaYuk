@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Sewa Yuk</title>
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/font-open-sans.css">
+	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/font-home.css">
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/css/owl.theme.default.min.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="<?= base_url() ?>assets/global/css/hamburgers/hamburgers.min.css" />
@@ -26,7 +26,6 @@
 </head>
 
 <body>
-
 	<?php if($this->session->userdata('login')!=TRUE): ?>
 	<nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top ">
 		<ul class="nav ml-auto">
@@ -218,12 +217,11 @@
 					</div>
 				</div>
 	</section>
-	<section id="kategori" class="category-bg" style="padding-top: 10px;padding-bottom: 10px;">
+
+	<!-- Bagian Kategori -->
+	<section id="kategori" class="category-bg">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-12">
-					<h5 class="text-left color-blue font-opensans-bold">Kategori</h5>
-				</div>
 				<div class="content-category">
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12">
@@ -272,13 +270,17 @@
 			</div>
 		</div>
 	</section>
-	<section id="hotsale" class="hotsale-bg" style="padding-top: 10px;padding-bottom: 10px;">
+
+
+	<section id="hotsale" class="hotsale-bg">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12">
-					<h5 class="text-left color-white font-opensans-bold float-left">Hot Sale</h5>&nbsp;&nbsp;&nbsp;
-					<img src="<?=base_url()?>assets/global/image/fire.png" alt="hot">
+						<h5 class="title" style="color:white;">Hot Sale</h5>
+				
 				</div>
+
+				
 				<div class="col-md-10 offset-md-1">
 					<div class="box-hotsale col-lg-12 col-md-12 col-sm-12">
 					<!-- Set up your HTML -->
@@ -355,11 +357,13 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- Bagian Hot Sale -->
 	<section id="recent" class="recent-bg">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
-					<h5 class="text-left color-blue font-opensans-bold">Baru Disewa</h5>
+					<h5 class="title">Baru - Baru Disewa</h5>
 				</div>
 				<div class="col-md-12">
 					<a href="#">

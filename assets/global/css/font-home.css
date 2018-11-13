@@ -17,6 +17,26 @@
 	font-family: OpenSans_Regular;
 	src: url(../fonts/open-sans/OpenSans-Regular.ttf);
 }
+
+@font-face {
+    font-family: gotham-book;
+    src: url('../fonts/gotham-rounded/GothamRounded-Book.otf');
+}
+
+@font-face {
+    font-family: gotham-bold;
+    src: url('../fonts/gotham-rounded/GothamRounded-Bold.otf');
+}
+
+@font-face {
+    font-family: gotham-medium;
+    src: url('../fonts/gotham-rounded/GothamRounded-Medium.otf');
+}
+
+@font-face {
+    font-family: poppins-medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf');
+}
 .font-opensans-bold{
 	font-family: OpenSans_Bold;
 }
