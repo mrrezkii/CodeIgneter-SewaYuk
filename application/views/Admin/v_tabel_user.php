@@ -1,3 +1,4 @@
+
 <div class="" role="main">
           <div class="">
             <div class="page-title">
@@ -15,11 +16,44 @@
             <div class="clearfix"></div>
 
             <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Grafik Pengguna Berdasarkan Jenis Kelamin</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <canvas id="JenisKelamin"></canvas>
+                  </div>
+                </div>
+              </div>
 
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Grafik Pengguna Berdasarkan Jenis Kelamin</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <canvas id="pieChart"></canvas>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+         <div class="clearfix"></div>   
+
+            <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Data Pengguna Sewa</h2>
+                    <h2>Data Pengguna SewaYuk</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -34,7 +68,6 @@
                       <thead>
                         <tr>
                           <th>Id User</th>
-                          <th>Username</th>
                           <th>Nama User</th>
                           <th>Email</th>
                           <th>Telepon</th>
@@ -50,7 +83,6 @@
                       ?>                  
                           <tr>
                             <td><?= $data->id_user ?></td>
-                            <td><?= $data->username ?></td>
                             <td><?= $data->nama_user ?></td>
                             <td><?= $data->email ?></td>
                             <td><?= $data->telepon ?></td>
@@ -116,14 +148,6 @@
                       </div>
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Email : 
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" id="username" name="username" required="required" class="form-control col-md-7 col-xs-12">
-                        </div>
-                      </div>
-
-                      <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Telepon : 
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
@@ -155,16 +179,62 @@
                         </div>
                         </div>
                         </form>
+                     </div>
                     </div>
-                    </div>
-
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <script src="<?= base_url() ?>assets/admin/vendors/chartjs/Chart.js"></script>
+         <script src="<?= base_url() ?>assets/admin/vendors/chartjs/PieceLabel.min.js"></script>
+         <script>
+    var ctx = document.getElementById( "JenisKelamin" );
+    var JenisKelamin = new Chart( ctx, {
+        type: 'pie',
+        data: {
+             labels : ['Laki-Laki','Perempuan'],  
+            datasets: [
+                {
+                    
+                     data : [<?php echo json_encode($DataCowok);?>,<?php echo json_encode($DataCewek);?>],
+                    backgroundColor: [
+                                    'rgb(0, 188, 212)',
+                                    'rgb(76, 175, 80)'      
+                                     ],
+                    
+                    borderWidth: 2
+                            
+                },
+               
+                        ],
+          
+        },
+        options: {
+            legend: {
+            display: true
+            },
+            responsive: true,
+             tooltips: {
+             enabled: false
+             },
+            hover: {
+                mode: 'nearest',
+                intersect: true
+            },
 
+            pieceLabel: {
+                render: 'percentage',
+                fontColor: 'white',
+                precision: 2
+              }
+
+        }
+
+
+    } );
+         </script>
 <script type="text/javascript">
 	function edit(a){
 		$.ajax({
@@ -175,7 +245,6 @@
 			$("#nama_user").val(data.nama_user);
 			$("#email").val(data.email);
       $("#telepon").val(data.telepon);
-			$("#username").val(data.username);
       $("#status").val(data.status);
 		}
 		});
