@@ -68,6 +68,12 @@ body{
     padding-bottom: 0!important;
     padding-top: 0!important;
 }
+.dropdown{
+	margin-right: auto!important;
+}
+.dropdown-toggle::after {
+    display:none;
+}
 
 /* Section Beranda */
 

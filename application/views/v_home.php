@@ -32,25 +32,83 @@
 				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Beranda</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Top</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Kategori</a>
 			</li>
 			<li class="nav-item">
 				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa</a>
 			</li>
 		</ul>
 		<ul class="navbar-nav ml-auto">
+			<li class="nav-item dropdown">
+        		<a class="nav-link dropdown-toggle font-opensans-bold " href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<img class="img-fluid" src="<?=base_url()?>assets/global/image/rounded account.png" alt="Rounded account">
+					Login
+				</a>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown01">
+				 <form class="px-4 py-3">
+					<div class="form-group">
+					  <label for="exampleDropdownFormEmail1">Email address</label>
+					  <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+					</div>
+					<div class="form-group">
+					  <label for="exampleDropdownFormPassword1">Password</label>
+					  <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+					</div>
+					<div class="form-check">
+					  <input type="checkbox" class="form-check-input" id="dropdownCheck">
+					  <label class="form-check-label" for="dropdownCheck">
+						Remember me
+					  </label>
+					</div>
+					<button type="submit" class="btn btn-primary">Sign in</button>
+				  </form>
+				  <div class="dropdown-divider"></div>
+				  <a class="dropdown-item" href="#">New around here? Sign up</a>
+				  <a class="dropdown-item" href="#">Forgot password?</a>
+				</div>
+     		</li>
+		</ul>
+		<!--<div class="dropdown">
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Dropdown button
+				</button>
+				<div class="dropdown-menu">
+				  <form class="px-4 py-3">
+					<div class="form-group">
+					  <label for="exampleDropdownFormEmail1">Email address</label>
+					  <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+					</div>
+					<div class="form-group">
+					  <label for="exampleDropdownFormPassword1">Password</label>
+					  <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+					</div>
+					<div class="form-check">
+					  <input type="checkbox" class="form-check-input" id="dropdownCheck">
+					  <label class="form-check-label" for="dropdownCheck">
+						Remember me
+					  </label>
+					</div>
+					<button type="submit" class="btn btn-primary">Sign in</button>
+				  </form>
+				  <div class="dropdown-divider"></div>
+				  <a class="dropdown-item" href="#">New around here? Sign up</a>
+				  <a class="dropdown-item" href="#">Forgot password?</a>
+				</div>
+			</div>-->
+		<!--<ul class="navbar-nav ml-auto">
+			
 			<li class="nav-item">
 				<a class="nav-link" href="#">
 					<img class="img-fluid" src="<?=base_url()?>assets/global/image/rounded account.png" alt="Rounded account">
 				</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link font-opensans-bold" href="#">Login</a>
+				<a class="nav-link font-opensans-bold btnlogin" href="#">Login</a>
 			</li>
-		</ul>
+		</ul>-->
 	</div>
 </nav>
 <section id="beranda" class="beranda-bg">
