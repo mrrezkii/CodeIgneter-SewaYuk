@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+@font-face {
+	font-family: Bebas_Neue;
+	src: url(../fonts/bebas-neue/BebasNeue-Regular.ttf);
+}
 @font-face {
 	font-family: OpenSans_Bold;
 	src: url(../fonts/open-sans/OpenSans-Bold.ttf);
@@ -17,7 +22,10 @@
 	font-family: OpenSans_Regular;
 	src: url(../fonts/open-sans/OpenSans-Regular.ttf);
 }
-
+@font-face {
+	font-family: Sunshine;
+	src: url(../fonts/sunshine/Sunshine.ttf);
+}
 @font-face {
     font-family: gotham-book;
     src: url('../fonts/gotham-rounded/GothamRounded-Book.otf');
@@ -37,6 +45,10 @@
     font-family: poppins-medium;
     src: url('../fonts/poppins/Poppins-Medium.ttf');
 }
+
+.font-bebas-neue{
+	font-family: Bebas_Neue;
+}
 .font-opensans-bold{
 	font-family: OpenSans_Bold;
 }
@@ -48,4 +60,7 @@
 }
 .font-opensans-regular{
 	font-family: OpenSans_Regular;
+}
+.font-sunshine{
+	font-family: Sunshine;
 }
