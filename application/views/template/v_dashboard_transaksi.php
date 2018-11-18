@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="<?=base_url()?>assets/global/image/icon.png" type="image/png" width="40px" height="auto">
 
-  <title>Dashboard Admin</title>
+  <title>Dashboard Transaksi</title>
 
   <!-- CSS -->
   <link href="<?= base_url() ?>assets/admin/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -16,8 +16,7 @@
   <link href="<?= base_url() ?>assets/admin/build/css/custom.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
-  <script src="<?= base_url() ?>assets/admin/vendors/jquery/dist/jquery.min.js"></script>
-        
+
 </head>
 
 <body class="nav-md">

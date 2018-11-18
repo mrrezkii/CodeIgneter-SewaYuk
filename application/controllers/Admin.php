@@ -28,6 +28,8 @@ class Admin extends CI_Controller {
 		$data['title'] = "Data Pengguna";
         $data['konten'] = "admin/v_tabel_user";
         $data['Data_User'] = $this->admin->getUser();
+        $data['DataCowok'] = count($this->admin->getUser_laki());
+        $data['DataCewek'] = count($this->admin->getUser_cewek());
         $this->load->view('template/v_dashboard',$data);
     }
 }
