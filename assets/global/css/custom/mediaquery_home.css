@@ -1,3 +1,47 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+@media screen and (max-width: 768px){
+	.hidden-sm{
+		display: none;
+	}
+	.hidden-md{
+		display: block;
+	}
+	
+	/* Section Beranda-SM */
+	
+	.beranda-bg-sm{
+		background-image: url(../../image/banner-sm.png);
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 450px;
+		margin-top: 76px;
+	}
+	.p-intro-sm{
+		margin-top: 55px;
+		font-size: 30px;
+		margin-bottom: 55px;
+	}
+	.icofont-curved-down{
+		font-size: 100px;
+		cursor: pointer;
+	}
+}
+
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}

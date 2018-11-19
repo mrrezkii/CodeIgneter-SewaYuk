@@ -21,7 +21,8 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow">
 	<div class="col-lg-1 col-md-1 col-sm-6">
-		<a href="index.php"><img class="img-fluid navbar-brand" src="<?=base_url()?>assets/global/image/logo.png" alt="Logo Sewa Yuk" width="60px"></a>
+		<a href="index.php"><img class="img-fluid navbar-brand hidden-sm" src="<?=base_url()?>assets/global/image/logo.png" alt="Logo Sewa Yuk" width="60px"></a>
+		<a href="index.php"><img class="img-fluid navbar-brand hidden-md" src="<?=base_url()?>assets/global/image/Logo with tagline.png" alt="Logo Sewa Yuk"></a>
 	</div>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
@@ -91,20 +92,32 @@
 		</ul>
 	</div>
 </nav>
-<section id="beranda" class="beranda-bg">
+<section id="beranda" class="beranda-bg hidden-sm">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-6 co-md-6 col-sm-12">
 				<div class="intro-kiri">
 					<img class="img-fluid" src="<?=base_url()?>assets/global/image/Logo with tagline.png" alt="tagline">
 					<hr class="text-left hr-blue" width="76px" size="200">
-					<p class="p-intro-kiri font-opensans-regular color-black2">Membantu anda dalam hal sewa menyewa barang. Selain bisa transaksi, dengan aplikasi ini Anda bisa menemukan tempat penyewaan di sekitar anda.</p>
+					<p class="p-intro-kiri font-opensans-regular color-black2">Membantu Anda dalam hal sewa menyewa barang. Selain bisa transaksi, dengan aplikasi ini Anda bisa menemukan tempat penyewaan di sekitar Anda.</p>
 				</div>
 			</div>
 			<div class="col-lg-6 co-md-6 col-sm-12">
 				<div class="intro-kanan">
 					<p class="p-intro-kanan font-opensans-bold color-white2">Sewa Barang Idaman Anda di SEWAYUK</p>
 				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="beranda-sm" class="beranda-bg-sm hidden-md">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<p class="p-intro-sm font-opensans-bold color-white text-center">Sewa Barang Idaman Anda di SEWAYUK</p>
+				<center>
+					<i class="icofont-curved-down color-orange"></i>
+				</center>
 			</div>
 		</div>
 	</div>
