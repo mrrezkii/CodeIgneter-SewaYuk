@@ -128,37 +128,37 @@
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<p class="p-judul text-center font-bebas-neue color-blue2">Kategori</p>
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-12 grid-kategori">
+			<div class="col-lg-3 col-md-3 col-sm-6 grid-kategori">
 				<div class="item">
 					<a href="#">
-						<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/kamera.jpg" alt="kamera" width="341" draggable="false">
+						<img class="img-fluid kategori-1" src="<?=base_url()?>assets/global/image/kategori/kamera.jpg" alt="kamera" width="341" draggable="false">
 						<p class="color-white2 font-sunshine">Kamera</p>
 						<div class="item-overlay top"></div>
 					</a>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-12 grid-kategori">
+			<div class="col-lg-3 col-md-3 col-sm-6 grid-kategori">
 				<div class="item">
 					<a href="#">
-						<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/kostum.jpg" alt="Kostum" width="341" draggable="false">
+						<img class="img-fluid kategori-1" src="<?=base_url()?>assets/global/image/kategori/kostum.jpg" alt="Kostum" width="341" draggable="false">
 						<p class="color-white2 font-sunshine">Kostum</p>
 						<div class="item-overlay top"></div>
 					</a>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-12 grid-kategori">
+			<div class="col-lg-3 col-md-3 col-sm-6 grid-kategori">
 				<div class="item">
 					<a href="#">
-						<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/tenda.jpg" alt="Tenda" width="341" draggable="false">
+						<img class="img-fluid kategori-1" src="<?=base_url()?>assets/global/image/kategori/tenda.jpg" alt="Tenda" width="341" draggable="false">
 						<p class="color-white2 font-sunshine">Tenda</p>
 						<div class="item-overlay top"></div>
 					</a>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-12 grid-kategori">
+			<div class="col-lg-3 col-md-3 col-sm-6 grid-kategori">
 				<div class="item">
 					<a href="#">
-						<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/trail.jpg" alt="Sepeda Motor" width="341" draggable="false">
+						<img class="img-fluid kategori-1" src="<?=base_url()?>assets/global/image/kategori/trail.jpg" alt="Sepeda Motor" width="341" draggable="false">
 						<p class="color-white2 font-sunshine">Sepeda Motor"</p>
 						<div class="item-overlay top"></div>
 					</a>
@@ -167,7 +167,7 @@
 			<div class="col-lg-6 col-md-6 col-sm-12 grid-kategori">
 				<div class="item">
 					<a href="#">
-						<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/catering.jpg" alt="Alat Catering" width="100%" draggable="false">
+						<img class="img-fluid kategori-2" src="<?=base_url()?>assets/global/image/kategori/catering.jpg" alt="Alat Catering" width="100%" draggable="false">
 						<p class="color-white2 font-sunshine">Alat Catering</p>
 						<div class="item-overlay top"></div>
 					</a>
@@ -176,7 +176,7 @@
 			<div class="col-lg-6 col-md-6 col-sm-12 grid-kategori">
 				<div class="item">
 					<a href="#">
-						<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/mic.jpg" alt="Microphone" width="100%" draggable="false">
+						<img class="img-fluid kategori-2" src="<?=base_url()?>assets/global/image/kategori/mic.jpg" alt="Microphone" width="100%" draggable="false">
 						<p class="color-white2 font-sunshine">Microphone</p>
 						<div class="item-overlay top"></div>
 					</a>

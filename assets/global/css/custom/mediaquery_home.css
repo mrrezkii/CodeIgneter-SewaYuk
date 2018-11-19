@@ -30,6 +30,12 @@
 		font-size: 100px;
 		cursor: pointer;
 	}
+	
+	/* Section Kategori-SM */
+	
+	.kategori-1{
+		width: 400px;
+	}
 }
 
 
