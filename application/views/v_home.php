@@ -257,28 +257,28 @@
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<p class="p-judul text-center font-bebas-neue color-blue2">Mengapa Harus Memilih SewaYuk ?</p>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 grid-mengapa">
+			<div class="col-lg-6 col-md-6 col-sm-6 grid-mengapa">
 				<img class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/barang.png" alt="Barang">
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 grid-mengapa">
+			<div class="col-lg-6 col-md-6 col-sm-6 grid-mengapa">
 				<div class="teks-mengapa">
 					<h1 class="judul-mengapa color-black2 text-left font-opensans-bold">Berbagai Barang Terlengkap</h1>
 					<p class="desk-mengapa color-black2 text-left font-opensans-light">Jelajahi Berbagai Macam Jenis Barang Yang Di Tawarkan Oleh Kami. Mulai dari mobil, motor, kamera, perlengkapan camping, kaset DVD, dan masih banyak lagi barang menarik lainnya.</p>
 				</div>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 grid-mengapa">
+			<div class="col-lg-6 col-md-6 col-sm-6 grid-mengapa">
 				<div class="teks-mengapa">
 					<h1 class="judul-mengapa color-black2 text-right font-opensans-bold">Transaksi Paling Aman</h1>
 					<p class="desk-mengapa color-black2 text-left font-opensans-light">Semua transaksi di SewaYuk terjamin keamanannya baik dari sisi penyewa maupun pengguna semua mitra / pemilik toko rental wajib terverifikasi sebelum melakukan transaksi.</p>
 				</div>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 grid-mengapa">
+			<div class="col-lg-6 col-md-6 col-sm-6 grid-mengapa">
 				<img class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/transaksi.png" alt="Transaksi">
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 grid-mengapa">
+			<div class="col-lg-6 col-md-6 col-sm-6 grid-mengapa">
 				<img class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/murah.png" alt="Murah">
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 grid-mengapa">
+			<div class="col-lg-6 col-md-6 col-sm-6 grid-mengapa">
 				<div class="teks-mengapa">
 					<h1 class="judul-mengapa color-black2 text-left font-opensans-bold">Harga Yang Terjangkau</h1>
 					<p class="desk-mengapa color-black2 text-left font-opensans-light">Dapatkan berbagai jenis barang yang disewakan dengan harga yang terjangkau dan tidak akan menguras isi dompet anda, gunakan Kategori Sewa untuk menyesuaikan sesuai dengan modal anda.</p>
