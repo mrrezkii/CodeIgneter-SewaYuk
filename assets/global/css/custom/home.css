@@ -14,6 +14,9 @@ body{
 
 /* Atrribute */
 
+a, a:hover{
+	text-decoration: none
+}
 .color-orange{
     color: #F56954;
 }

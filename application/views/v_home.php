@@ -116,9 +116,13 @@
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
 				<p class="p-intro-sm font-opensans-bold color-white text-center">Sewa Barang Idaman Anda di SEWAYUK</p>
-				<center>
-					<i class="icofont-curved-down color-orange"></i>
-				</center>
+				<div class="arrow bounce">
+					<center>
+						<a href="#kategori">
+							<i class="icofont-rounded-down color-white"></i>
+						</a>
+					</center>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -453,5 +457,13 @@
 	})
 		$('.owl-next', element).toggleClass('disabled', current === carousel.maximum());
 		$('.owl-prev', element).toggleClass('disabled', current === carousel.minimum());
+	</script>
+	<script>
+		$(function() {
+		  $('a[href*=#]').on('click', function(e) {
+			e.preventDefault();
+			$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+		  });
+		});
 	</script>
 </html>

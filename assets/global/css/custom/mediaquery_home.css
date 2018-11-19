@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+@import "compass/css3";
 
 @media screen and (max-width: 1016px){
 	
@@ -18,8 +19,39 @@
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		background-size: cover;
-		height: 450px;
+		height: 500px;
 		margin-top: 76px;
+	}
+	
+	.p-intro-sm{
+		margin-top: 55px;
+		font-size: 30px;
+		margin-bottom: 55px;
+	}
+	.icofont-rounded-down{
+		font-size: 100px;
+		cursor: pointer;
+	}
+	.arrow {
+		margin-top: 250px;	
+		text-align: center;
+	}
+	.bounce {
+	  -moz-animation: bounce 2s infinite;
+	  -webkit-animation: bounce 2s infinite;
+	  animation: bounce 2s infinite;
+	}
+
+	@keyframes bounce {
+	  0%, 20%, 50%, 80%, 100% {
+		transform: translateY(0);
+	  }
+	  40% {
+		transform: translateY(-30px);
+	  }
+	  60% {
+		transform: translateY(-15px);
+	  }
 	}
 }
 
@@ -39,16 +71,6 @@
 }
 
 @media screen and (max-width: 768px){
-	
-	.p-intro-sm{
-		margin-top: 55px;
-		font-size: 30px;
-		margin-bottom: 55px;
-	}
-	.icofont-curved-down{
-		font-size: 100px;
-		cursor: pointer;
-	}
 	
 	/* Section Kategori-SM */
 	
@@ -79,3 +101,5 @@
     line-height: 1.8;
   }
 }
+
+
