@@ -80,6 +80,12 @@ body{
 .dropdown-toggle::after {
     display:none;
 }
+.icon-nav{
+	display: block;
+}
+.icon-nav-sm{
+	display: none;
+}
 
 /* Section Beranda */
 
@@ -280,10 +286,14 @@ body{
 .text-uppercase {
     text-transform: uppercase;
 }
-
+.team-member, .team-hover{
+	position: relative;
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
 .team-member, .team-member .team-img {
     position: relative;
-    border-radius: 50%;
 }
 .team-member {
     overflow: hidden;
@@ -304,7 +314,6 @@ body{
     opacity: 0;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    border-radius: 50%;
 }
 .team-member:hover .team-hover .desk {
     top: 35%;

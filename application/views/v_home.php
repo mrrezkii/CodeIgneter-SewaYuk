@@ -20,9 +20,10 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow">
-	<div class="col-lg-1 col-md-1 col-sm-6">
-		<a href="index.php"><img class="img-fluid navbar-brand hidden-sm" src="<?=base_url()?>assets/global/image/logo.png" alt="Logo Sewa Yuk" width="60px"></a>
-		<a href="index.php"><img class="img-fluid navbar-brand hidden-md" src="<?=base_url()?>assets/global/image/Logo with tagline.png" alt="Logo Sewa Yuk"></a>
+	<div class="col-lg-1 col-md-6 col-sm-6">
+		<a href="index.php"><img class="img-fluid navbar-brand icon-nav" src="<?=base_url()?>assets/global/image/logo.png" alt="Logo Sewa Yuk" width="60px"></a>
+		<a href="index.php"><img class="img-fluid navbar-brand icon-nav-sm" src="<?=base_url()?>assets/global/image/Logo with tagline.png" alt="Logo Sewa Yuk"></a>
+		
 	</div>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
@@ -296,7 +297,9 @@
             <div class="col-lg-3 col-md-3 col-sm-12">
 				<div class="team-member">
 					<div class="team-img">
-						<img src="<?=base_url()?>assets/global/image/profil/CEO.jpg" alt="team member" class="img-fluid">
+						<center>
+							<img src="<?=base_url()?>assets/global/image/profil/CEO.jpg" alt="team member" class="img-fluid">
+						</center>
 					</div>
 					<div class="team-hover">
 						<div class="desk">
@@ -318,7 +321,9 @@
 			<div class="col-lg-3 col-md-3 col-sm-12">
 				<div class="team-member">
 					<div class="team-img">
-						<img src="<?=base_url()?>assets/global/image/profil/CTO.jpg" alt="team member" class="img-fluid">
+						<center>
+							<img src="<?=base_url()?>assets/global/image/profil/CTO.jpg" alt="team member" class="img-fluid">
+						</center>
 					</div>
 					<div class="team-hover">
 						<div class="desk">
@@ -340,7 +345,9 @@
 			<div class="col-lg-3 col-md-3 col-sm-12">
 				<div class="team-member">
 					<div class="team-img">
-						<img src="<?=base_url()?>assets/global/image/profil/COO.jpg" alt="team member" class="img-fluid">
+						<center>
+							<img src="<?=base_url()?>assets/global/image/profil/COO.jpg" alt="team member" class="img-fluid">
+						</center>
 					</div>
 					<div class="team-hover">
 						<div class="desk">
@@ -362,7 +369,9 @@
 			<div class="col-lg-3 col-md-3 col-sm-12">
 				<div class="team-member">
 					<div class="team-img">
-						<img src="<?=base_url()?>assets/global/image/profil/CMO.jpeg" alt="team member" class="img-fluid">
+						<center>
+							<img src="<?=base_url()?>assets/global/image/profil/CMO.jpeg" alt="team member" class="img-fluid">
+						</center>
 					</div>
 					<div class="team-hover">
 						<div class="desk">
