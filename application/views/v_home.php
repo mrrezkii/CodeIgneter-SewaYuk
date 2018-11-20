@@ -290,11 +290,11 @@
 		</div>
 	</div>
 </section>
-<section id="mengapa" class="mengapa-bg" style="padding-top: 90px;">
+<section id="mengapa" class="mengapa-bg-parallax" style="padding-top: 70px; margin-top: 90px;">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12">
-				<p class="p-judul text-center font-bebas-neue color-blue2">Mengapa Harus Memilih SewaYuk ?</p>
+			<div class="col-lg-12 col-md-12 col-sm-12" >
+				<p class="p-judul text-center font-bebas-neue color-white" style="font-size:50px ; padding-bottom: 70px;">Mengapa Harus Memilih SewaYuk ?</p>
 			</div>
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="mengapa-bg-parallax">
@@ -332,7 +332,7 @@
 		</div>
 	</div>
 </section>
-<section id="dibalik" class="dibalik-bg" style="padding-top: 90px;">
+<section id="dibalik" class="dibalik-bg" style="padding-top: 90px; padding-bottom: 90px;">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12">
