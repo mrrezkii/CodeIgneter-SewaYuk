@@ -122,15 +122,8 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-6 co-md-6 col-sm-12">
-				<div class="intro-kiri">
-					<img class="img-fluid" src="<?=base_url()?>assets/global/image/Logo with tagline - sm.png" alt="tagline">
-					<hr class="text-left hr-blue" width="76px" size="200">
-					<p class="p-intro-kiri font-opensans-regular color-white2">Membantu Anda dalam hal sewa menyewa barang. Selain bisa transaksi, dengan aplikasi ini Anda bisa menemukan tempat penyewaan di sekitar Anda.</p>
-				</div>
-			</div>
-			<div class="col-lg-6 co-md-6 col-sm-12">
 				<div class="intro-kanan">
-					<p class="p-intro-kanan font-opensans-bold color-white2">Sewa Barang Idaman Anda di SEWAYUK</p>
+					<p class="p-intro-kanan font-opensans-bold color-white2 text-center">Sewa Barang Idaman Anda di SEWAYUK</p>
 					<div class="arrow bounce">
 					<center>
 						<a href="#kategori">
@@ -141,17 +134,6 @@
 				</div>
 			</div>
 		</div>
-			<!--<div class="col-md-12 col-sm-12">
-				<p class="p-intro-sm font-opensans-bold color-white text-center">Sewa Barang Idaman Anda di SEWAYUK</p>
-				<div class="arrow bounce">
-					<center>
-						<a href="#kategori">
-							<i class="icofont-rounded-down color-white"></i>
-						</a>
-					</center>
-				</div>
-			</div>
-		</div>-->
 	</div>
 </section>
 <section id="kategori" class="kategori-bg" style="padding-top: 90px;">

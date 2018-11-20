@@ -45,7 +45,7 @@ a, a:hover{
     border-radius: 3px;
 }
 .p-judul{
-    font-size: 72px;
+    font-size: 72px!important;
     letter-spacing: 5px;
     padding-bottom: 17px;
 }
@@ -291,6 +291,9 @@ a, a:hover{
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
+}
+.mengapa-bg-parallax img{
+	box-shadow: 0 0 11px rgba(33,33,33,0.60);
 }
 .grid-mengapa{
     padding-left: 0!important;
