@@ -20,8 +20,10 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow">
-	<div class="col-lg-1 col-md-1 col-sm-6">
-		<a href="index.php"><img class="img-fluid navbar-brand" src="<?=base_url()?>assets/global/image/logo.png" alt="Logo Sewa Yuk" width="60px"></a>
+	<div class="col-lg-1 col-md-6 col-sm-6">
+		<a href="index.php"><img class="img-fluid navbar-brand icon-nav" src="<?=base_url()?>assets/global/image/logo.png" alt="Logo Sewa Yuk" width="60px"></a>
+		<a href="index.php"><img class="img-fluid navbar-brand icon-nav-sm" src="<?=base_url()?>assets/global/image/Logo with tagline.png" alt="Logo Sewa Yuk"></a>
+		
 	</div>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
@@ -49,29 +51,83 @@
 		</ul>
 		<ul class="navbar-nav ml-auto">
 			<li class="nav-item">
-				<a class="nav-link" href="#">
-					<img class="img-fluid" src="<?=base_url()?>assets/global/image/rounded account.png" alt="Rounded account">
+				<a href="#index.php">
+					<li class="icofont-cart color-blue" style="font-size: 25px;margin-top: 8px;">
+					</li>
 				</a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link font-opensans-bold" href="#">Login</a>
-			</li>
+			<li class="nav-item dropdown">
+        		<a class="nav-link dropdown-toggle font-opensans-bold " href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<img class="img-fluid" src="<?=base_url()?>assets/global/image/profil/CTO.jpg" alt="Rounded account" width="22" style="border-radius: 50%">
+					Muhammad Rezki Ananda
+				</a>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown02">
+					<a class="dropdown-item" href="#">Profil</a>
+					<a class="dropdown-item" href="#">Transaksi</a>
+				  	<div class="dropdown-divider"></div>
+				  	<a class="dropdown-item" href="#">Logout</a>
+				</div>
+     		</li>
+			<li class="nav-item dropdown">
+        		<a class="nav-link dropdown-toggle font-opensans-bold " href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<img class="img-fluid" src="<?=base_url()?>assets/global/image/rounded account.png" alt="Rounded account">
+					Login
+				</a>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown01">
+				 <form class="px-4 py-3">
+					<div class="form-group">
+					  <label for="exampleDropdownFormEmail1">Email address</label>
+					  <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+					</div>
+					<div class="form-group">
+					  <label for="exampleDropdownFormPassword1">Password</label>
+					  <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+					</div>
+					<div class="form-check">
+					  <input type="checkbox" class="form-check-input" id="dropdownCheck">
+					  <label class="form-check-label" for="dropdownCheck">
+						Remember me
+					  </label>
+					</div>
+					<button type="submit" class="btn btn-primary">Sign in</button>
+				  </form>
+				  <div class="dropdown-divider"></div>
+				  <a class="dropdown-item" href="#">New around here? Sign up</a>
+				  <a class="dropdown-item" href="#">Forgot password?</a>
+				</div>
+     		</li>
 		</ul>
 	</div>
 </nav>
-<section id="beranda" class="beranda-bg">
+<section id="beranda" class="beranda-bg hidden-sm">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-6 co-md-6 col-sm-12">
 				<div class="intro-kiri">
 					<img class="img-fluid" src="<?=base_url()?>assets/global/image/Logo with tagline.png" alt="tagline">
 					<hr class="text-left hr-blue" width="76px" size="200">
-					<p class="p-intro-kiri font-opensans-regular color-black2">Membantu anda dalam hal sewa menyewa barang. Selain bisa transaksi, dengan aplikasi ini Anda bisa menemukan tempat penyewaan di sekitar anda.</p>
+					<p class="p-intro-kiri font-opensans-regular color-black2">Membantu Anda dalam hal sewa menyewa barang. Selain bisa transaksi, dengan aplikasi ini Anda bisa menemukan tempat penyewaan di sekitar Anda.</p>
 				</div>
 			</div>
 			<div class="col-lg-6 co-md-6 col-sm-12">
 				<div class="intro-kanan">
 					<p class="p-intro-kanan font-opensans-bold color-white2">Sewa Barang Idaman Anda di SEWAYUK</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="beranda-sm" class="beranda-bg-sm hidden-md">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<p class="p-intro-sm font-opensans-bold color-white text-center">Sewa Barang Idaman Anda di SEWAYUK</p>
+				<div class="arrow bounce">
+					<center>
+						<a href="#kategori">
+							<i class="icofont-rounded-down color-white"></i>
+						</a>
+					</center>
 				</div>
 			</div>
 		</div>
@@ -83,37 +139,37 @@
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<p class="p-judul text-center font-bebas-neue color-blue2">Kategori</p>
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-12 grid-kategori">
+			<div class="col-lg-3 col-md-3 col-sm-6 grid-kategori">
 				<div class="item">
 					<a href="#">
-						<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/kamera.jpg" alt="kamera" width="341" draggable="false">
+						<img class="img-fluid kategori-1" src="<?=base_url()?>assets/global/image/kategori/kamera.jpg" alt="kamera" width="341" draggable="false">
 						<p class="color-white2 font-sunshine">Kamera</p>
 						<div class="item-overlay top"></div>
 					</a>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-12 grid-kategori">
+			<div class="col-lg-3 col-md-3 col-sm-6 grid-kategori">
 				<div class="item">
 					<a href="#">
-						<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/kostum.jpg" alt="Kostum" width="341" draggable="false">
+						<img class="img-fluid kategori-1" src="<?=base_url()?>assets/global/image/kategori/kostum.jpg" alt="Kostum" width="341" draggable="false">
 						<p class="color-white2 font-sunshine">Kostum</p>
 						<div class="item-overlay top"></div>
 					</a>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-12 grid-kategori">
+			<div class="col-lg-3 col-md-3 col-sm-6 grid-kategori">
 				<div class="item">
 					<a href="#">
-						<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/tenda.jpg" alt="Tenda" width="341" draggable="false">
+						<img class="img-fluid kategori-1" src="<?=base_url()?>assets/global/image/kategori/tenda.jpg" alt="Tenda" width="341" draggable="false">
 						<p class="color-white2 font-sunshine">Tenda</p>
 						<div class="item-overlay top"></div>
 					</a>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-12 grid-kategori">
+			<div class="col-lg-3 col-md-3 col-sm-6 grid-kategori">
 				<div class="item">
 					<a href="#">
-						<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/trail.jpg" alt="Sepeda Motor" width="341" draggable="false">
+						<img class="img-fluid kategori-1" src="<?=base_url()?>assets/global/image/kategori/trail.jpg" alt="Sepeda Motor" width="341" draggable="false">
 						<p class="color-white2 font-sunshine">Sepeda Motor"</p>
 						<div class="item-overlay top"></div>
 					</a>
@@ -122,7 +178,7 @@
 			<div class="col-lg-6 col-md-6 col-sm-12 grid-kategori">
 				<div class="item">
 					<a href="#">
-						<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/catering.jpg" alt="Alat Catering" width="100%" draggable="false">
+						<img class="img-fluid kategori-2" src="<?=base_url()?>assets/global/image/kategori/catering.jpg" alt="Alat Catering" width="100%" draggable="false">
 						<p class="color-white2 font-sunshine">Alat Catering</p>
 						<div class="item-overlay top"></div>
 					</a>
@@ -131,7 +187,7 @@
 			<div class="col-lg-6 col-md-6 col-sm-12 grid-kategori">
 				<div class="item">
 					<a href="#">
-						<img class="img-fluid" src="<?=base_url()?>assets/global/image/kategori/mic.jpg" alt="Microphone" width="100%" draggable="false">
+						<img class="img-fluid kategori-2" src="<?=base_url()?>assets/global/image/kategori/mic.jpg" alt="Microphone" width="100%" draggable="false">
 						<p class="color-white2 font-sunshine">Microphone</p>
 						<div class="item-overlay top"></div>
 					</a>
@@ -179,29 +235,114 @@
 					</div>
 				</div>
 			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<div class="show-more-kategori text-center">
+					<button class="btn btn-show-more font-opensans-bold color-white2">Lihat Semua</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
 <section id="baru" class="baru-bg" style="padding-top: 90px;">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<p class="p-judul text-center font-bebas-neue color-blue2">Baru Baru Ini Di Sewa</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-			  <div class="card">
-				<img src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="" class="img-fluid">
-					<div class="card-body">
-					  <h3 class="card-title"><i class="fa fa-map-marker-alt"></i> Apartment 1, NY</h3>
-					  <div class="card-desc">
-						<span class="card__desc__price">$1500 <span class="card__desc__price--small">to</span> $2000</span>
-					  </div>
-					</div>
-				<div class="card-button">
-				  <button class="btn">Action 1</button> 
-				  <button class="btn">Action 2</button>
+			  <div class="card" style="width: 18rem;">
+				  <center>
+					  <img class="img-fluid card-img-top w-75" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
+				  </center>
+				  <div class="card-body">
+					<p class="card-text h5-baru color-black font-opensans-regular text-center">Kamera 700D</p>
+					<p class="card-text h5-baru-harga color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</p>
+					<p class="p-kota-baru font-opensans-light text-center"><i class="icofont-location-pin">Kota Malang</i></p>
+					<a href="#">
+						<button type="button" class="btn btn-baru font-opensans-bold">Lihat</button>
+					</a>
+				  </div>
 				</div>
-			  </div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+			  <div class="card" style="width: 18rem;">
+				  <center>
+					  <img class="img-fluid card-img-top w-75" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
+				  </center>
+				  <div class="card-body">
+					<p class="card-text h5-baru color-black font-opensans-regular text-center">Kamera 700D</p>
+					<p class="card-text h5-baru-harga color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</p>
+					<p class="p-kota-baru font-opensans-light text-center"><i class="icofont-location-pin">Kota Malang</i></p>
+					<a href="#">
+						<button type="button" class="btn btn-baru font-opensans-bold">Lihat</button>
+					</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+			  <div class="card" style="width: 18rem;">
+				  <center>
+					  <img class="img-fluid card-img-top w-75" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
+				  </center>
+				  <div class="card-body">
+					<p class="card-text h5-baru color-black font-opensans-regular text-center">Kamera 700D</p>
+					<p class="card-text h5-baru-harga color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</p>
+					<p class="p-kota-baru font-opensans-light text-center"><i class="icofont-location-pin">Kota Malang</i></p>
+					<a href="#">
+						<button type="button" class="btn btn-baru font-opensans-bold">Lihat</button>
+					</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+			  <div class="card" style="width: 18rem;">
+				  <center>
+					  <img class="img-fluid card-img-top w-75" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
+				  </center>
+				  <div class="card-body">
+					<p class="card-text h5-baru color-black font-opensans-regular text-center">Kamera 700D</p>
+					<p class="card-text h5-baru-harga color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</p>
+					<p class="p-kota-baru font-opensans-light text-center"><i class="icofont-location-pin">Kota Malang</i></p>
+					<a href="#">
+						<button type="button" class="btn btn-baru font-opensans-bold">Lihat</button>
+					</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+			  <div class="card" style="width: 18rem;">
+				  <center>
+					  <img class="img-fluid card-img-top w-75" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
+				  </center>
+				  <div class="card-body">
+					<p class="card-text h5-baru color-black font-opensans-regular text-center">Kamera 700D</p>
+					<p class="card-text h5-baru-harga color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</p>
+					<p class="p-kota-baru font-opensans-light text-center"><i class="icofont-location-pin">Kota Malang</i></p>
+					<a href="#">
+						<button type="button" class="btn btn-baru font-opensans-bold">Lihat</button>
+					</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+			  <div class="card" style="width: 18rem;">
+				  <center>
+					  <img class="img-fluid card-img-top w-75" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
+				  </center>
+				  <div class="card-body">
+					<p class="card-text h5-baru color-black font-opensans-regular text-center">Kamera 700D</p>
+					<p class="card-text h5-baru-harga color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</p>
+					<p class="p-kota-baru font-opensans-light text-center"><i class="icofont-location-pin">Kota Malang</i></p>
+					<a href="#">
+						<button type="button" class="btn btn-baru font-opensans-bold">Lihat</button>
+					</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<div class="show-more-kategori text-center">
+					<button class="btn btn-show-more font-opensans-bold color-white2">Lihat Semua</button>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -212,28 +353,28 @@
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<p class="p-judul text-center font-bebas-neue color-blue2">Mengapa Harus Memilih SewaYuk ?</p>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 grid-mengapa">
+			<div class="col-lg-6 col-md-6 col-sm-6 grid-mengapa">
 				<img class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/barang.png" alt="Barang">
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 grid-mengapa">
+			<div class="col-lg-6 col-md-6 col-sm-6 grid-mengapa">
 				<div class="teks-mengapa">
 					<h1 class="judul-mengapa color-black2 text-left font-opensans-bold">Berbagai Barang Terlengkap</h1>
 					<p class="desk-mengapa color-black2 text-left font-opensans-light">Jelajahi Berbagai Macam Jenis Barang Yang Di Tawarkan Oleh Kami. Mulai dari mobil, motor, kamera, perlengkapan camping, kaset DVD, dan masih banyak lagi barang menarik lainnya.</p>
 				</div>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 grid-mengapa">
+			<div class="col-lg-6 col-md-6 col-sm-6 grid-mengapa">
 				<div class="teks-mengapa">
 					<h1 class="judul-mengapa color-black2 text-right font-opensans-bold">Transaksi Paling Aman</h1>
 					<p class="desk-mengapa color-black2 text-left font-opensans-light">Semua transaksi di SewaYuk terjamin keamanannya baik dari sisi penyewa maupun pengguna semua mitra / pemilik toko rental wajib terverifikasi sebelum melakukan transaksi.</p>
 				</div>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 grid-mengapa">
+			<div class="col-lg-6 col-md-6 col-sm-6 grid-mengapa">
 				<img class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/transaksi.png" alt="Transaksi">
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 grid-mengapa">
+			<div class="col-lg-6 col-md-6 col-sm-6 grid-mengapa">
 				<img class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/murah.png" alt="Murah">
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 grid-mengapa">
+			<div class="col-lg-6 col-md-6 col-sm-6 grid-mengapa">
 				<div class="teks-mengapa">
 					<h1 class="judul-mengapa color-black2 text-left font-opensans-bold">Harga Yang Terjangkau</h1>
 					<p class="desk-mengapa color-black2 text-left font-opensans-light">Dapatkan berbagai jenis barang yang disewakan dengan harga yang terjangkau dan tidak akan menguras isi dompet anda, gunakan Kategori Sewa untuk menyesuaikan sesuai dengan modal anda.</p>
@@ -251,7 +392,9 @@
             <div class="col-lg-3 col-md-3 col-sm-12">
 				<div class="team-member">
 					<div class="team-img">
-						<img src="<?=base_url()?>assets/global/image/profil/CEO.jpg" alt="team member" class="img-fluid">
+						<center>
+							<img src="<?=base_url()?>assets/global/image/profil/CEO.jpg" alt="team member" class="img-fluid">
+						</center>
 					</div>
 					<div class="team-hover">
 						<div class="desk">
@@ -273,7 +416,9 @@
 			<div class="col-lg-3 col-md-3 col-sm-12">
 				<div class="team-member">
 					<div class="team-img">
-						<img src="<?=base_url()?>assets/global/image/profil/CTO.jpg" alt="team member" class="img-fluid">
+						<center>
+							<img src="<?=base_url()?>assets/global/image/profil/CTO.jpg" alt="team member" class="img-fluid">
+						</center>
 					</div>
 					<div class="team-hover">
 						<div class="desk">
@@ -295,7 +440,9 @@
 			<div class="col-lg-3 col-md-3 col-sm-12">
 				<div class="team-member">
 					<div class="team-img">
-						<img src="<?=base_url()?>assets/global/image/profil/COO.jpg" alt="team member" class="img-fluid">
+						<center>
+							<img src="<?=base_url()?>assets/global/image/profil/COO.jpg" alt="team member" class="img-fluid">
+						</center>
 					</div>
 					<div class="team-hover">
 						<div class="desk">
@@ -317,7 +464,9 @@
 			<div class="col-lg-3 col-md-3 col-sm-12">
 				<div class="team-member">
 					<div class="team-img">
-						<img src="<?=base_url()?>assets/global/image/profil/CMO.jpeg" alt="team member" class="img-fluid">
+						<center>
+							<img src="<?=base_url()?>assets/global/image/profil/CMO.jpeg" alt="team member" class="img-fluid">
+						</center>
 					</div>
 					<div class="team-hover">
 						<div class="desk">
@@ -399,5 +548,13 @@
 	})
 		$('.owl-next', element).toggleClass('disabled', current === carousel.maximum());
 		$('.owl-prev', element).toggleClass('disabled', current === carousel.minimum());
+	</script>
+	<script>
+		$(function() {
+		  $('a[href*=#]').on('click', function(e) {
+			e.preventDefault();
+			$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+		  });
+		});
 	</script>
 </html>

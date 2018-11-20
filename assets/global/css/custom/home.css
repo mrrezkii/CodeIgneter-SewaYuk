@@ -14,6 +14,9 @@ body{
 
 /* Atrribute */
 
+a, a:hover{
+	text-decoration: none
+}
 .color-orange{
     color: #F56954;
 }
@@ -45,6 +48,12 @@ body{
     letter-spacing: 5px;
     padding-bottom: 17px;
 }
+.hidden-sm{
+	display: block;
+}
+.hidden-md{
+	display: none;
+}
 
 /* Navigasi */
 
@@ -68,6 +77,18 @@ body{
     padding-bottom: 0!important;
     padding-top: 0!important;
 }
+.dropdown{
+	margin-right: auto!important;
+}
+.dropdown-toggle::after {
+    display:none;
+}
+.icon-nav{
+	display: block;
+}
+.icon-nav-sm{
+	display: none;
+}
 
 /* Section Beranda */
 
@@ -78,6 +99,7 @@ body{
     background-size: cover;
     height: 588px;
     margin-top: 76px;
+	
 }
 .intro-kiri{
     margin-left: 30px;
@@ -160,9 +182,10 @@ body{
     background-color: #ffffff;
 }
 .box-top{
-    background-color: #FFFFFF;
-    margin-top: 50px;
-    margin-bottom: 50px;
+	background-image: url(../../image/top-bg.png);
+	background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .owl-carousel{
     
@@ -179,7 +202,6 @@ body{
 .content-top{
     background-color: #FFFFFF;
     border: 2px #FFFFFF solid;
-    border-radius: 10px;
     text-align: center;
 }
 .content-top img{
@@ -217,6 +239,42 @@ body{
 
 .baru-bg{
     background-color: #FFFFFF;
+}
+.h5-baru{
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+.h5-baru-harga{
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+.p-kota-baru{
+    font-size: 13px;
+	color: #757575;
+}
+.card{
+	margin: 20px;
+	-webkit-transition: width 2s;
+    transition: width 2s;
+	transition-timing-function: ease-in-out;
+}
+.card:hover{
+	box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+.btn-baru{
+    background-color: #F56954;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    width: 100%; 
+}
+.btn-baru:hover{
+    background-color: #FFFFFF;
+    border: 1px #F56954 solid; 
+    color: #F56954;
 }
 
 /* Section Mengapa */
@@ -273,10 +331,14 @@ body{
 .text-uppercase {
     text-transform: uppercase;
 }
-
+.team-member, .team-hover{
+	position: relative;
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
 .team-member, .team-member .team-img {
     position: relative;
-    border-radius: 50%;
 }
 .team-member {
     overflow: hidden;
@@ -297,7 +359,6 @@ body{
     opacity: 0;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    border-radius: 50%;
 }
 .team-member:hover .team-hover .desk {
     top: 35%;
@@ -448,18 +509,3 @@ body{
 .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
 
 .footer-distributed p.footer-links a:hover{text-decoration:underline;}
-
-/* Media Queries */
-
-@media (max-width: 600px) {
-  .footer-distributed .footer-left, .footer-distributed .footer-right {
-    text-align: center;
-  }
-  .footer-distributed .footer-right {
-    float: none;
-    margin: 0 auto 20px;
-  }
-  .footer-distributed .footer-left p.footer-links {
-    line-height: 1.8;
-  }
-}
