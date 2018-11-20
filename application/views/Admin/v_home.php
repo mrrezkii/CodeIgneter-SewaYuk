@@ -19,7 +19,7 @@
               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="color:white;">
                 <div class="tile-stats" style="background : orange;">
                   <div class="icon"><i class="fa fa-dropbox" style="color:white;"></i></div>
-                  <div class="count"><?= $Jumlah_User; ?></div>
+                  <div class="count"><?= $Jumlah_Barang; ?></div>
                   <h3 style="color:white;">Barang</h3>
                   <p style="color:white;">Jumlah Barang Pada Website</p>
                 </div>

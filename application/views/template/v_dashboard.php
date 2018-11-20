@@ -26,14 +26,14 @@
       <div class="col-md-3 left_col">
         <div class="left_col scroll-view">
           <div class="navbar nav_title" style="border: 0;">
-            <a href="<?= base_url() ?>index.php/admin" class="site_title"></i><span> Sewa <b>Admin</b></span></a>
+            <a href="<?= base_url() ?>index.php/admin" class="site_title"></i><span> SewaYuk <b>Admin</b></span></a>
           </div>
 
           <!-- menu profile quick info -->
           <div class="profile clearfix">
             <div class="profile_pic">
-              <?php if($this->session->userdata('foto')!=NULL)  :?>
-              <img src="<?= base_url(" assets/user/foto/profil/".$this->session->userdata('foto') )?>"
+              <?php if($this->session->userdata('foto_profil')!=NULL)  :?>
+              <img src="<?= base_url("assets/user/foto/profil/".$this->session->userdata('foto_profil') )?>"
               class="img-circle profile_img">
 
               <?php else: ?>
@@ -44,7 +44,7 @@
             <div class="profile_info">
               <span>Selamat Datang ,</span>
               <h2>
-                <?=$this->session->userdata('username')?>
+                <?=$this->session->userdata('nama_user')?>
               </h2>
             </div>
           </div>
@@ -85,8 +85,8 @@
 
                 <a href="javascript:" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 
-                  <?php if($this->session->userdata('foto')!=NULL)  :?>
-                  <img src="<?= base_url(" assets/user/foto/profil/".$this->session->userdata('foto') )?>">
+                  <?php if($this->session->userdata('foto_profil')!=NULL)  :?>
+                  <img src="<?= base_url("assets/user/foto/profil/".$this->session->userdata('foto_profil') )?>">
                   <?php else: ?>
                   <img src="<?= base_url() ?>assets/admin/images/user.png" alt="...">
                   <?php endif?>

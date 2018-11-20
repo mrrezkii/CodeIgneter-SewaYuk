@@ -25,7 +25,7 @@
       <div class="col-md-3 left_col">
         <div class="left_col scroll-view">
           <div class="navbar nav_title" style="border: 0;">
-            <a href="<?= base_url() ?>index.php/admin" class="site_title"></i><span> Sewa <b>Admin</b></span></a>
+            <a href="<?= base_url() ?>index.php/admin" class="site_title"></i><span> SewaYuk</span></a>
           </div>
 
           <!-- menu profile quick info -->

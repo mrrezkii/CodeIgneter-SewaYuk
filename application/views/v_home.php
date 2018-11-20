@@ -32,13 +32,19 @@
 				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Beranda</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Kategori</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa Teratas</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Baru Disewa</a>
+			</li>
+			<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Mengapa SewaYuk</a>
+			</li>
+			<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Tentang	</a>
 			</li>
 		</ul>
 		<ul class="navbar-nav ml-auto">

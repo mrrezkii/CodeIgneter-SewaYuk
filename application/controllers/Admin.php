@@ -20,6 +20,7 @@ class Admin extends CI_Controller {
 		$data['title'] = "Dashboard Admin";
         $data['konten'] = "admin/v_home";
         $data['Jumlah_User'] = count($this->admin->getUser());
+        $data['Jumlah_Barang'] = count($this->admin->getBarang());
         $this->load->view('template/v_dashboard',$data);
     }
 
@@ -30,6 +31,22 @@ class Admin extends CI_Controller {
         $data['Data_User'] = $this->admin->getUser();
         $data['DataCowok'] = count($this->admin->getUser_laki());
         $data['DataCewek'] = count($this->admin->getUser_cewek());
+        $this->load->view('template/v_dashboard',$data);
+    }
+
+    public function konfirmasi_akun()
+	{
+		$data['title'] = "Verifikasi Akun";
+        $data['konten'] = "admin/v_konfirmasi_akun";
+        $data['Data_Verifikasi'] = $this->admin->getUser_Verifikasi();
+        $this->load->view('template/v_dashboard',$data);
+    }
+
+    public function konfirmasi_barang()
+	{
+		$data['title'] = "Verifikasi Barang";
+        $data['konten'] = "admin/v_konfirmasi_barang";
+        $data['Data_Verifikasi'] = $this->admin->getBarang_Verifikasi();
         $this->load->view('template/v_dashboard',$data);
     }
 }

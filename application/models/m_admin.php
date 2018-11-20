@@ -9,6 +9,12 @@ class m_admin extends CI_Model {
         $this->db->where('status', 'user');    
         return $this->db->get()->result();
     }
+
+    public function getBarang(){      
+        $this->db->select('*');
+        $this->db->from('barang');   
+        return $this->db->get()->result();
+    }
     
     public function getUser_laki(){      
         $this->db->select('*');
@@ -23,6 +29,24 @@ class m_admin extends CI_Model {
         $this->db->where('jenis_kelamin', 'Perempuan');    
         return $this->db->get()->result();
     }
+
+    public function getUser_Verifikasi(){      
+        $this->db->select('*');
+        $this->db->from('user');
+        $this->db->where('foto_identitas !=', NULL);    
+        $this->db->where('NIK !=', NULL); 
+        return $this->db->get()->result();
+    }
+
+    public function getBarang_Verifikasi(){      
+        $this->db->select('*');
+        $this->db->from('barang');
+        $this->db->join('jenis_barang','jenis_barang.id_jenis=barang.id_jenis');
+        $this->db->where('status_barang', '0');   
+        $this->db->order_by('tanggal_masuk', 'ASC'); 
+        return $this->db->get()->result();
+    }
+
 
 
     
