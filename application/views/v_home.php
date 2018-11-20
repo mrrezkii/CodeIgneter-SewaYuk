@@ -204,40 +204,34 @@
 <section id="top" class="top-bg" style="padding-top: 90px;">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12">
-				<p class="p-judul text-center font-bebas-neue color-blue2">Top Sewa</p>
-			</div>
 			<div class="col-lg-12 col-md-12 col-sm-12 grid-top">
 				<div class="box-top shadow-lg">
-					<div class="owl-carousel">
-						<div class="content-top">
-							<center>
-								<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
-							</center>
-							<h5 class="h5-top color-black font-opensans-regular">Kamera Canon 700D</h5>
-							<h5 class="h5-top-harga color-orange font-opensans-regular">Rp. 100.000 / 24 jam</h5>
-							<p class="p-kota-top font-opensans-light"><i class="icofont-location-pin">Kota Kediri</i></p>
-							<a href="#">
-								<button type="button" class="btn btn-top font-opensans-bold">Lihat</button>
-							</a>
-						</div>
-						<div class="content-top">
-							<center>
-								<img class="img-fluid" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
-							</center>
-							<h5 class="h5-top color-black font-opensans-regular">Kamera Canon 600D</h5>
-							<h5 class="h5-top-harga color-orange font-opensans-regular">Rp. 100.000 / 24 jam</h5>
-							<p class="p-kota-top font-opensans-light"><i class="icofont-location-pin">Kota Malang</i></p>
-							<a href="#">
-								<button type="button" class="btn btn-top font-opensans-bold">Lihat</button>
-							</a>
-						</div>
-					</div>
-				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12">
+				<p class="p-judul text-center font-bebas-neue color-white">Top Sewa</p>
 			</div>
-			<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="owl-carousel">
+
+					<?php foreach($ListPromosi as $promosi){ ?>
+						<div class="content-top">
+							<center>
+								<img class="img-fluid" src="<?= base_url("assets/user/foto/barang/".$List->foto_barang)?>" alt="700d">
+							</center>
+							<h5 class="h5-top color-black font-opensans-regular"><?= $promosi->nama_barang?></h5>
+							<h5 class="h5-top-harga color-orange font-opensans-regular">Rp<?= number_format($promosi->harga_barang,2,',','.') ?> / 24 jam</h5>
+							<p class="p-kota-top font-opensans-light"><i class="icofont-location-pin"><?= $promosi->kota?></i></p>
+							<a href="#">
+								<a href="<?=base_url('Home/Detail/'.$List->id_barang)?>" class="btn btn-top font-opensans-bold">Lihat Detail</a>
+							</a>
+						</div>
+					<?php } ?>
+					</div>
+
+						<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="show-more-kategori text-center">
 					<button class="btn btn-show-more font-opensans-bold color-white2">Lihat Semua</button>
+				</div>
+			</div>
+
 				</div>
 			</div>
 		</div>
@@ -249,96 +243,24 @@
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<p class="p-judul text-center font-bebas-neue color-blue2">Baru Baru Ini Di Sewa</p>
 			</div>
+
+			<?php foreach($ListBarang as $List){ ?>
 			<div class="col-lg-4 col-md-4 col-sm-12">
 			  <div class="card" style="width: 18rem;">
 				  <center>
-					  <img class="img-fluid card-img-top w-75" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
+					  <img class="img-fluid card-img-top w-75" src="<?= base_url("assets/user/foto/barang/".$List->foto_barang)?>" alt="700d">
 				  </center>
 				  <div class="card-body">
-					<p class="card-text h5-baru color-black font-opensans-regular text-center">Kamera 700D</p>
-					<p class="card-text h5-baru-harga color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</p>
-					<p class="p-kota-baru font-opensans-light text-center"><i class="icofont-location-pin">Kota Malang</i></p>
+					<p class="card-text h5-baru color-black font-opensans-regular text-center"><?= $List->nama_barang ?></p>
+					<p class="card-text h5-baru-harga color-orange font-opensans-regular text-center">Rp<?= number_format($List->harga_barang,2,',','.') ?> / 24 jam</p>
+					<p class="p-kota-baru font-opensans-light text-center"><i class="icofont-location-pin"><?= $List->kota ?></i></p>
 					<a href="#">
-						<button type="button" class="btn btn-baru font-opensans-bold">Lihat</button>
+			           <a class="btn btn-baru font-opensans-bold" href="<?=base_url('Home/Detail/'.$List->id_barang)?>" >Lihat Detail</a>
 					</a>
 				  </div>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
-			  <div class="card" style="width: 18rem;">
-				  <center>
-					  <img class="img-fluid card-img-top w-75" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
-				  </center>
-				  <div class="card-body">
-					<p class="card-text h5-baru color-black font-opensans-regular text-center">Kamera 700D</p>
-					<p class="card-text h5-baru-harga color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</p>
-					<p class="p-kota-baru font-opensans-light text-center"><i class="icofont-location-pin">Kota Malang</i></p>
-					<a href="#">
-						<button type="button" class="btn btn-baru font-opensans-bold">Lihat</button>
-					</a>
-				  </div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
-			  <div class="card" style="width: 18rem;">
-				  <center>
-					  <img class="img-fluid card-img-top w-75" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
-				  </center>
-				  <div class="card-body">
-					<p class="card-text h5-baru color-black font-opensans-regular text-center">Kamera 700D</p>
-					<p class="card-text h5-baru-harga color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</p>
-					<p class="p-kota-baru font-opensans-light text-center"><i class="icofont-location-pin">Kota Malang</i></p>
-					<a href="#">
-						<button type="button" class="btn btn-baru font-opensans-bold">Lihat</button>
-					</a>
-				  </div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
-			  <div class="card" style="width: 18rem;">
-				  <center>
-					  <img class="img-fluid card-img-top w-75" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
-				  </center>
-				  <div class="card-body">
-					<p class="card-text h5-baru color-black font-opensans-regular text-center">Kamera 700D</p>
-					<p class="card-text h5-baru-harga color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</p>
-					<p class="p-kota-baru font-opensans-light text-center"><i class="icofont-location-pin">Kota Malang</i></p>
-					<a href="#">
-						<button type="button" class="btn btn-baru font-opensans-bold">Lihat</button>
-					</a>
-				  </div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
-			  <div class="card" style="width: 18rem;">
-				  <center>
-					  <img class="img-fluid card-img-top w-75" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
-				  </center>
-				  <div class="card-body">
-					<p class="card-text h5-baru color-black font-opensans-regular text-center">Kamera 700D</p>
-					<p class="card-text h5-baru-harga color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</p>
-					<p class="p-kota-baru font-opensans-light text-center"><i class="icofont-location-pin">Kota Malang</i></p>
-					<a href="#">
-						<button type="button" class="btn btn-baru font-opensans-bold">Lihat</button>
-					</a>
-				  </div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
-			  <div class="card" style="width: 18rem;">
-				  <center>
-					  <img class="img-fluid card-img-top w-75" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
-				  </center>
-				  <div class="card-body">
-					<p class="card-text h5-baru color-black font-opensans-regular text-center">Kamera 700D</p>
-					<p class="card-text h5-baru-harga color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</p>
-					<p class="p-kota-baru font-opensans-light text-center"><i class="icofont-location-pin">Kota Malang</i></p>
-					<a href="#">
-						<button type="button" class="btn btn-baru font-opensans-bold">Lihat</button>
-					</a>
-				  </div>
-				</div>
-			</div>
+			<?php } ?>
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="show-more-kategori text-center">
 					<button class="btn btn-show-more font-opensans-bold color-white2">Lihat Semua</button>
@@ -347,7 +269,7 @@
 		</div>
 	</div>
 </section>
-<section id="mengapa" class="mengapa-bg" style="padding-top: 90px;">
+<section id="mengapa" class="mengapa-bg" style="padding-top: 90px;" >
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12">
@@ -525,7 +447,7 @@
 		loop:true,
 		navigation:false,
 		nav:false,
-		margin:0,
+		margin:30,
 		responsiveClass:true,
 		autoplay:true,
 		autoplayTimeout:2000,

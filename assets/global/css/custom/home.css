@@ -203,6 +203,8 @@ a, a:hover{
     background-color: #FFFFFF;
     border: 2px #FFFFFF solid;
     text-align: center;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
 }
 .content-top img{
     width: 120px!important;
@@ -252,7 +254,7 @@ a, a:hover{
     text-align: center;
 }
 .p-kota-baru{
-    font-size: 13px;
+    font-size: 16px;
 	color: #757575;
 }
 .card{
