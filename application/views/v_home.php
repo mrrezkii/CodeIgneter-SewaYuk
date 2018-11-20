@@ -170,7 +170,7 @@
 				<div class="item">
 					<a href="#">
 						<img class="img-fluid kategori-1" src="<?=base_url()?>assets/global/image/kategori/trail.jpg" alt="Sepeda Motor" width="341" draggable="false">
-						<p class="color-white2 font-sunshine">Sepeda Motor"</p>
+						<p class="color-white2 font-sunshine">Kendaraan</p>
 						<div class="item-overlay top"></div>
 					</a>
 				</div>
@@ -188,7 +188,7 @@
 				<div class="item">
 					<a href="#">
 						<img class="img-fluid kategori-2" src="<?=base_url()?>assets/global/image/kategori/mic.jpg" alt="Microphone" width="100%" draggable="false">
-						<p class="color-white2 font-sunshine">Microphone</p>
+						<p class="color-white2 font-sunshine">Peralatan Panggung</p>
 						<div class="item-overlay top"></div>
 					</a>
 				</div>
@@ -468,8 +468,6 @@
 			}
 		}
 	})
-		$('.owl-next', element).toggleClass('disabled', current === carousel.maximum());
-		$('.owl-prev', element).toggleClass('disabled', current === carousel.minimum());
 	</script>
 	<script>
 		$(function() {
