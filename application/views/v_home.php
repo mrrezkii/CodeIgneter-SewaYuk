@@ -238,25 +238,105 @@
 	</div>
 </section>
 <section id="baru" class="baru-bg" style="padding-top: 90px;">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<p class="p-judul text-center font-bebas-neue color-blue2">Baru Baru Ini Di Sewa</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-			  <div class="card">
-				<img src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="" class="img-fluid">
-					<div class="card-body">
-					  <h3 class="card-title"><i class="fa fa-map-marker-alt"></i> Apartment 1, NY</h3>
-					  <div class="card-desc">
-						<span class="card__desc__price">$1500 <span class="card__desc__price--small">to</span> $2000</span>
-					  </div>
-					</div>
-				<div class="card-button">
-				  <button class="btn">Action 1</button> 
-				  <button class="btn">Action 2</button>
+			  <div class="card" style="width: 18rem;">
+				  <center>
+					  <img class="img-fluid card-img-top w-75" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
+				  </center>
+				  <div class="card-body">
+					<p class="card-text h5-baru color-black font-opensans-regular text-center">Kamera 700D</p>
+					<p class="card-text h5-baru-harga color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</p>
+					<p class="p-kota-baru font-opensans-light text-center"><i class="icofont-location-pin">Kota Malang</i></p>
+					<a href="#">
+						<button type="button" class="btn btn-baru font-opensans-bold">Lihat</button>
+					</a>
+				  </div>
 				</div>
-			  </div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+			  <div class="card" style="width: 18rem;">
+				  <center>
+					  <img class="img-fluid card-img-top w-75" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
+				  </center>
+				  <div class="card-body">
+					<p class="card-text h5-baru color-black font-opensans-regular text-center">Kamera 700D</p>
+					<p class="card-text h5-baru-harga color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</p>
+					<p class="p-kota-baru font-opensans-light text-center"><i class="icofont-location-pin">Kota Malang</i></p>
+					<a href="#">
+						<button type="button" class="btn btn-baru font-opensans-bold">Lihat</button>
+					</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+			  <div class="card" style="width: 18rem;">
+				  <center>
+					  <img class="img-fluid card-img-top w-75" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
+				  </center>
+				  <div class="card-body">
+					<p class="card-text h5-baru color-black font-opensans-regular text-center">Kamera 700D</p>
+					<p class="card-text h5-baru-harga color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</p>
+					<p class="p-kota-baru font-opensans-light text-center"><i class="icofont-location-pin">Kota Malang</i></p>
+					<a href="#">
+						<button type="button" class="btn btn-baru font-opensans-bold">Lihat</button>
+					</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+			  <div class="card" style="width: 18rem;">
+				  <center>
+					  <img class="img-fluid card-img-top w-75" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
+				  </center>
+				  <div class="card-body">
+					<p class="card-text h5-baru color-black font-opensans-regular text-center">Kamera 700D</p>
+					<p class="card-text h5-baru-harga color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</p>
+					<p class="p-kota-baru font-opensans-light text-center"><i class="icofont-location-pin">Kota Malang</i></p>
+					<a href="#">
+						<button type="button" class="btn btn-baru font-opensans-bold">Lihat</button>
+					</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+			  <div class="card" style="width: 18rem;">
+				  <center>
+					  <img class="img-fluid card-img-top w-75" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
+				  </center>
+				  <div class="card-body">
+					<p class="card-text h5-baru color-black font-opensans-regular text-center">Kamera 700D</p>
+					<p class="card-text h5-baru-harga color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</p>
+					<p class="p-kota-baru font-opensans-light text-center"><i class="icofont-location-pin">Kota Malang</i></p>
+					<a href="#">
+						<button type="button" class="btn btn-baru font-opensans-bold">Lihat</button>
+					</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+			  <div class="card" style="width: 18rem;">
+				  <center>
+					  <img class="img-fluid card-img-top w-75" src="<?=base_url()?>assets/global/image/barang sewa/kamera700d.jpg" alt="700d">
+				  </center>
+				  <div class="card-body">
+					<p class="card-text h5-baru color-black font-opensans-regular text-center">Kamera 700D</p>
+					<p class="card-text h5-baru-harga color-orange font-opensans-regular text-center">Rp. 100.000 / 24 jam</p>
+					<p class="p-kota-baru font-opensans-light text-center"><i class="icofont-location-pin">Kota Malang</i></p>
+					<a href="#">
+						<button type="button" class="btn btn-baru font-opensans-bold">Lihat</button>
+					</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<div class="show-more-kategori text-center">
+					<button class="btn btn-show-more font-opensans-bold color-white2">Lihat Semua</button>
+				</div>
 			</div>
 		</div>
 	</div>

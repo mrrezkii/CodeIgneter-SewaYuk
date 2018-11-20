@@ -234,6 +234,42 @@ a, a:hover{
 .baru-bg{
     background-color: #FFFFFF;
 }
+.h5-baru{
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+.h5-baru-harga{
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+.p-kota-baru{
+    font-size: 13px;
+	color: #757575;
+}
+.card{
+	margin: 20px;
+	-webkit-transition: width 2s;
+    transition: width 2s;
+	transition-timing-function: ease-in-out;
+}
+.card:hover{
+	box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+.btn-baru{
+    background-color: #F56954;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    width: 100%; 
+}
+.btn-baru:hover{
+    background-color: #FFFFFF;
+    border: 1px #F56954 solid; 
+    color: #F56954;
+}
 
 /* Section Mengapa */
 
