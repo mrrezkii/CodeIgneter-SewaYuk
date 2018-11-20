@@ -214,13 +214,13 @@
 					<?php foreach($ListPromosi as $promosi){ ?>
 						<div class="content-top">
 							<center>
-								<img class="img-fluid" src="<?= base_url("assets/user/foto/barang/".$List->foto_barang)?>" alt="700d">
+								<img class="img-fluid" src="<?= base_url("assets/user/foto/barang/".$promosi->foto_barang)?>" alt="700d">
 							</center>
 							<h5 class="h5-top color-black font-opensans-regular"><?= $promosi->nama_barang?></h5>
 							<h5 class="h5-top-harga color-orange font-opensans-regular">Rp<?= number_format($promosi->harga_barang,2,',','.') ?> / 24 jam</h5>
 							<p class="p-kota-top font-opensans-light"><i class="icofont-location-pin"><?= $promosi->kota?></i></p>
 							<a href="#">
-								<a href="<?=base_url('Home/Detail/'.$List->id_barang)?>" class="btn btn-top font-opensans-bold">Lihat Detail</a>
+								<a href="<?=base_url('Home/Detail/'.$promosi->id_barang)?>" class="btn btn-top font-opensans-bold">Lihat Detail</a>
 							</a>
 						</div>
 					<?php } ?>
