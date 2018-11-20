@@ -176,9 +176,10 @@ a, a:hover{
     background-color: #ffffff;
 }
 .box-top{
-    background-color: #FFFFFF;
-    margin-top: 50px;
-    margin-bottom: 50px;
+	background-image: url(../../image/top-bg.png);
+	background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .owl-carousel{
     
@@ -195,7 +196,6 @@ a, a:hover{
 .content-top{
     background-color: #FFFFFF;
     border: 2px #FFFFFF solid;
-    border-radius: 10px;
     text-align: center;
 }
 .content-top img{
