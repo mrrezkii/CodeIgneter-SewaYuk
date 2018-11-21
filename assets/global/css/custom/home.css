@@ -205,6 +205,7 @@ a, a:hover{
     text-align: center;
     padding: 10px 10px 10px 10px;
     border-radius: 10px;
+	min-height: 276px;
 }
 .content-top img{
     width: 120px!important;
