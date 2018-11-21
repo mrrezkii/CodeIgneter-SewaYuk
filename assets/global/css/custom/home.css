@@ -141,9 +141,8 @@ a, a:hover{
 }
 .item p{
     position: absolute;
-    top: 48%;
-    font-size: 35px;
-    letter-spacing: 5px;
+    top: 40%;
+    font-size: 25px;
     width: 100%;
 }
 .item img {

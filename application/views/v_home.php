@@ -146,7 +146,7 @@
 				<div class="item">
 					<a href="#">
 						<img class="img-fluid kategori-1" src="<?=base_url()?>assets/global/image/kategori/kamera.jpg" alt="kamera" width="341" draggable="false">
-						<p class="color-white2 font-sunshine">Kamera</p>
+						<p class="color-white2 font-opensans-regular">Kamera</p>
 						<div class="item-overlay top"></div>
 					</a>
 				</div>
@@ -155,7 +155,7 @@
 				<div class="item">
 					<a href="#">
 						<img class="img-fluid kategori-1" src="<?=base_url()?>assets/global/image/kategori/kostum.jpg" alt="Kostum" width="341" draggable="false">
-						<p class="color-white2 font-sunshine">Kostum</p>
+						<p class="color-white2 font-opensans-regular">Kostum</p>
 						<div class="item-overlay top"></div>
 					</a>
 				</div>
@@ -164,7 +164,7 @@
 				<div class="item">
 					<a href="#">
 						<img class="img-fluid kategori-1" src="<?=base_url()?>assets/global/image/kategori/tenda.jpg" alt="Tenda" width="341" draggable="false">
-						<p class="color-white2 font-sunshine">Tenda</p>
+						<p class="color-white2 font-opensans-regular">Tenda</p>
 						<div class="item-overlay top"></div>
 					</a>
 				</div>
@@ -173,7 +173,7 @@
 				<div class="item">
 					<a href="#">
 						<img class="img-fluid kategori-1" src="<?=base_url()?>assets/global/image/kategori/trail.jpg" alt="Sepeda Motor" width="341" draggable="false">
-						<p class="color-white2 font-sunshine">Kendaraan</p>
+						<p class="color-white2 font-opensans-regular">Kendaraan</p>
 						<div class="item-overlay top"></div>
 					</a>
 				</div>
@@ -182,7 +182,7 @@
 				<div class="item">
 					<a href="#">
 						<img class="img-fluid kategori-2" src="<?=base_url()?>assets/global/image/kategori/catering.jpg" alt="Alat Catering" width="100%" draggable="false">
-						<p class="color-white2 font-sunshine">Alat Catering</p>
+						<p class="color-white2 font-opensans-regular">Alat Catering</p>
 						<div class="item-overlay top"></div>
 					</a>
 				</div>
@@ -191,7 +191,7 @@
 				<div class="item">
 					<a href="#">
 						<img class="img-fluid kategori-2" src="<?=base_url()?>assets/global/image/kategori/mic.jpg" alt="Microphone" width="100%" draggable="false">
-						<p class="color-white2 font-sunshine">Peralatan Panggung</p>
+						<p class="color-white2 font-opensans-regular">Peralatan Panggung</p>
 						<div class="item-overlay top"></div>
 					</a>
 				</div>
