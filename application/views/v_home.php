@@ -247,7 +247,7 @@
 				<p class="p-judul text-center font-bebas-neue color-blue2">Baru Baru Ini Di Sewa</p>
 			</div>
 
-			<?php foreach($ListBarang as $List){ ?>
+			<!-- <?php foreach($ListBarang as $List){ ?>
 			<div class="col-lg-4 col-md-4 col-sm-12">
 			  <div class="card" style="width: 18rem;">
 				  <center>
@@ -263,7 +263,7 @@
 				  </div>
 				</div>
 			</div>
-			<?php } ?>
+			<?php } ?> -->
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="show-more-kategori text-center">
 					<button class="btn btn-show-more font-opensans-bold color-white2">Lihat Semua</button>
