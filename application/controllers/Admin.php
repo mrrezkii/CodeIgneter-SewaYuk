@@ -40,11 +40,10 @@ class Admin extends CI_Controller {
 	{
 		$data['title'] = "Data Barang";
         $data['konten'] = "admin/v_tabel_barang";
-        $data['Data_User'] = $this->admin->getUser();
-        $data['DataCowok'] = count($this->admin->getUser_laki());
-        $data['DataCewek'] = count($this->admin->getUser_cewek());
-        $data['DataVerif'] = count($this->admin->getUser_Verif());
-        $data['DataNonVerif'] = count($this->admin->getUser_NonVerif());
+        $data['Data_Barang'] = $this->admin->getBarang();
+        $data['DataVerif'] = count($this->admin->getBarang_Verif());
+        $data['DataNonVerif'] = count($this->admin->getBarang_NonVerif());
+        $data['DataPromosi'] = count($this->admin->getBarang_Promosi());
         $this->load->view('template/v_dashboard',$data);
     }
 

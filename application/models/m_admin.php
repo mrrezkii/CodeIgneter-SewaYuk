@@ -13,6 +13,8 @@ class m_admin extends CI_Model {
     public function getBarang(){      
         $this->db->select('*');
         $this->db->from('barang');   
+        $this->db->join('jenis_barang','jenis_barang.id_jenis=barang.id_jenis');
+        $this->db->join('user','user.id_user=barang.id_user');
         return $this->db->get()->result();
     }
     
@@ -41,6 +43,27 @@ class m_admin extends CI_Model {
         $this->db->select('*');
         $this->db->from('user');
         $this->db->where('verifikasi !=', true); 
+        return $this->db->get()->result();
+    }
+
+    public function getBarang_Verif(){      
+        $this->db->select('*');
+        $this->db->from('barang');
+        $this->db->where('status_barang !=', false); 
+        return $this->db->get()->result();
+    }
+
+    public function getBarang_NonVerif(){      
+        $this->db->select('*');
+        $this->db->from('barang');
+        $this->db->where('status_barang !=', true); 
+        return $this->db->get()->result();
+    }
+
+    public function getBarang_Promosi(){      
+        $this->db->select('*');
+        $this->db->from('barang');
+        $this->db->where('status_promosi !=', false); 
         return $this->db->get()->result();
     }
 
