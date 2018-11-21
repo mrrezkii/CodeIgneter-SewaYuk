@@ -19,14 +19,14 @@
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Grafik Pengguna Berdasarkan Jenis Kelamin</h2>
+                    <h2>Grafik Data Barang</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                     </ul>
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                    <canvas id="JenisKelamin"></canvas>
+                    <canvas id="DataBarang"></canvas>
                   </div>
                 </div>
               </div>
@@ -67,11 +67,11 @@
                              width="100%">
                       <thead>
                         <tr>
-                          <th>Id User</th>
-                          <th>Nama User</th>
-                          <th>Email</th>
-                          <th>Telepon</th>
-                          <th>Role</th>
+                          <th>Id Barang</th>
+                          <th>Foto Barang</th>
+                          <th>Nama Barang</th>
+                          <th>Jenis Barang</th>
+                          <th>Pemilik</th>
                           <th>Aksi</th>
                           
                         </tr>
@@ -79,14 +79,14 @@
 
                       <tbody>
                       <?php  
-                        foreach ($Data_User as $data) { 
+                        foreach ($Data_Barang as $data) { 
                       ?>                  
                           <tr>
                             <td><?= $data->id_user ?></td>
+                            <td><img src="<?= base_url("assets/user/foto/barang/".$data->nama_jenis."/".$data->foto_barang)?>" class="img-responsive"></td>
+                            <td><?= $data->nama_barang ?></td>
+                            <td><?= $data->nama_jenis ?></td>
                             <td><?= $data->nama_user ?></td>
-                            <td><?= $data->email ?></td>
-                            <td><?= $data->telepon ?></td>
-                            <td><?= $data->status ?></td>
                             <td>
                                 <a data-toggle="modal" data-target="#edit" href="#"  onclick="edit('<?=$data->id_user?>')" ><i class="fa fa-pencil"></i></a>
                                 &nbsp;&nbsp;<a data-toggle="modal" data-target="#konfirmasi" href="#"><i class="fa fa-trash"></i></a>
@@ -190,18 +190,22 @@
         <script src="<?= base_url() ?>assets/admin/vendors/chartjs/Chart.js"></script>
          <script src="<?= base_url() ?>assets/admin/vendors/chartjs/PieceLabel.min.js"></script>
          <script>
-    var ctx = document.getElementById( "JenisKelamin" );
+    var ctx = document.getElementById( "DataBarang" );
     var JenisKelamin = new Chart( ctx, {
         type: 'pie',
         data: {
-             labels : ['Laki-Laki','Perempuan'],  
+             labels : ['Barang Terverifikasi','Barang Belum Terverifikasi', 'Barang Di Promosikan'],  
             datasets: [
                 {
                     
-                     data : [<?php echo json_encode($DataCowok);?>,<?php echo json_encode($DataCewek);?>],
+                     data : [<?php echo json_encode($DataVerif);?>,
+                             <?php echo json_encode($DataNonVerif);?>,
+                             <?php echo json_encode($DataPromosi);?>
+                            ],
                     backgroundColor: [
                                     'rgb(66, 134, 244)',
-                                    'rgb(255, 158, 33)'      
+                                    'rgb(255, 158, 33)',
+                                    'rgb(0, 175, 38)'        
                                      ],
                     
                     borderWidth: 2

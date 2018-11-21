@@ -31,6 +31,19 @@ class Admin extends CI_Controller {
         $data['Data_User'] = $this->admin->getUser();
         $data['DataCowok'] = count($this->admin->getUser_laki());
         $data['DataCewek'] = count($this->admin->getUser_cewek());
+        $data['DataVerif'] = count($this->admin->getUser_Verif());
+        $data['DataNonVerif'] = count($this->admin->getUser_NonVerif());
+        $this->load->view('template/v_dashboard',$data);
+    }
+
+    public function tabel_barang()
+	{
+		$data['title'] = "Data Barang";
+        $data['konten'] = "admin/v_tabel_barang";
+        $data['Data_Barang'] = $this->admin->getBarang();
+        $data['DataVerif'] = count($this->admin->getBarang_Verif());
+        $data['DataNonVerif'] = count($this->admin->getBarang_NonVerif());
+        $data['DataPromosi'] = count($this->admin->getBarang_Promosi());
         $this->load->view('template/v_dashboard',$data);
     }
 
@@ -49,4 +62,18 @@ class Admin extends CI_Controller {
         $data['Data_Verifikasi'] = $this->admin->getBarang_Verifikasi();
         $this->load->view('template/v_dashboard',$data);
     }
+
+    public function data_user($id){
+		$data=$this->admin->data_user($id);
+		echo json_encode($data);
+    }
+    
+    public function verifikasi_user()
+	{	
+        if($this->input->post('edit')){
+		$this->admin->verifikasi_user();
+		$this->session->set_flashdata('pesan_sukses', 'Sukses Mengkonfirmasi Akun');
+        redirect('admin/konfirmasi_akun');
+        }
+	}
 }

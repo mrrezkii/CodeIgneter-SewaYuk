@@ -60,8 +60,15 @@
                 <li><a><i class="fa fa-table"></i> Data Tabel <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
                     <li><a href="<?= base_url() ?>admin/tabel_user">Tabel User</a></li>
-                    <li><a href="<?= base_url() ?>admin">Tabel Barang</a></li>
+                    <li><a href="<?= base_url() ?>admin/tabel_barang">Tabel Barang</a></li>
                     <li><a href="form_validation.html">Tabel Transaksi</a></li>
+                  </ul>
+                </li>
+
+                <li><a><i class="fa fa-lock"></i> Tabel Verifikasi <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu"> 
+                    <li><a href="<?= base_url() ?>admin/konfirmasi_akun">Verifikasi Akun User</a></li>
+                    <li><a href="<?= base_url() ?>admin/konfirmasi_barang">Verifikasi Barang</a></li>
                   </ul>
                 </li>
 
