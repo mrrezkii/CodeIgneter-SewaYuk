@@ -249,7 +249,7 @@
 
 			<?php foreach($ListBarang as $List){ ?>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-			  <div class="card" style="width: 18rem;">
+			  <div class="card">
 				  <center>
 					  <img class="img-fluid card-img-top w-75" src="<?= base_url("assets/user/foto/barang/".$List->foto_barang)?>" alt="700d">
 				  </center>
