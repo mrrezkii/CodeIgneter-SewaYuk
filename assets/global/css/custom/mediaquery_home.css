@@ -47,14 +47,12 @@
 		height: 615px;
 		margin-top: 76px;
 	}
-	.intro-kiri{
-		margin-top: 50px;
-	}
-	.p-intro-kiri{
-		margin-top: 20px;
-	}
 	.intro-kanan{
 		margin-top: 200px;
+	}
+	.p-intro-kanan{
+		margin-left: 0px;
+		margin-right: 0px;
 	}
 	.icofont-rounded-down{
 		font-size: 80px;
@@ -96,7 +94,19 @@
 	.icon-nav-sm{
 		width: 321px;
 	}
+	.p-intro-kanan{
+		margin-top: 20px;
+	}
 }
+
+
+@media screen and (max-width: 375px){
+	.icon-nav-sm{
+		width: 200px;
+	}
+}
+
+
 
 @media screen and (max-width: 768px){
 	
