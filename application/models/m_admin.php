@@ -68,6 +68,7 @@ class m_admin extends CI_Model {
     }
 
 
+
     public function getUser_Verifikasi(){      
         $this->db->select('*');
         $this->db->from('user');

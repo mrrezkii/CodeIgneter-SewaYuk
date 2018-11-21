@@ -16,4 +16,18 @@ class Home extends CI_Controller {
 		$this->load->view('v_home',$data);
 	}
 
+	public function barang()
+	{
+		$data['ListBarang'] = $this->home->getDataBarang();
+		$data['title']="SewaYuk | Home";
+		$this->load->view('v_barang',$data);
+	}
+	
+	public function transaksi()
+	{
+		$data['ListBarang'] = $this->home->getStatusBarang();
+		$data['title']="SewaYuk | Home";
+		$this->load->view('v_transaksi',$data);
+	}
+
 }

@@ -141,9 +141,8 @@ a, a:hover{
 }
 .item p{
     position: absolute;
-    top: 48%;
-    font-size: 35px;
-    letter-spacing: 5px;
+    top: 40%;
+    font-size: 30px;
     width: 100%;
 }
 .item img {
@@ -206,6 +205,7 @@ a, a:hover{
     text-align: center;
     padding: 10px 10px 10px 10px;
     border-radius: 10px;
+	min-height: 276px;
 }
 .content-top img{
     width: 120px!important;
