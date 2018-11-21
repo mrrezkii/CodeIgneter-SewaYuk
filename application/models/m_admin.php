@@ -30,11 +30,27 @@ class m_admin extends CI_Model {
         return $this->db->get()->result();
     }
 
+    public function getUser_Verif(){      
+        $this->db->select('*');
+        $this->db->from('user');
+        $this->db->where('verifikasi !=', false); 
+        return $this->db->get()->result();
+    }
+
+    public function getUser_NonVerif(){      
+        $this->db->select('*');
+        $this->db->from('user');
+        $this->db->where('verifikasi !=', true); 
+        return $this->db->get()->result();
+    }
+
+
     public function getUser_Verifikasi(){      
         $this->db->select('*');
         $this->db->from('user');
         $this->db->where('foto_identitas !=', NULL);    
         $this->db->where('NIK !=', NULL); 
+        $this->db->where('verifikasi !=', true); 
         return $this->db->get()->result();
     }
 
@@ -47,6 +63,23 @@ class m_admin extends CI_Model {
         return $this->db->get()->result();
     }
 
+    public function verifikasi_user()
+    {
+        $data = array(
+                'verifikasi' => 1
+            );
+
+        return $this->db->where('id_user', $this->input->post('id_user'))
+                        ->update('user', $data);
+    }
+
+    public function data_user($a)
+	{
+        return $this->db
+                    ->where('id_user', $a)
+                    ->get('user')
+                    ->row();
+    }
 
 
     

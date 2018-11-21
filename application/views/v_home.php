@@ -19,8 +19,8 @@
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/fonts/icofont/icofont.min.css" />
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow">
-	<div class="col-lg-1 col-md-11 col-sm-11">
+<nav class="navbar navbar-expand-custom navbar-light fixed-top bg-white shadow">
+	<div class="col-lg-1 col-md-11 col-sm-11 col-9">
 		<center>
 			<a href="index.php"><img class="img-fluid navbar-brand icon-nav" src="<?=base_url()?>assets/global/image/logo.png" alt="Logo Sewa Yuk" width="60px"></a>
 			<a href="index.php"><img class="img-fluid navbar-brand icon-nav-sm ml-auto mr-auto" src="<?=base_url()?>assets/global/image/Logo with name.png" alt="Logo Sewa Yuk" width="225px"></a>
@@ -121,7 +121,7 @@
 <section id="beranda-sm" class="beranda-bg-sm hidden-md">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-lg-6 co-md-6 col-sm-12">
+			<div class="col-lg-12 co-md-6 col-sm-12">
 				<div class="intro-kanan">
 					<p class="p-intro-kanan font-opensans-bold color-white2 text-center">Sewa Barang Idaman Anda di SEWAYUK</p>
 					<div class="arrow bounce">
@@ -247,9 +247,9 @@
 				<p class="p-judul text-center font-bebas-neue color-blue2">Baru Baru Ini Di Sewa</p>
 			</div>
 
-			<!-- <?php foreach($ListBarang as $List){ ?>
+			<?php foreach($ListBarang as $List){ ?>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-			  <div class="card" style="width: 18rem;">
+			  <div class="card">
 				  <center>
 					  <img class="img-fluid card-img-top w-75" src="<?= base_url("assets/user/foto/barang/".$List->foto_barang)?>" alt="700d">
 				  </center>
@@ -263,7 +263,7 @@
 				  </div>
 				</div>
 			</div>
-			<?php } ?> -->
+			<?php } ?>
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="show-more-kategori text-center">
 					<button class="btn btn-show-more font-opensans-bold color-white2">Lihat Semua</button>
@@ -272,7 +272,7 @@
 		</div>
 	</div>
 </section>
-<section id="mengapa" class="mengapa-bg-parallax" style="padding-top: 70px; margin-top: 90px;">
+<section id="mengapa" class="mengapa-bg-parallax hidden-sm" style="padding-top: 70px; margin-top: 90px;">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12" >
@@ -305,11 +305,59 @@
 					<div class="col-lg-6 col-md-6 col-sm-6 grid-mengapa">
 						<div class="teks-mengapa">
 							<h1 class="judul-mengapa color-white2 text-left font-opensans-bold">Harga Yang Terjangkau</h1>
-							<p class="desk-mengapa color-white2 text-left font-opensans-light">Dapatkan berbagai jenis barang yang disewakan dengan harga yang terjangkau dan tidak akan menguras isi dompet anda, gunakan Kategori Sewa untuk menyesuaikan sesuai dengan modal anda.</p>
+							<p class="desk-mengapa color-white2 text-left font-opensans-light">Dapatkan berbagai jenis barang yang disewakan dengan harga yang terjangkau dan tidak akan menguras isi dompet Anda, gunakan Kategori Sewa untuk menyesuaikan sesuai dengan modal Anda.</p>
 						</div>
 					</div>
 				</div>
 			</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="mengapa" class="mengapa-bg-parallax hidden-md" style="padding-top: 70px; margin-top: 90px;">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12" >
+				<p class="p-judul text-center font-bebas-neue color-white" style="font-size:50px ; padding-bottom: 70px;">Mengapa Harus Memilih SewaYuk ?</p>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<img class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/barang.png" alt="Barang">
+					</div>
+					<div class="col-md-12 col-sm-12">
+						<div class="teks-mengapa-sm">
+							<h5 class="judul-mengapa-sm color-white2 text-center font-opensans-bold">Berbagai Barang Terlengkap</h5>
+							<p class="desk-mengapa-sm color-white2 text-center font-opensans-light">Jelajahi Berbagai Macam Jenis Barang Yang Di Tawarkan Oleh Kami. Mulai dari mobil, motor, kamera, perlengkapan camping, kaset DVD, dan masih banyak lagi barang menarik lainnya.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<img class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/transaksi.png" alt="Transaksi">
+					</div>
+					<div class="col-md-12 col-sm-12">
+						<div class="teks-mengapa-sm">
+							<h5 class="judul-mengapa-sm color-white2 text-center font-opensans-bold">Transaksi Paling Aman</h5>
+							<p class="desk-mengapa-sm color-white2 text-center font-opensans-light">Semua transaksi di SewaYuk terjamin keamanannya baik dari sisi penyewa maupun pengguna semua mitra / pemilik toko rental wajib terverifikasi sebelum melakukan transaksi.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<img class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/murah.png" alt="Murah">
+					</div>
+					<div class="col-md-12 col-sm-12">
+						<div class="teks-mengapa-sm">
+							<h5 class="judul-mengapa-sm color-white2 text-center font-opensans-bold">Harga Yang Terjangkau</h5>
+							<p class="desk-mengapa-sm color-white2 text-center font-opensans-light">Dapatkan berbagai jenis barang yang disewakan dengan harga yang terjangkau dan tidak akan menguras isi dompet Anda, gunakan Kategori Sewa untuk menyesuaikan sesuai dengan modal Anda.</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
