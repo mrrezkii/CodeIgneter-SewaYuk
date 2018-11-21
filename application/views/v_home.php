@@ -20,7 +20,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-custom navbar-light fixed-top bg-white shadow">
-	<div class="col-lg-1 col-md-11 col-sm-11 col-10">
+	<div class="col-lg-1 col-md-11 col-sm-11 col-9">
 		<center>
 			<a href="index.php"><img class="img-fluid navbar-brand icon-nav" src="<?=base_url()?>assets/global/image/logo.png" alt="Logo Sewa Yuk" width="60px"></a>
 			<a href="index.php"><img class="img-fluid navbar-brand icon-nav-sm ml-auto mr-auto" src="<?=base_url()?>assets/global/image/Logo with name.png" alt="Logo Sewa Yuk" width="225px"></a>
