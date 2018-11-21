@@ -3,28 +3,74 @@
 @import "compass/css3";
 
 
+@media screen and (max-width: 320px){
+	.intro-kanan{
+		margin-top: 60px;
+	}
+	.p-intro-kanan{
+		margin-top: 0px;
+	}
+}
+	
+@media screen and (max-width: 375px){
+	.icon-nav-sm{
+		width: 200px;
+	}
+}
 
-@media screen and (min-width: 1300px){
-    .navbar-expand-custom {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-		overflow: hidden;
-		width: 100%;
-    }
-    .navbar-expand-custom .navbar-nav {
-        flex-direction: row;
-    }
-    .navbar-expand-custom .navbar-nav .nav-link {
-        padding-right: .5rem;
-        padding-left: .5rem;
-    }
-    .navbar-expand-custom .navbar-collapse {
-        display: flex!important;
-    }
-    .navbar-expand-custom .navbar-toggler {
-        display: none;
-    }
+@media screen and (max-width: 414px){
+	.icon-nav-sm{
+		width: 200px;
+	}
+}
+	
+@media screen and (max-width: 570px){
+	.icon-nav-sm{
+		width: 321px;
+	}
+	.p-intro-kanan{
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+
+@media screen and (max-width: 768px){
+	
+	/* Section Kategori-SM */
+	
+	.kategori-1{
+		width: 420px;
+	}
+	
+	/* Section Mengapa-SM */
+	
+	.teks-mengapa{
+		margin-left: 10px;
+		margin-right: 10px;;
+		margin-top: 25px;
+	}
+	
+}
+
+@media screen and (max-width: 992px){
+	.icon-nav{
+		display: none;
+	}
+	.icon-nav-sm{
+		display: block;
+	}
 }
 
 @media screen and (max-width: 1016px){
@@ -81,76 +127,29 @@
 	}
 }
 
-@media screen and (max-width: 992px){
-	.icon-nav{
-		display: none;
-	}
-	.icon-nav-sm{
-		display: block;
-	}
-}
-
-@media screen and (max-width: 570px){
-	.icon-nav-sm{
-		width: 321px;
-	}
-	.p-intro-kanan{
-		margin-top: 20px;
-	}
-}
-
-
-@media screen and (max-width: 375px){
-	.icon-nav-sm{
-		width: 200px;
-	}
-}
-
-@media screen and (max-width: 414px){
-	.icon-nav-sm{
-		width: 200px;
-	}
-}
-
-@media screen and (max-width: 320px){
-	.intro-kanan{
-		margin-top: 60px;
-	}
-	.p-intro-kanan{
-		margin-top: 0px;
-	}
-}
-
-@media screen and (max-width: 768px){
-	
-	/* Section Kategori-SM */
-	
-	.kategori-1{
-		width: 420px;
-	}
-	
-	/* Section Mengapa-SM */
-	
-	.teks-mengapa{
-		margin-left: 10px;
-		margin-right: 10px;;
-		margin-top: 25px;
-	}
-	
+@media screen and (min-width: 1300px){
+    .navbar-expand-custom {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+		overflow: hidden;
+		width: 100%;
+    }
+    .navbar-expand-custom .navbar-nav {
+        flex-direction: row;
+    }
+    .navbar-expand-custom .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    .navbar-expand-custom .navbar-collapse {
+        display: flex!important;
+    }
+    .navbar-expand-custom .navbar-toggler {
+        display: none;
+    }
 }
 
 
-@media (max-width: 600px) {
-  .footer-distributed .footer-left, .footer-distributed .footer-right {
-    text-align: center;
-  }
-  .footer-distributed .footer-right {
-    float: none;
-    margin: 0 auto 20px;
-  }
-  .footer-distributed .footer-left p.footer-links {
-    line-height: 1.8;
-  }
-}
 
 
