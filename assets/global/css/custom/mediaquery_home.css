@@ -31,22 +31,6 @@
 	.intro-kanan{
 		margin-top: 200px;
 	}
-	
-	/*.beranda-bg-sm{
-		background-image: url(../../image/banner-sm.png);
-		background-position: center;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		background-size: cover;
-		height: 500px;
-		margin-top: 76px;
-	}
-	
-	.p-intro-sm{
-		margin-top: 55px;
-		font-size: 30px;
-		margin-bottom: 55px;
-	}*/
 	.icofont-rounded-down{
 		font-size: 80px;
 		cursor: pointer;
