@@ -121,7 +121,7 @@
 <section id="beranda-sm" class="beranda-bg-sm hidden-md">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-lg-6 co-md-6 col-sm-12">
+			<div class="col-lg-12 co-md-6 col-sm-12">
 				<div class="intro-kanan">
 					<p class="p-intro-kanan font-opensans-bold color-white2 text-center">Sewa Barang Idaman Anda di SEWAYUK</p>
 					<div class="arrow bounce">

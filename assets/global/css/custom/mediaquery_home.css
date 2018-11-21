@@ -91,10 +91,12 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 615px;
-		margin-top: 76px;
+		margin-top: 60px;
 	}
 	.intro-kanan{
 		margin-top: 200px;
+		padding-left: 25px;
+		padding-right: 25px;
 	}
 	.p-intro-kanan{
 		margin-left: 0px;
