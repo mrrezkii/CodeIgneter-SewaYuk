@@ -10,7 +10,7 @@
 	<link rel="icon" href="<?=base_url()?>assets/global/image/logo.png" type="image/png" width="40px" height="auto">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="<?=base_url()?>assets/global/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="<?=base_url()?>assets/global/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/fonts/icofont/icofont.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="<?=base_url()?>assets/global/css/main.css" />
 </head>
 
@@ -26,14 +26,14 @@
 						<input class="input100" type="text" name="nama_user" placeholder="Nama Lengkap">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-id-card" aria-hidden="true"></i>
+							<i class="icofont-id-card" aria-hidden="true"></i>
 						</span>
 					</div>
 					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
 						<input class="input100" type="text" name="email" placeholder="Email">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<i class="icofont-envelope" aria-hidden="true"></i>
 						</span>
 					</div>
 
@@ -44,7 +44,7 @@
 				   </select>
 				   <span class="focus-input100"></span>
 				   <span class="symbol-input100">
-							<i class="fa fa-user" aria-hidden="true"></i>
+							<i class="icofont-user" aria-hidden="true"></i>
 						</span>
 					</div>
 
@@ -57,7 +57,7 @@
 				   </select>
 				   <span class="focus-input100"></span>
 				   <span class="symbol-input100">
-							<i class="fa fa-globe" aria-hidden="true"></i>
+							<i class="icofont-globe" aria-hidden="true"></i>
 						</span>
 					</div>
 
@@ -70,7 +70,7 @@
 				   </select>
 				   <span class="focus-input100"></span>
 				   <span class="symbol-input100">
-							<i class="fa fa-home" aria-hidden="true"></i>
+							<i class="icofont-home" aria-hidden="true"></i>
 						</span>
 					</div>
 
@@ -78,7 +78,7 @@
 						<input class="input100" type="text" name="telepon" placeholder="Telepon">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-phone" aria-hidden="true"></i>
+							<i class="icofont-phone" aria-hidden="true"></i>
 						</span>
                     </div>
                     
@@ -86,7 +86,7 @@
 						<input class="input100" type="date" name="tanggal_lahir">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-calendar" aria-hidden="true"></i>
+							<i class="icofont-calendar" aria-hidden="true"></i>
 						</span>
 					</div>
 
@@ -94,7 +94,7 @@
 						<input class="input100" type="password" name="password" placeholder="Password">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
+							<i class="icofont-lock" aria-hidden="true"></i>
 						</span>
                     </div>
 
@@ -104,7 +104,7 @@
 
 					<div class="text-center p-t-136">
                         <a class="txt2" href="<?=base_url('user/login')?>">
-                        <i class="fa fa-long-arrow-left m-l-5" aria-hidden="true"></i>
+                        <i class="icofont-long-arrow-left m-l-5" aria-hidden="true"></i>
 						Back to login 
 						</a>
 					</div>
