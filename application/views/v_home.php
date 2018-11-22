@@ -19,8 +19,12 @@
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/fonts/icofont/icofont.min.css" />
 </head>
 <body>
+<<<<<<< HEAD
 
 <nav class="navbar navbar-expand-custom navbar-light fixed-top bg-white shadow">
+=======
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow">
+>>>>>>> f83981170f2a5c3f548b4fbf8161867ffb5ebfb6
 	<div class="col-lg-1 col-md-11 col-sm-11 col-9">
 		<center>
 			<a href="index.php"><img class="img-fluid navbar-brand icon-nav" src="<?=base_url()?>assets/global/image/logo.png" alt="Logo Sewa Yuk" width="60px"></a>
@@ -218,7 +222,7 @@
 					<?php foreach($ListPromosi as $promosi){ ?>
 						<div class="content-top">
 							<center>
-								<img class="img-fluid" src="<?= base_url('assets/user/foto/barang/'.$promosi->nama_jenis."/".$promosi->foto_barang) ?>" alt="700d">
+								<img class="img-fluid" src="<?= base_url('assets/user/foto/barang/'.$promosi->nama_jenis."/".$promosi->foto_barang) ?>" alt="">
 							</center>
 							<h5 class="h5-top color-black font-opensans-regular"><?= $promosi->nama_barang?></h5>
 							<h5 class="h5-top-harga color-orange font-opensans-regular">Rp<?= number_format($promosi->harga_barang,2,',','.') ?> / 24 jam</h5>
