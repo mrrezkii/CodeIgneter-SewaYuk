@@ -23,7 +23,7 @@
 
 <body style="background: #eee">
 
-<nav class="navbar navbar-expand-custom navbar-light fixed-top bg-white shadow">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow">
 	<div class="col-lg-1 col-md-11 col-sm-11 col-9">
 		<center>
 			<a href="index.php"><img class="img-fluid navbar-brand icon-nav" src="<?=base_url()?>assets/global/image/logo.png" alt="Logo Sewa Yuk" width="60px"></a>
@@ -125,8 +125,8 @@
 							<h1 id="nama-museum"><b>
                                     <?= $detail->nama_barang ?></b>
 							</h1>
-								<div id="main-bg" class="container-fluid" style="background: url('<?= base_url('assets/user/foto/barang/'.$detail->nama_jenis."/".$detail->foto_barang) ?>');background-size: cover; background-repeat: no-repeat; min-height: 400px; width: 100%; background-position: center; max-height: 401px;box-shadow: 0 0 4px rgba(33,33,33,0.60);">
-								</div>
+							<img class="img-responsive" src="<?= base_url('assets/user/foto/barang/'.$detail->nama_jenis."/".$detail->foto_barang) ?>" alt="" style="background: url('<?= base_url('assets/user/foto/barang/'.$detail->nama_jenis."/".$detail->foto_barang) ?>');background-size: cover; background-repeat: no-repeat; min-height: 400px; width: 100%; background-position: center; max-height: 401px;box-shadow: 0 0 4px rgba(33,33,33,0.60);"> 
+								
 							
 						</div>
 					<div class="col-lg-6 col-md-6 col-sm-6">
