@@ -43,7 +43,7 @@
             <div class="profile_info">
               <span>Selamat Datang ,</span>
               <h2>
-                <?=$this->session->userdata('username')?>
+                <?=$this->session->userdata('nama_user')?>
               </h2>
             </div>
           </div>
@@ -56,9 +56,17 @@
               <ul class="nav side-menu">
                 <li><a href="<?= base_url() ?>admin"><i class="fa fa-home"></i> Home </span></a></li>
 
-                <li><a><i class="fa fa-table"></i> Data Tabel <span class="fa fa-chevron-down"></span></a>
+                <li><a><i class="fa fa-dollar"></i> Data Transaksi <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                    <li><a href="<?= base_url() ?>admin/tabel_user">Tabel User</a></li>
+                  <li><a href="<?= base_url() ?>transaksi/transaksi_barang">Tabel Status Transaksi</a></li>
+                    <li><a href="<?= base_url() ?>admin">Tabel Barang</a></li>
+                    <li><a href="form_validation.html">Tabel Transaksi</a></li>
+                  </ul>
+                </li>
+
+                 <li><a><i class="fa fa-dropbox"></i> Data Barang <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="<?= base_url() ?>transaksi/barang">Tabel Status Transaksi</a></li>
                     <li><a href="<?= base_url() ?>admin">Tabel Barang</a></li>
                     <li><a href="form_validation.html">Tabel Transaksi</a></li>
                   </ul>
@@ -94,7 +102,7 @@
 
                 </a>
                 <ul class="dropdown-menu dropdown-usermenu pull-right">
-                  <li><a href="<?=base_url('index.php/user/logout')?>"><i class="fa fa-sign-out pull-left"></i>&nbsp;
+                  <li><a href="<?=base_url('user/logout')?>"><i class="fa fa-sign-out pull-left"></i>&nbsp;
                       Log Out</a></li>
                 </ul>
               </li>

@@ -120,14 +120,14 @@
 						<div style="margin-top:5px; margin-left:0px; padding:0;" id="rateYo"></div>
 					</p> -->
 
-					<div class="row">
+			    		<div class="row">
 
 						<div class="col-md-12">
 							<h1 id="nama-museum"><b>
                                     <?= $detail->nama_barang ?></b></h1>
                                     
                                     <div id="main-bg" class="container-fluid" style="background: url('<?= base_url('assets/user/foto/barang/'.$detail->nama_jenis."/".$detail->foto_barang) ?>');background-size: cover; background-repeat: no-repeat; min-height: 400px; width: 100%; background-position: center">
-		</div>
+	                	</div>
 
 							<div class="row">
 								<div class="col-lg-6">

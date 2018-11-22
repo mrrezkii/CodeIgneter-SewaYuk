@@ -19,6 +19,7 @@
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/fonts/icofont/icofont.min.css" />
 </head>
 <body>
+
 <nav class="navbar navbar-expand-custom navbar-light fixed-top bg-white shadow">
 	<div class="col-lg-1 col-md-11 col-sm-11 col-9">
 		<center>
@@ -47,7 +48,7 @@
 				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Mengapa SewaYuk</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Tentang	</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Tentang</a>
 			</li>
 		</ul>
 		<ul class="navbar-nav ml-auto">

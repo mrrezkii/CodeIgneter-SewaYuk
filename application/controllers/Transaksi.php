@@ -24,19 +24,22 @@ class Transaksi extends CI_Controller {
 
     public function tabel_barang()
 	{
+        $data['DataTransaksi'] = $this->transaksi->getBarangSewa();
 		$data['title'] = "Data Barang Sewa";
         $data['konten'] = "transaksi/v_barang";
         $this->load->view('template/v_dashboard_transaksi',$data);
     }
 
-    public function tabel_transaksi_barang()
+    public function transaksi_barang()
 	{
-		$data['title'] = "Data Transaksi Barang";
+        $data['title'] = "Data Transaksi Barang";
+        $data['DataTransaksi'] = $this->transaksi->getBarangUser();
         $data['konten'] = "transaksi/v_transaksi_barang";
         $this->load->view('template/v_dashboard_transaksi',$data);
     }
 
-    public function tabel_transaksi_sewa(){
+    public function transaksi_sewa(){
+        $data['DataTransaksi'] = $this->transaksi->getTransaksiSewa();
         $data['title'] = "Data Transaksi Sewa";
         $data['konten'] = "transaksi/v_transaksi_sewa";
         $this->load->view('template/v_dashboard_transaksi',$data);
