@@ -133,25 +133,25 @@
 						<div class="padding-content-detailbarang">
 							<div class="row">
 								<div class="col-lg-12 col-md-12 col-sm-12">
-									<h6><i class="fa fa-phone" aria-hidden="true"></i> Telepon :</h6>
+									<h6><i class="icofont-phone" aria-hidden="true"></i> Telepon :</h6>
 									<p class="text-infor">
 										<?= $detail->telepon ?>
 									</p>
 								</div>
 								<div class="col-lg-12 col-md-12 col-sm-12">
-									<h6><i class="fa fa-clock-o" aria-hidden="true"></i> Jam Buka :</h6>
+									<h6><i class="icofont-clock-time" aria-hidden="true"></i> Jam Buka :</h6>
 									<p class="text-infor">
 										<?= $detail->email ?>
 									</p>
 								</div>
 								<div class="col-lg-12 col-md-12 col-sm-12">
-                                <p class="text-infor">
-                                <h6><i class="fa fa-calendar" aria-hidden="true"></i> Daerah :</h6>
+									<h6><i class="icofont-calendar" aria-hidden="true"></i> Daerah :</h6>
+									<p class="text-infor">
 										<?= $detail->kota ?> , <?= $detail->provinsi ?>
-									</p>
+										</p>
 								</div>
 								<div class="col-lg-12 col-md-12 col-sm-12">
-									<h6><i class="fa fa-calendar" aria-hidden="true"></i> Alamat :</h6>
+									<h6><i class="icofont-address-book"</" aria-hidden="true"></i> Alamat :</h6>
                                     <p class="text-infor">
 										<?= $detail->alamat ?> 
 									</p>
