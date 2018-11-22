@@ -121,34 +121,36 @@
 					</p> -->
 
 					<div class="row">
-
-						<div class="col-md-12">
+						<div class="col-lg-6 col-md-6 col-sm-6">
 							<h1 id="nama-museum"><b>
-                                    <?= $detail->nama_barang ?></b></h1>
-                                    
-                                    <div id="main-bg" class="container-fluid" style="background: url('<?= base_url('assets/user/foto/barang/'.$detail->nama_jenis."/".$detail->foto_barang) ?>');background-size: cover; background-repeat: no-repeat; min-height: 400px; width: 100%; background-position: center">
-		</div>
-
+                                    <?= $detail->nama_barang ?></b>
+							</h1>
+								<div id="main-bg" class="container-fluid" style="background: url('<?= base_url('assets/user/foto/barang/'.$detail->nama_jenis."/".$detail->foto_barang) ?>');background-size: cover; background-repeat: no-repeat; min-height: 400px; width: 100%; background-position: center; max-height: 401px;box-shadow: 0 0 4px rgba(33,33,33,0.60);">
+								</div>
+							
+						</div>
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<div class="padding-content-detailbarang">
 							<div class="row">
-								<div class="col-lg-6">
+								<div class="col-lg-6 col-md-6 col-sm-12">
 									<h6><i class="fa fa-phone" aria-hidden="true"></i> Telepon :</h6>
 									<p class="text-infor">
 										<?= $detail->telepon ?>
 									</p>
 								</div>
-								<div class="col-lg-6">
+								<div class="col-lg-6 col-md-6 col-sm-12">
 									<h6><i class="fa fa-clock-o" aria-hidden="true"></i> Jam Buka :</h6>
 									<p class="text-infor">
 										<?= $detail->email ?>
 									</p>
 								</div>
-								<div class="col-lg-6">
+								<div class="col-lg-6 col-md-6 col-sm-12">
                                 <p class="text-infor">
                                 <h6><i class="fa fa-calendar" aria-hidden="true"></i> Daerah :</h6>
 										<?= $detail->kota ?> , <?= $detail->provinsi ?>
 									</p>
 								</div>
-								<div class="col-lg-6">
+								<div class="col-lg-6 col-md-6 col-sm-12">
 									<h6><i class="fa fa-calendar" aria-hidden="true"></i> Alamat :</h6>
                                     <p class="text-infor">
 										<?= $detail->alamat ?> 
@@ -156,6 +158,8 @@
 								</div>
 							</div>
 						</div>
+						
+					</div>
 					</div>
 				</div>
 				<div class="main">
