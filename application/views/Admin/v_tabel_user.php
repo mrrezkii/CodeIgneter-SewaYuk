@@ -192,7 +192,7 @@
          <script>
     var ctx = document.getElementById( "JenisKelamin" );
     var JenisKelamin = new Chart( ctx, {
-        type: 'pie',
+        type: 'doughnut',
         data: {
              labels : ['Laki-Laki','Perempuan'],  
             datasets: [
@@ -238,7 +238,7 @@
                <script>
     var ctx = document.getElementById( "Verifikasi" );
     var JenisKelamin = new Chart( ctx, {
-        type: 'pie',
+        type: 'doughnut',
         data: {
              labels : ['Terverifikasi','Belum Terverifikasi'],  
             datasets: [

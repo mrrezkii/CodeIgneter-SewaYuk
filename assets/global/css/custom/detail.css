@@ -25,27 +25,12 @@ body {
 }
 
 .main-detail {
-	margin-top: 60px;
+	margin-top: 50px;
 	border-radius: 4px 4px 0 0;
 }
 
 .hero {
 	width: 100%;
-}
-
-.slick-carousel {
-	max-height: 400px;
-}
-
-.slick-item {
-	margin-right: 10px;
-	margin-left: 10px;
-	max-height: 400px;
-	background: white;
-}
-
-.slick-item img {
-	height: 400px;
 }
 
 .breadcrumb {

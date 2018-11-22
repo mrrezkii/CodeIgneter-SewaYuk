@@ -22,6 +22,13 @@ class Home extends CI_Controller {
 		$data['title']="SewaYuk | Home";
 		$this->load->view('v_barang',$data);
 	}
+
+	public function Detail($id)
+	{
+		$data['DetailBarang'] = $this->home->getDetailBarang($id);
+		$data['title']="SewaYuk | Home";
+		$this->load->view('v_barang_detail',$data);
+	}
 	
 	public function transaksi()
 	{

@@ -75,5 +75,19 @@ class Admin extends CI_Controller {
 		$this->session->set_flashdata('pesan_sukses', 'Sukses Mengkonfirmasi Akun');
         redirect('admin/konfirmasi_akun');
         }
+    }
+    
+    public function data_barang($id){
+		$data=$this->admin->data_barang($id);
+		echo json_encode($data);
+    }
+    
+    public function verifikasi_barang()
+	{	
+        if($this->input->post('edit')){
+		$this->admin->verifikasi_barang();
+		$this->session->set_flashdata('pesan_sukses', 'Sukses Mengkonfirmasi Barang');
+        redirect('admin/konfirmasi_barang');
+        }
 	}
 }

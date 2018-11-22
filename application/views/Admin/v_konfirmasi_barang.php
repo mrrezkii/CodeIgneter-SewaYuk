@@ -23,6 +23,20 @@
                   </div>
                   <div class="x_content">
 
+                      <?php if($this->session->flashdata('pesan_sukses')==TRUE){?>
+                  <div class="alert alert-success alert-dismissible fade in" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
+                    </button>
+                    <?= $this->session->flashdata('pesan_sukses'); ?>
+                  </div>
+              <?php } else if($this->session->flashdata('pesan_gagal')==TRUE){?>
+                <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
+                    </button>
+                    <?= $this->session->flashdata('pesan_gagal'); ?>
+                  </div>
+                <?php }?>
+
                         <table style="margin-top:10px;" id="tabel-responsive"
                              class="table table-bordered dt-responsive nowrap"
                              width="100%">
@@ -41,13 +55,13 @@
                         foreach ($Data_Verifikasi as $data) { 
                       ?>                  
                           <tr>
-                          <td><img src="<?= base_url("assets/user/foto/barang/".$data->foto_barang)?>" class="img-responsive"></td>
+                          <td><img src="<?= base_url("assets/user/foto/barang/".$data->nama_jenis."/".$data->foto_barang)?>" class="img-responsive"></td>
                             <td><?= $data->nama_barang ?></td>
                             <td><?= $data->nama_jenis ?></td>
                             <td>Rp<?= number_format($data->harga_barang,2,',','.') ?></td>
                             <td>
-                                <a class="btn btn-success" data-toggle="modal" data-target="#edit" href="#"  onclick="edit('<?=$data->id_user?>')" >Konfirmasi</a>
-                              <a data-toggle="modal" class="btn btn-danger" data-target="#konfirmasi" href="#">Hapus</a>
+                                <a class="btn btn-success" data-toggle="modal" data-target="#edit" href="#"  onclick="edit('<?=$data->id_barang?>')" >Konfirmasi</a>
+                              <!-- <a data-toggle="modal" class="btn btn-danger" data-target="#konfirmasi" href="#">Hapus</a> -->
                             </td>
                             
                           </tr>
@@ -89,52 +103,17 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             </button>
-                            <h2>Edit Data Pengguna</h2>
+                            <h2>Verifikasi Data Barang ?</h2>
                         </div>
-                        <div class="modal-body">                      
-                    <br />
+                       
 
-                    <form action="<?=base_url('admin/update_user')?>" method="post" class="form-horizontal form-label-left">
+                    <form action="<?=base_url('admin/verifikasi_barang')?>" method="post" class="form-horizontal form-label-left">
                                     
-                        <input type="hidden" id="id_user" name="id_user" required="required" class="form-control col-md-7 col-xs-12">
-                    
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Nama :
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="text" id="nama_user" name="nama_user" required="required" class="form-control col-md-7 col-xs-12">
-                        </div>
-                      </div>
+                        <input type="hidden" id="id_barang" name="id_barang" required="required" class="form-control col-md-7 col-xs-12">
 
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Telepon : 
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" id="telepon" name="telepon" required="required" class="form-control col-md-7 col-xs-12">
-                        </div>
-                      </div>
-
-                      <div class="form-group">
-                        <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Username : </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="text" id="email" name="email" required="required" class="form-control col-md-7 col-xs-12">
-                        </div>
-                      </div>
-
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12"><span class="required">*</span> Role : </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                        <select id="status" name="status" class="form-control" required>
-                            <option value="Admin">Admin</option>
-                            <option value="User">User</option>
-                        </select>
-                        </div>
-                      </div>  
-                   
-                        </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                            <input type="submit" name="edit" value="Simpan" class="btn btn-primary">
+                            <input type="submit" name="edit" value="Ya" class="btn btn-primary">
                         </div>
                         </div>
                         </form>
@@ -146,3 +125,15 @@
             </div>
           </div>
         </div>
+
+<script type="text/javascript">
+function edit(a){
+$.ajax({
+  type:"post",
+url:"<?=base_url()?>admin/data_barang/"+a,dataType:"json",
+success:function(data){
+  $("#id_barang").val(data.id_barang);
+}
+});
+}
+</script>

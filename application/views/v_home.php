@@ -217,7 +217,7 @@
 					<?php foreach($ListPromosi as $promosi){ ?>
 						<div class="content-top">
 							<center>
-								<img class="img-fluid" src="<?= base_url("assets/user/foto/barang/".$promosi->foto_barang)?>" alt="700d">
+								<img class="img-fluid" src="<?= base_url('assets/user/foto/barang/'.$promosi->nama_jenis."/".$promosi->foto_barang) ?>" alt="700d">
 							</center>
 							<h5 class="h5-top color-black font-opensans-regular"><?= $promosi->nama_barang?></h5>
 							<h5 class="h5-top-harga color-orange font-opensans-regular">Rp<?= number_format($promosi->harga_barang,2,',','.') ?> / 24 jam</h5>
@@ -251,7 +251,7 @@
 			<div class="col-lg-4 col-md-4 col-sm-12">
 			  <div class="card">
 				  <center>
-					  <img class="img-fluid card-img-top w-75" src="<?= base_url("assets/user/foto/barang/".$List->foto_barang)?>" alt="700d">
+					  <img class="img-fluid card-img-top w-75" src="<?= base_url('assets/user/foto/barang/'.$List->nama_jenis."/".$List->foto_barang) ?>" alt="700d">
 				  </center>
 				  <div class="card-body">
 					<p class="card-text h5-baru color-black font-opensans-regular text-center"><?= $List->nama_barang ?></p>

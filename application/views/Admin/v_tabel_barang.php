@@ -34,7 +34,7 @@
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Grafik Status Verifikasi Pengguna</h2>
+                    <h2>Grafik Jumlah Jenis Barang</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                     </ul>
@@ -192,7 +192,7 @@
          <script>
     var ctx = document.getElementById( "DataBarang" );
     var JenisKelamin = new Chart( ctx, {
-        type: 'pie',
+        type: 'doughnut',
         data: {
              labels : ['Barang Terverifikasi','Barang Belum Terverifikasi', 'Barang Di Promosikan'],  
             datasets: [
@@ -242,16 +242,20 @@
                <script>
     var ctx = document.getElementById( "Verifikasi" );
     var JenisKelamin = new Chart( ctx, {
-        type: 'pie',
+        type: 'doughnut',
         data: {
-             labels : ['Terverifikasi','Belum Terverifikasi'],  
+             labels : ['Peralatan Kemah','Kendaraan','Peralatan Audio','Kostum','Catering','Kamera'],  
             datasets: [
                 {
                     
-                     data : [<?php echo json_encode($DataVerif);?>,<?php echo json_encode($DataNonVerif);?>],
+                     data : ['4','4','3','2','2','4',],
                     backgroundColor: [
                                     'rgb(66, 134, 244)',
-                                    'rgb(255, 158, 33)'      
+                                    'rgb(255, 158, 33)',
+                                    'rgb(0, 175, 38)',
+                                    'rgb(175, 0, 0)',
+                                    'rgb(145, 0, 175)',
+                                    'rgb(214, 0, 103)'      
                                      ],
                     
                     borderWidth: 2

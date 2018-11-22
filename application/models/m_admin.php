@@ -67,8 +67,6 @@ class m_admin extends CI_Model {
         return $this->db->get()->result();
     }
 
-
-
     public function getUser_Verifikasi(){      
         $this->db->select('*');
         $this->db->from('user');
@@ -102,6 +100,24 @@ class m_admin extends CI_Model {
         return $this->db
                     ->where('id_user', $a)
                     ->get('user')
+                    ->row();
+    }
+
+    public function verifikasi_barang()
+    {
+        $data = array(
+                'status_barang' => 1
+            );
+
+        return $this->db->where('id_barang', $this->input->post('id_barang'))
+                        ->update('barang', $data);
+    }
+
+    public function data_barang($a)
+	{
+        return $this->db
+                    ->where('id_barang', $a)
+                    ->get('barang')
                     ->row();
     }
 
