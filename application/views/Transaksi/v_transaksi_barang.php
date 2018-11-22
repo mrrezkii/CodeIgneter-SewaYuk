@@ -56,51 +56,34 @@
                       <tbody>
                       <?php  $no = 1; 
                         foreach ($DataTransaksi as $data) { 
-                      ?>                  
+                      ?>        
+                   
                           <tr>
                           <td><?= $no++ ?></td>
-                          <td><?= $data->nama_user ?></td>
+                          <td><?= $data->nama_user ?> </td>
                           <td><img src="<?= base_url("assets/user/foto/barang/".$data->nama_jenis."/".$data->foto_barang)?>" class="img-responsive"></td>
                             <td><?= $data->nama_barang ?></td>
                             <td>Rp<?= number_format($data->harga_barang,2,',','.') ?></td>
                             <td><?= date("d-m-Y", strtotime($data->tanggal_sewa ));?></td>
                             <?php if($data->status_transaksi == "Pending"):?>
                             <td><font color="red"><?= $data->status_transaksi ?></font></td>
-                            <td><a class="btn btn-danger" data-toggle="modal" data-target="#edit" href="#"  onclick="edit('<?=$data->id_barang?>')" >Batalkan</a></td>
+                       <td><a class="btn btn-danger" href="<?php echo base_url("transaksi/batal_sewa/");echo $data->id_transaksi ?>"  onclick="edit('<?=$data->id_transaksi?>')" >Batalkan</a>
+                 <!-- <a class="btn btn-danger" data-toggle="modal" data-target="#konfirmasi" href="#"  onclick="edit('<?=$data->id_transaksi?>')" >Batalkan</a> -->
+                          </td>
                             <?php else: ?>
                             <td><font color="green"><?= $data->status_transaksi ?></font></td>
                             <td><a class="btn btn-primary" data-toggle="modal" data-target="#edit" href="#"  onclick="edit('<?=$data->id_barang?>')" >Lihat Detail</a></td>
                             <?php endif ?>
                           </tr> 
+
+                    
                       <?php } ?>
                         
                         
                       </tbody>
                     </table>
 
-                    
-                    <!-- Modal Konfirmasi Hapus-->
-                    <div class="modal fade" id="konfirmasi" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h2>Konfirmasi Hapus Data</h2>
-                        </div>
-                        <div class="modal-body">
-                            <h4>Anda Yakin Ingin Menghapus User ?</h4>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <a class="btn btn-primary" href="<?php echo base_url("admin/hapus_user/");echo $data->id_user?>">Hapus Data</a>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                
-                    <!-- Modal Edit Data-->
+       
                 
                   </div>
                 </div>
@@ -109,7 +92,7 @@
           </div>
         </div>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 function edit(a){
 $.ajax({
   type:"post",
@@ -118,5 +101,5 @@ success:function(data){
   $("#id_barang").val(data.id_barang);
 }
 });
-}
+} -->
 </script>

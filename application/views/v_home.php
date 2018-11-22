@@ -35,7 +35,7 @@
 				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Beranda</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Kategori</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Barang Sewa</a>
 			</li>
 			<li class="nav-item">
 				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa Teratas</a>

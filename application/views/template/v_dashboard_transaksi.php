@@ -59,16 +59,15 @@
                 <li><a><i class="fa fa-dollar"></i> Data Transaksi <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
                   <li><a href="<?= base_url() ?>transaksi/transaksi_barang">Tabel Status Transaksi</a></li>
-                    <li><a href="<?= base_url() ?>admin">Tabel Barang</a></li>
-                    <li><a href="form_validation.html">Tabel Transaksi</a></li>
+                    <li><a href="<?= base_url() ?>transaksi/tabel_barang">Tabel Barang</a></li>
+                 
                   </ul>
                 </li>
 
                  <li><a><i class="fa fa-dropbox"></i> Data Barang <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                    <li><a href="<?= base_url() ?>transaksi/barang">Tabel Status Transaksi</a></li>
-                    <li><a href="<?= base_url() ?>admin">Tabel Barang</a></li>
-                    <li><a href="form_validation.html">Tabel Transaksi</a></li>
+                    <li><a href="<?= base_url() ?>transaksi/transaksi_sewa">Tabel Status Sewa</a></li>
+                  
                   </ul>
                 </li>
 

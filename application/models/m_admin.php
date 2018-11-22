@@ -79,6 +79,7 @@ class m_admin extends CI_Model {
     public function getBarang_Verifikasi(){      
         $this->db->select('*');
         $this->db->from('barang');
+        $this->db->join('user','user.id_user=barang.id_user');
         $this->db->join('jenis_barang','jenis_barang.id_jenis=barang.id_jenis');
         $this->db->where('status_barang', '0');   
         $this->db->order_by('tanggal_masuk', 'ASC'); 

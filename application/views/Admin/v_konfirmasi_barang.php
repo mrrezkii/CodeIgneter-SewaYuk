@@ -46,6 +46,7 @@
                           <th>Nama Barang</th>
                           <th>Jenis Barang</th>
                           <th>Harga</th>
+                          <th>Pemilik</th>
                           <th>Aksi</th>
                         </tr>
                       </thead>
@@ -59,6 +60,7 @@
                             <td><?= $data->nama_barang ?></td>
                             <td><?= $data->nama_jenis ?></td>
                             <td>Rp<?= number_format($data->harga_barang,2,',','.') ?></td>
+                            <td><?= $data->nama_user ?></td>
                             <td>
                                 <a class="btn btn-success" data-toggle="modal" data-target="#edit" href="#"  onclick="edit('<?=$data->id_barang?>')" >Konfirmasi</a>
                               <!-- <a data-toggle="modal" class="btn btn-danger" data-target="#konfirmasi" href="#">Hapus</a> -->

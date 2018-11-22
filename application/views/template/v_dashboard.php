@@ -32,8 +32,8 @@
           <!-- menu profile quick info -->
           <div class="profile clearfix">
             <div class="profile_pic">
-              <?php if($this->session->userdata('foto_profil')!=NULL)  :?>
-              <img src="<?= base_url("assets/user/foto/profil/".$this->session->userdata('foto_profil') )?>"
+              <?php if($this->session->userdata('foto')!=NULL)  :?>
+              <img src="<?= base_url(" assets/user/foto/profil/".$this->session->userdata('foto') )?>"
               class="img-circle profile_img">
 
               <?php else: ?>
@@ -92,12 +92,11 @@
 
                 <a href="javascript:" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 
-                  <?php if($this->session->userdata('foto_profil')!=NULL)  :?>
-                  <img src="<?= base_url("assets/user/foto/profil/".$this->session->userdata('foto_profil') )?>">
+                   <?php if($this->session->userdata('foto')!=NULL)  :?>
+                  <img src="<?= base_url(" assets/user/foto/profil/".$this->session->userdata('foto') )?>">
                   <?php else: ?>
                   <img src="<?= base_url() ?>assets/admin/images/user.png" alt="...">
                   <?php endif?>
-
                   <?=$this->session->userdata('nama_user')?> &nbsp;<span class=" fa fa-angle-down"></span>
 
                 </a>
