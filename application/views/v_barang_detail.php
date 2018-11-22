@@ -120,17 +120,6 @@
 						<div style="margin-top:5px; margin-left:0px; padding:0;" id="rateYo"></div>
 					</p> -->
 
-<<<<<<< HEAD
-			    		<div class="row">
-
-						<div class="col-md-12">
-							<h1 id="nama-museum"><b>
-                                    <?= $detail->nama_barang ?></b></h1>
-                                    
-                                    <div id="main-bg" class="container-fluid" style="background: url('<?= base_url('assets/user/foto/barang/'.$detail->nama_jenis."/".$detail->foto_barang) ?>');background-size: cover; background-repeat: no-repeat; min-height: 400px; width: 100%; background-position: center">
-	                	</div>
-
-=======
 					<div class="row">
 						<div class="col-lg-6 col-md-6 col-sm-6">
 							<h1 id="nama-museum"><b>
@@ -142,7 +131,6 @@
 						</div>
 					<div class="col-lg-6 col-md-6 col-sm-6">
 						<div class="padding-content-detailbarang">
->>>>>>> f83981170f2a5c3f548b4fbf8161867ffb5ebfb6
 							<div class="row">
 								<div class="col-lg-12 col-md-12 col-sm-12">
 									<h6><i class="icofont-phone" aria-hidden="true"></i> Telepon :</h6>
