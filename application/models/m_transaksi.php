@@ -47,6 +47,40 @@ class m_transaksi extends CI_Model {
         $this->db->delete('transaksi');
     }
 
+    public function sewa_barang(){
+        $this->load->helper('date'); // load Helper for Date 
+
+        date_default_timezone_set("UTC");
+        echo $date=gmdate("F j, Y").'<br>'; // ie. May 23, 2018
+
+        if (function_exists('date_default_timezone_set'))
+        {
+        date_default_timezone_set('Asia/Jakarta'); // Specify your time zone according to your city
+        }
+
+        date_default_timezone_set('Asia/Jakarta'); // Defined City For Timezone
+        $currentDate =time();
+        $datestring = '%Y-%m-%d - %h:%i %a';
+        $time = time();
+        $better_date= mdate($datestring, $time).'<br>'; //  i.e : 2018-05-23 - 09:52 am | For AM | PM result
+        $c_date=date("Y-m-d H:i:s").'<br>'; // 2018-05-23 09:52:36 | For Seconds Result
+
+        $id_barang=$this->input->post('id_barang');
+        $datasimpan=array(
+            'id_barang'=>$id_barang,
+            'id_penyewa'=>$this->session->userdata('id_user'),
+            'tanggal_sewa'=>$c_date,
+            'waktu_kembali'=>$c_date,
+            'status_transaksi'=>'Pending',
+        );
+        $this->db->insert('transaksi',$datasimpan);
+        if($this->db->affected_rows()>0){
+            return TRUE;
+        }else{
+            return FALSE;
+        }
+    }
+
     public function simpan_barang($foto_barang)
     {
         $this->load->helper('date'); // load Helper for Date 

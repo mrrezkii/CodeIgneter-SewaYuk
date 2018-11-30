@@ -92,7 +92,7 @@ class User extends CI_Controller {
 			
 			else {
 					$this->session->set_flashdata('pesan_gagal', validation_errors());
-					$this->load->view('user/bangsat','refresh');
+					$this->load->view('user/register','refresh');
 				 }
 
 		}

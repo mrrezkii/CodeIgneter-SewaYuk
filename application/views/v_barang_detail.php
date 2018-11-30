@@ -22,7 +22,12 @@
 </head>
 
 <body style="background: #eee">
-
+<div class="alert alert-primary" style="background-color:#3D80C1; border-radius:10px; border:2px white solid;">
+					<h5 style="color:white;" class="text-center">
+						<?php echo $this->session->flashdata('pesan')?>
+					</h5>	
+				</div>
+<?php if($this->session->userdata('login')==TRUE): ?>
 <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow">
 	<div class="col-lg-1 col-md-11 col-sm-11 col-9">
 		<center>
@@ -39,7 +44,7 @@
 				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Beranda</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Kategori</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Barang Sewa</a>
 			</li>
 			<li class="nav-item">
 				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa Teratas</a>
@@ -51,65 +56,101 @@
 				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Mengapa SewaYuk</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Tentang	</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Tentang</a>
 			</li>
 		</ul>
+
 		<ul class="navbar-nav ml-auto">
-			<li class="nav-item">
+			<!-- <li class="nav-item">
 				<a href="#index.php">
 					<li class="icofont-cart color-blue" style="font-size: 25px;margin-top: 8px;">
 					</li>
 				</a>
-			</li>
+			</li>  -->
 			<li class="nav-item dropdown">
         		<a class="nav-link dropdown-toggle font-opensans-bold " href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					<img class="img-fluid" src="<?=base_url()?>assets/global/image/profil/CTO.jpg" alt="Rounded account" width="22" style="border-radius: 50%">
-					Muhammad Rezki Ananda
+				<?=$this->session->userdata('nama_user')?> &nbsp;	
+				<?php if($this->session->userdata('foto_profil') != NULL ) : ?>
+				<img class="img-fluid" src="<?=base_url("assets/user/foto/profil/".$this->session->userdata('foto_profil'))?>" alt="Rounded account" width="40" style="border-radius: 50%">
+				<?php else: ?>	
+				<img class="img-fluid" src="<?= base_url() ?>assets/admin/images/user.png" alt="Rounded account" width="22" style="border-radius: 50%">
+				<?php endif ?>	
+				
 				</a>
-				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown02">
-					<a class="dropdown-item" href="#">Profil</a>
-					<a class="dropdown-item" href="#">Transaksi</a>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown02"> 	 	
+					<a class="dropdown-item" href="<?=base_url("assets/user/foto/profil/".$this->session->userdata('foto'))?>">Profil</a>
+					<?php if($this->session->userdata('status')== "Admin"): ?>
+					<a class="dropdown-item" href="<?=base_url()?>Admin">Laman Admin</a>
+					<?php endif ?>
+					<a class="dropdown-item" href="<?=base_url()?>transaksi">Transaksi</a>
 				  	<div class="dropdown-divider"></div>
-				  	<a class="dropdown-item" href="#">Logout</a>
+				  	<a class="dropdown-item" href="<?=base_url()?>user/logout">Logout</a>
 				</div>
      		</li>
+			
+		</ul>
+	</div>
+</nav>
+
+<?php else: ?>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow">
+	<div class="col-lg-1 col-md-11 col-sm-11 col-9">
+		<center>
+			<a href="index.php"><img class="img-fluid navbar-brand icon-nav" src="<?=base_url()?>assets/global/image/logo.png" alt="Logo Sewa Yuk" width="60px"></a>
+			<a href="index.php"><img class="img-fluid navbar-brand icon-nav-sm ml-auto mr-auto" src="<?=base_url()?>assets/global/image/Logo with name.png" alt="Logo Sewa Yuk" width="225px"></a>
+		</center>
+	</div>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Beranda</a>
+			</li>
+			<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Barang Sewa</a>
+			</li>
+			<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa Teratas</a>
+			</li>
+			<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Baru Disewa</a>
+			</li>
+			<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Mengapa SewaYuk</a>
+			</li>
+			<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Tentang</a>
+			</li>
+		</ul>
+
+		<ul class="navbar-nav ml-auto">
+			<!-- <li class="nav-item">
+				<a href="#index.php">
+					<li class="icofont-cart color-blue" style="font-size: 25px;margin-top: 8px;">
+					</li>
+				</a>
+			</li> -->
+			
 			<li class="nav-item dropdown">
-        		<a class="nav-link dropdown-toggle font-opensans-bold " href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        		<a class="nav-link dropdown-toggle font-opensans-bold " href="<?=base_url()?>user/login" aria-haspopup="true" aria-expanded="false">
 					<img class="img-fluid" src="<?=base_url()?>assets/global/image/rounded account.png" alt="Rounded account">
 					Login
 				</a>
-				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown01">
-				 <form class="px-4 py-3">
-					<div class="form-group">
-					  <label for="exampleDropdownFormEmail1">Email address</label>
-					  <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-					</div>
-					<div class="form-group">
-					  <label for="exampleDropdownFormPassword1">Password</label>
-					  <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-					</div>
-					<div class="form-check">
-					  <input type="checkbox" class="form-check-input" id="dropdownCheck">
-					  <label class="form-check-label" for="dropdownCheck">
-						Remember me
-					  </label>
-					</div>
-					<button type="submit" class="btn btn-primary">Sign in</button>
-				  </form>
-				  <div class="dropdown-divider"></div>
-				  <a class="dropdown-item" href="#">New around here? Sign up</a>
-				  <a class="dropdown-item" href="#">Forgot password?</a>
-				</div>
+		
      		</li>
 		</ul>
 	</div>
 </nav>
+<?php endif ?>
 
 	<div class="main-detail" style="padding-bottom 65px">
 		<br><br>
 		<?php foreach($DetailBarang as $detail): ?>
 
-   
+		 <form action="<?=base_url('transaksi/sewa_barang')?>" method="post">
+		<input type="hidden" name="id_barang" id="id_barang" value=" <?= $detail->id_barang ?>">
 		
 		<div id="main-content" class="container" style="">
 			<div class="main-container">
@@ -203,7 +244,7 @@
 				</div>
 			</div>
 			<div class="col-md-3 col-6">
-				<button class="buy-now" data-toggle="modal" data-target="#pesan">Pesan Sekarang</button>
+			&nbsp; &nbsp; <input type="submit" name="tambah" value="Pesan Barang" class="btn btn-primary">
 			</div>
 		</div>
 	</div>
@@ -263,7 +304,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+					</div>
+			</form>
     </div>
   </div>
 </div>

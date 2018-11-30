@@ -46,6 +46,19 @@ class Transaksi extends CI_Controller {
         $this->load->view('template/v_dashboard_transaksi',$data);
     }
 
+    public function sewa_barang()
+    {
+        if($this->transaksi->sewa_barang()==TRUE){
+            $this ->session->set_flashdata('pesan_sukses', 'Sukses Menambah Data Transaksi');
+            redirect('home/','refresh');
+            }
+        
+            else{
+            $this->session->set_flashdata('pesan_gagal', 'Gagal Menyimpan Data Anda');
+            $this->load->view('refresh');
+            }
+    }
+
     public function batal_sewa($id_transaksi)
     {
         $this->transaksi->hapus_transaksi($id_transaksi);
