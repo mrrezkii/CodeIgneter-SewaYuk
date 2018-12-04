@@ -223,7 +223,7 @@
 					<section class="location-detail">
 						<h4>Lokasi Penyewa</h4>
 						<p>
-							<span class="fa fa-map-marker"></span>
+							<span class="icofont-marke"></span>
 							<span id="lokasi-museum"></span>
 						</p>
 						<div id="map" style="width: 100%; height: 600px">
