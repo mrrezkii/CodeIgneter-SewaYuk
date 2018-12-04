@@ -170,6 +170,12 @@ a, a:hover{
     padding-left: 40px;
     padding-right: 40px;
 }
+.kategori-2{
+	display: block;
+}
+.kategori-2-sm{
+	display: none;
+}
 
 /* Section Top */
 

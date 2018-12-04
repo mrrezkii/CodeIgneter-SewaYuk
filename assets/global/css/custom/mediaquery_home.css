@@ -19,6 +19,12 @@
 	.p-judul{
 		font-size: 45px!important;
 	}
+	.kategori-2{
+		display: none;
+	}
+	.kategori-2-sm{
+		display: block;
+	}
 }
 
 @media screen and (max-width: 414px){

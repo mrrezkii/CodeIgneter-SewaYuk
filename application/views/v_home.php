@@ -220,6 +220,7 @@
 				<div class="item">
 					<a href="#">
 						<img class="img-fluid kategori-2" src="<?=base_url()?>assets/global/image/kategori/catering.jpg" alt="Alat Catering" width="100%" draggable="false">
+						<img class="img-fluid kategori-2-sm" src="<?=base_url()?>assets/global/image/kategori/catering-sm.png" alt="Alat Catering" width="100%" draggable="false">
 						<p class="color-white2 font-opensans-regular">Alat Catering</p>
 						<div class="item-overlay top"></div>
 					</a>
@@ -229,6 +230,7 @@
 				<div class="item">
 					<a href="#">
 						<img class="img-fluid kategori-2" src="<?=base_url()?>assets/global/image/kategori/mic.jpg" alt="Microphone" width="100%" draggable="false">
+						<img class="img-fluid kategori-2-sm" src="<?=base_url()?>assets/global/image/kategori/mic-sm.png" alt="Microphone" width="100%" draggable="false">
 						<p class="color-white2 font-opensans-regular">Peralatan Panggung</p>
 						<div class="item-overlay top"></div>
 					</a>
