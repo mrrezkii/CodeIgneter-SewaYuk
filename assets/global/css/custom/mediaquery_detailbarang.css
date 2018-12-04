@@ -14,7 +14,6 @@
 }
 
 
-
 @media screen and (min-width: 1200px){
 	.img-detailfoto{
 		min-height: 500px!important;
@@ -26,6 +25,11 @@
 		margin-top: 50px;
 		margin-left: auto;
 	}
+	.mapboxgl-canvas{
+		min-height: none!important;
+		height: 500px!important;
+	}
 }
+
 
 
