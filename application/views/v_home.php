@@ -236,7 +236,7 @@
 			</div>
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="show-more-kategori text-center">
-					<button class="btn btn-show-more font-opensans-bold color-white2">Lihat Semua</button>
+					<a class="btn btn-show-more font-opensans-bold color-white2">Lihat Semua</a>
 				</div>
 			</div>
 		</div>
@@ -250,7 +250,7 @@
 				<div class="col-lg-12 col-md-12 col-sm-12">
 				<p class="p-judul text-center font-bebas-neue color-white">Top Sewa</p>
 			</div>
-					<div class="owl-carousel">
+					<div class="owl-carousel containerpromo">
 
 					<?php foreach($ListPromosi as $promosi){ ?>
 						<div class="content-top">
@@ -269,7 +269,7 @@
 
 						<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="show-more-kategori text-center">
-					<button class="btn btn-show-more font-opensans-bold color-white2">Lihat Semua</button>
+					<a class="btn btn-show-more font-opensans-bold color-white2" href="<?=base_url()?>Home/Barang">Lihat Semua</a>
 				</div>
 			</div>
 
@@ -304,7 +304,7 @@
 			<?php } ?>
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="show-more-kategori text-center">
-					<button class="btn btn-show-more font-opensans-bold color-white2">Lihat Semua</button>
+					<a class="btn btn-show-more font-opensans-bold color-white2" href="<?=base_url()?>Home/Barang">Lihat Semua</a>
 				</div>
 			</div>
 		</div>
@@ -550,11 +550,14 @@
 		responsive:{
 			0:{
 				items:1,
-				nav:true
+				nav:true,
+				loop:true
+				
 			},
 			600:{
 				items:3,
-				nav:true
+				nav:true,
+				loop:true
 			},
 			1000:{
 				items:5,
