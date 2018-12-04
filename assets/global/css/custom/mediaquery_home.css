@@ -16,6 +16,9 @@
 	.icon-nav-sm{
 		width: 200px;
 	}
+	.p-judul{
+		font-size: 45px!important;
+	}
 }
 
 @media screen and (max-width: 414px){
@@ -46,12 +49,12 @@
   }
 }
 
-@media screen and (max-width: 768px){
-	
-	/* Section Kategori-SM */
-	
+@media screen and (max-width: 768px){	
 	.kategori-1{
 		width: 420px;
+	}
+	.p-judul{
+		font-size: 50px!important;
 	}
 	
 }
@@ -140,7 +143,13 @@
 	
 }
 
-@media screen and (max-width: 1328px) and (min-width: 1022px){
+@media screen and (max-width: 1024px) and (min-width: 769px){
+	.p-judul{
+		font-size: 60px!important;
+	}
+}
+
+@media screen and (max-width: 1328px) and (min-width: 1022px) {
 	.teks-mengapa{
 		margin-top: 75px;
 	}
@@ -168,6 +177,8 @@
         display: none;
     }
 }
+
+
 
 
 
