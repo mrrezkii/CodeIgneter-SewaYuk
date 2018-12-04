@@ -140,6 +140,12 @@
 	
 }
 
+@media screen and (max-width: 1328px) and (min-width: 1022px){
+	.teks-mengapa{
+		margin-top: 75px;
+	}
+}
+
 @media screen and (min-width: 1300px){
     .navbar-expand-custom {
         flex-direction: row;
