@@ -3,9 +3,9 @@
 @import "compass/css3";
 
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 380px){
 	.intro-kanan{
-		margin-top: 60px;
+		margin-top: 60px!important;
 	}
 	.p-intro-kanan{
 		margin-top: 0px;
