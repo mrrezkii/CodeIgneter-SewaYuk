@@ -25,11 +25,29 @@
 	.kategori-2-sm{
 		display: block;
 	}
+	.p-intro-kanan{
+		padding-top: 80px;
+	}
+	.item p{
+		font-size: 20px!important;
+	}
 }
 
 @media screen and (max-width: 414px){
 	.icon-nav-sm{
 		width: 200px;
+	}
+}
+
+@media screen and (min-width: 420px) and (max-width: 575px){
+	.kategori-1{
+		min-width: 571px;
+	}
+	.kategori-2{
+		display: none;
+	}
+	.kategori-2-sm{
+		display: block;
 	}
 }
 	
@@ -60,7 +78,10 @@
 		width: 420px;
 	}
 	.p-judul{
-		font-size: 50px!important;
+		font-size: 40px!important;
+	}
+	.p-intro-kanan{
+		font-size: 40px;
 	}
 	
 }
