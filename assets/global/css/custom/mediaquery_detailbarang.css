@@ -25,9 +25,11 @@
 		margin-top: 50px;
 		margin-left: auto;
 	}
-	.mapboxgl-canvas{
+}
+@media screen and (max-width: 765px){
+	.location-detail #map{
 		min-height: none!important;
-		height: 500px!important;
+		height: 300px!important;
 	}
 }
 
