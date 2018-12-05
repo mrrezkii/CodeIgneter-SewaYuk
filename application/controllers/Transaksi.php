@@ -15,8 +15,9 @@ class Transaksi extends CI_Controller {
 
 	public function index()
 	{
-		$data['title'] = "Dashboard Transaksi";
-        $data['konten'] = "transaksi/v_home";
+        $data['title'] = "Data Transaksi Barang";
+        $data['DataTransaksi'] = $this->transaksi->getBarangUser();
+        $data['konten'] = "transaksi/v_transaksi_barang";
         $this->load->view('template/v_dashboard_transaksi',$data);
     }
 
@@ -47,8 +48,8 @@ class Transaksi extends CI_Controller {
     public function sewa_barang()
     {
         if($this->transaksi->sewa_barang()==TRUE){
-            $this ->session->set_flashdata('pesan_sukses', 'Sukses Menambah Data Transaksi');
-            redirect('home/','refresh');
+            $this ->session->set_flashdata('pesan_barang', 'Sukses Memesan Barang');
+            redirect('home/barang','refresh');
             }
         
             else{

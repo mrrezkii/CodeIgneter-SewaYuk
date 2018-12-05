@@ -1,6 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-@import "compass/css3";
 
 
 @media screen and (max-width: 380px){
@@ -132,7 +131,7 @@
 	/* Section Beranda-SM */
 	
 	.beranda-bg-sm{
-		background-image: url(../../image/banner-sm.png);
+		background-image: url(../../image/banner-sm.jpg);
 		background-position: center;
 		background-attachment: fixed;
 		background-repeat: no-repeat;

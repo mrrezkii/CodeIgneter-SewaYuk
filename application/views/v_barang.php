@@ -18,6 +18,25 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="<?=base_url()?>assets/global/css/custom/mediaquery_home.css" />
 </head>
 <body>
+<div class="modal fade" id="pesan_barang" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	<?php  $this->session->flashdata('pesan_barang') ?>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <?php if($this->session->userdata('login')==TRUE): ?>
 <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow">
@@ -34,22 +53,22 @@
 		<div  id="Sidenav"></div>
 		<ul class="navbar-nav mr-auto collapse-md">
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="#home">Beranda</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="<?=base_url()?>home/#home">Beranda</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="#kategori_barang">Kategori</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="<?=base_url()?>home/#kategori_barang">Kategori</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="#teratas">Sewa Teratas</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="home/#teratas">Sewa Teratas</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="#sewa_baru">Baru Disewa</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="home/#sewa_baru">Baru Disewa</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="#tentang">Tentang</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="home/#tentang">Tentang</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="#kontak">Kontak Kami</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="home/#kontak">Kontak Kami</a>
 			</li>
 		</ul>
 
@@ -103,22 +122,22 @@
 		
 		<ul class="navbar-nav ml-auto collapse-sm">
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#home">Beranda</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="<?=base_url()?>home/#home">Beranda</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#kategori_barang">Kategori</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="<?=base_url()?>home/#kategori_barang">Kategori</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent"  href="#teratas">Sewa Teratas</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent"  href="<?=base_url()?>home/#teratas">Sewa Teratas</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#sewa_baru">Baru Disewa</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="<?=base_url()?>home/#sewa_baru">Baru Disewa</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#tentang">Tentang</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="<?=base_url()?>home/#tentang">Tentang</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#kontak">Kontak Kami</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="<?=base_url()?>home/#kontak">Kontak Kami</a>
 			</li>
 		</ul>
 		
@@ -139,22 +158,22 @@
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto collapse-md">
 		<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="#home">Beranda</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="<?=base_url()?>home/#home">Beranda</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="#kategori_barang">Kategori</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="<?=base_url()?>home/#kategori_barang">Kategori</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="#teratas">Sewa Teratas</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="home/#teratas">Sewa Teratas</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="#sewa_baru">Baru Disewa</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="home/#sewa_baru">Baru Disewa</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="#tentang">Tentang</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="home/#tentang">Tentang</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="#kontak">Kontak Kami</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="home/#kontak">Kontak Kami</a>
 			</li>
 		</ul>
 
@@ -184,25 +203,26 @@
 		<hr class="hr-collapse collapse-sm">
 		
 		<ul class="navbar-nav ml-auto collapse-sm">
-		<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#home">Beranda</a>
+			<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="<?=base_url()?>home/#home">Beranda</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#kategori_barang">Kategori</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="<?=base_url()?>home/#kategori_barang">Kategori</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent"  href="#teratas">Sewa Teratas</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent"  href="<?=base_url()?>home/#teratas">Sewa Teratas</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#sewa_baru">Baru Disewa</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="<?=base_url()?>home/#sewa_baru">Baru Disewa</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#tentang">Tentang</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="<?=base_url()?>home/#tentang">Tentang</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#kontak">Kontak Kami</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="<?=base_url()?>home/#kontak">Kontak Kami</a>
 			</li>
 		</ul>
+		
 
 		
 	</div>
@@ -268,7 +288,7 @@
 						<p class="card-text h5-baru-harga color-orange font-opensans-regular text-center">Rp<?= number_format($List->harga_barang,2,',','.') ?>/ 24 jam</p>
 						<p class="p-kota-baru font-opensans-light text-center"><i class="icofont-location-pin"><?= $List->kota ?></i></p>
 						<a href="#">
-							<button type="button" class="btn btn-baru font-opensans-bold">Lihat</button>
+							<a class="btn btn-baru font-opensans-bold" href="<?= base_url('home/Detail/'.$List->id_barang) ?>">Lihat</button>
 						</a>
 					  </div>	
 					</div>
@@ -321,5 +341,23 @@
 	</div>
 	<div id="kontak"></div>
 </footer>
+<script>
+	<script type="text/javascript" src="<?=base_url()?>assets/global/js/jquery/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="<?=base_url()?>assets/global/js/bootstrap/bootstrap.min.js"></script>
+<?php
+        if($this->session->flashdata('pesan_barang') != ''){
+    ?>
+
+<script>
+	$(document).ready(function () {
+		$("#pesan_barang").modal();
+	});
+
+</script>
+
+<?php
+        }
+    ?>
+</script>
 </body>
 </html>

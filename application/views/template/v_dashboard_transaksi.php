@@ -25,7 +25,7 @@
       <div class="col-md-3 left_col">
         <div class="left_col scroll-view">
           <div class="navbar nav_title" style="border: 0;">
-            <a href="<?= base_url() ?>index.php/admin" class="site_title"></i><span> SewaYuk</span></a>
+            <a href="<?= base_url() ?>transaksi" class="site_title"></i><span>SewaYuk</span></a>
           </div>
 
           <!-- menu profile quick info -->
@@ -54,7 +54,6 @@
           <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
             <div class="menu_section">
               <ul class="nav side-menu">
-                <li><a href="<?= base_url() ?>admin"><i class="fa fa-home"></i> Home </span></a></li>
 
                 <li><a><i class="fa fa-dollar"></i> Data Transaksi <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">

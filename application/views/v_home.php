@@ -24,8 +24,8 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow">
 	<div class="col-lg-1 col-md-11 col-sm-11 col-9">
 		<center>
-			<a href="index.php"><img class="img-fluid navbar-brand icon-nav" src="<?=base_url()?>assets/global/image/logo.png" alt="Logo Sewa Yuk" width="60px"></a>
-			<a href="index.php"><img class="img-fluid navbar-brand icon-nav-sm ml-auto mr-auto" src="<?=base_url()?>assets/global/image/Logo with name.png" alt="Logo Sewa Yuk" width="225px"></a>
+			<a href="<?=base_url()?>"><img class="img-fluid navbar-brand icon-nav" src="<?=base_url()?>assets/global/image/logo.png" alt="Logo Sewa Yuk" width="60px"></a>
+			<a href="<?=base_url()?>"><img class="img-fluid navbar-brand icon-nav-sm ml-auto mr-auto" src="<?=base_url()?>assets/global/image/Logo with name.png" alt="Logo Sewa Yuk" width="225px"></a>
 		</center>
 	</div>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -130,8 +130,8 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow">
 	<div class="col-lg-1 col-md-11 col-sm-11 col-9">
 		<center>
-			<a href="index.php"><img class="img-fluid navbar-brand icon-nav" src="<?=base_url()?>assets/global/image/logo.png" alt="Logo Sewa Yuk" width="60px"></a>
-			<a href="index.php"><img class="img-fluid navbar-brand icon-nav-sm ml-auto mr-auto" src="<?=base_url()?>assets/global/image/Logo with name.png" alt="Logo Sewa Yuk" width="225px"></a>
+			<a href="<?=base_url()?>"><img class="img-fluid navbar-brand icon-nav" src="<?=base_url()?>assets/global/image/logo.png" alt="Logo Sewa Yuk" width="60px"></a>
+			<a href="<?=base_url()?>"><img class="img-fluid navbar-brand icon-nav-sm ml-auto mr-auto" src="<?=base_url()?>assets/global/image/Logo with name.png" alt="Logo Sewa Yuk" width="225px"></a>
 		</center>
 	</div>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -395,7 +395,7 @@
 				<div class="mengapa-bg-parallax">
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-6 grid-mengapa">
-						<img  class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/barang.png" alt="Barang">
+						<img  class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/barang.jpg" alt="Barang">
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-6 grid-mengapa">
 						<div class="teks-mengapa">
@@ -410,10 +410,10 @@
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-6 grid-mengapa">
-						<img class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/transaksi.png" alt="Transaksi">
+						<img class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/transaksi.jpg" alt="Transaksi">
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-6 grid-mengapa">
-						<img class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/murah.png" alt="Murah">
+						<img class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/murah.jpg" alt="Murah">
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-6 grid-mengapa">
 						<div class="teks-mengapa">
@@ -557,7 +557,7 @@
 				<div class="team-member">
 					<div class="team-img">
 						<center>
-							<img src="<?=base_url()?>assets/global/image/profil/CMO.jpeg" alt="team member" class="img-fluid">
+							<img src="<?=base_url()?>assets/global/image/profil/CMO.jpg" alt="team member" class="img-fluid">
 						</center>
 					</div>
 					<div class="team-hover">
@@ -587,7 +587,9 @@
 		<footer class="footer-distributed">
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12">
-					<h4 class="font-opensans-bold color-white2">Sewa Yuk Mudah Praktik dan Asyik</h4>
+					<h4 class="font-opensans-bold color-white2"><font size="6px">
+						SewaYuk! Mudah Praktis dan Asyik
+						</font></h4>
 				<p class="footer-links">
 					<a href="#kategori_barang">Kategori</a>
 					<a href="#teratas">Sewa Teratas</a>

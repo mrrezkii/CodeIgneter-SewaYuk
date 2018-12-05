@@ -100,7 +100,7 @@ a, a:hover{
 /* Section Beranda */
 
 .beranda-bg{
-    background-image: url(../../image/banner.png);
+    background-image: url(../../image/banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -488,7 +488,7 @@ a, a:hover{
 }
 
 .footer-distributed p.footer-links {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     color: #ffffff;
     margin: 0 0 10px;

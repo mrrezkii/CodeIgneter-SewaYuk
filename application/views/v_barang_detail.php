@@ -244,7 +244,11 @@
 				</div>
 			</div>
 			<div class="col-md-3 col-6">
+			<?php if($this->session->userdata('login')==TRUE): ?>
 			&nbsp; &nbsp; <input type="submit" name="tambah" value="Pesan Barang" class="btn btn-primary">
+			<?php else: ?>
+			&nbsp; &nbsp; <a class="btn btn-primary" href="<?=base_url()?>user/login">Pesan Barang</a>
+			<?php endif ?>
 			</div>
 		</div>
 	</div>
@@ -256,8 +260,10 @@
                         <div class="row">
                             <div class="col-md-8 ">
                                 <div class="container">
+									
                                     <h5 class="title"><i class="fa fa-ticket" aria-hidden="true"></i> Pesan Barang
-                                     sekarang juga !</h5>
+									 sekarang juga !</h5>
+						
                                 </div>
                             </div>
 
