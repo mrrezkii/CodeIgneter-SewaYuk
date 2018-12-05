@@ -19,7 +19,7 @@
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/fonts/icofont/icofont.min.css" />
 </head>
 <body>
-
+<div id="home"></div>
 <?php if($this->session->userdata('login')==TRUE): ?>
 <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow">
 	<div class="col-lg-1 col-md-11 col-sm-11 col-9">
@@ -32,24 +32,25 @@
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<div  id="Sidenav"></div>
 		<ul class="navbar-nav mr-auto collapse-md">
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Beranda</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#home">Beranda</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Barang Sewa</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#kategori_barang">Kategori</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa Teratas</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#teratas">Sewa Teratas</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Baru Disewa</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#sewa_baru">Baru Disewa</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Mengapa SewaYuk</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#tentang">Tentang</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Tentang</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#kontak">Kontak Kami</a>
 			</li>
 		</ul>
 
@@ -79,9 +80,9 @@
 		<ul class="navbar-nav mr-auto collapse-sm">
 			<li class="nav-item dropdown">
         		<a class="nav-link dropdown-toggle font-opensans-bold " href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				<?=$this->session->userdata('nama_user')?> &nbsp;	
 				<?php if($this->session->userdata('foto_profil') != NULL ) : ?>
 				<center><img class="img-fluid" src="<?=base_url("assets/user/foto/profil/".$this->session->userdata('foto_profil'))?>" alt="" width="40" style="border-radius: 50%"></center>
+				<center><?=$this->session->userdata('nama_user')?> &nbsp;</center>	
 				<?php else: ?>	
 				<center><img class="img-fluid" src="<?= base_url() ?>assets/admin/images/user.png" alt="" width="22" style="border-radius: 50%"></center>
 				<?php endif ?>	
@@ -103,22 +104,22 @@
 		
 		<ul class="navbar-nav ml-auto collapse-sm">
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Beranda</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#home">Beranda</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Barang Sewa</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#kategori_barang">Kategori</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa Teratas</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent"  href="#teratas">Sewa Teratas</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Baru Disewa</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#sewa_baru">Baru Disewa</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Mengapa SewaYuk</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#tentang">Tentang</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Tentang</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#kontak">Kontak Kami</a>
 			</li>
 		</ul>
 		
@@ -138,23 +139,23 @@
 	</button>
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto collapse-md">
-			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Beranda</a>
+		<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" href="#home">Beranda</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Barang Sewa</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#kategori_barang">Kategori</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa Teratas</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#teratas">Sewa Teratas</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Baru Disewa</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#sewa_baru">Baru Disewa</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Mengapa SewaYuk</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#tentang">Tentang</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Tentang</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#kontak">Kontak Kami</a>
 			</li>
 		</ul>
 
@@ -184,23 +185,23 @@
 		<hr class="hr-collapse collapse-sm">
 		
 		<ul class="navbar-nav ml-auto collapse-sm">
-			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Beranda</a>
+		<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#home">Beranda</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Barang Sewa</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#kategori_barang">Kategori</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa Teratas</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent"  href="#teratas">Sewa Teratas</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Baru Disewa</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#sewa_baru">Baru Disewa</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Mengapa SewaYuk</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#tentang">Tentang</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Tentang</a>
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#kontak">Kontak Kami</a>
 			</li>
 		</ul>
 
@@ -209,7 +210,7 @@
 </nav>
 <?php endif ?>
 
-<section id="beranda" class="beranda-bg hidden-sm">
+<section class="beranda-bg hidden-sm">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-6 co-md-6 col-sm-12">
@@ -245,11 +246,12 @@
 		</div>
 	</div>
 </section>
-<section id="kategori" class="kategori-bg" style="padding-top: 90px;">
+
+<section  class="kategori-bg" style="padding-top: 90px;">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12">
-				<p class="p-judul text-center font-bebas-neue color-blue2">Kategori</p>
+				<p class="p-judul text-center font-bebas-neue color-blue2" id="kategori_barang">Kategori</p>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-6 grid-kategori">
 				<div class="item">
@@ -321,7 +323,7 @@
 			<div class="col-lg-12 col-md-12 col-sm-12 grid-top">
 				<div class="box-top shadow-lg">
 				<div class="col-lg-12 col-md-12 col-sm-12">
-				<p class="p-judul text-center font-bebas-neue color-white">Top Sewa</p>
+				<p class="p-judul text-center font-bebas-neue color-white" id="teratas">SEWA TERATAS</p>
 			</div>
 					<div class="owl-carousel containerpromo">
 
@@ -355,7 +357,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12">
-				<p class="p-judul text-center font-bebas-neue color-blue2">Baru Baru Ini Di Sewa</p>
+				<p class="p-judul text-center font-bebas-neue color-blue2" id="sewa_baru">Baru Baru Ini Di Sewa</p>
 			</div>
 
 			<?php foreach($ListBarang as $List){ ?>
@@ -376,24 +378,24 @@
 			</div>
 			<?php } ?>
 			<div class="col-lg-12 col-md-12 col-sm-12">
-				<div class="show-more-kategori text-center">
-					<a class="btn btn-show-more font-opensans-bold color-white2" href="<?=base_url()?>Home/Barang">Lihat Semua</a>
+				<div class="show-more-kategori text-center">	
+					<a class="btn btn-show-more font-opensans-bold color-white2" href="<?=base_url()?>Home/Barang"><font color="white">Lihat Semua</font></a>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<section id="mengapa" class="mengapa-bg-parallax hidden-sm" style="padding-top: 70px; margin-top: 90px;">
+<section class="mengapa-bg-parallax hidden-sm" style="padding-top: 70px; margin-top: 90px;">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12" >
-				<p class="p-judul text-center font-bebas-neue color-white" style="font-size:50px ; padding-bottom: 70px;">Mengapa Harus Memilih SewaYuk ?</p>
+				<p id="tentang"  class="p-judul text-center font-bebas-neue color-white" style="font-size:50px ; padding-bottom: 70px;">Mengapa Harus Memilih SewaYuk ?</p>
 			</div>
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="mengapa-bg-parallax">
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-6 grid-mengapa">
-						<img class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/barang.png" alt="Barang">
+						<img  class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/barang.png" alt="Barang">
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-6 grid-mengapa">
 						<div class="teks-mengapa">
@@ -617,12 +619,28 @@
 			</div>
 		</div>
 	</div>
+	<div id="kontak"></div>
 </footer>
 </body>
+
 <script type="text/javascript" src="<?=base_url()?>assets/global/js/jquery/jquery-3.3.1.js"></script>
 	<script type="text/javascript" src="<?=base_url()?>assets/global/js/bootstrap/bootstrap.min.js"></script>
 	<script type="text/javascript" src="<?=base_url()?>assets/global/js/owl-carousel/owl.carousel.min.js"></script>
 	<script>
+	function closeNav() {
+    document.getElementById("Sidenav").style.height = "0";
+	}
+
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			document.querySelector(this.getAttribute('href')).scrollIntoView({
+				behavior: 'smooth'
+			});
+		});
+	});
+
 	$('.owl-carousel').owlCarousel({
 		loop:true,
 		navigation:false,
@@ -630,7 +648,7 @@
 		margin:30,
 		responsiveClass:true,
 		autoplay:true,
-		autoplayTimeout:2000,
+		autoplayTimeout:1500,
 		autoplayHoverPause:true,
 		responsive:{
 			0:{
@@ -652,12 +670,5 @@
 		}
 	})
 	</script>
-	<script>
-		$(function() {
-		  $('a[href*=#]').on('click', function(e) {
-			e.preventDefault();
-			$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-		  });
-		});
-	</script>
+	
 </html>
