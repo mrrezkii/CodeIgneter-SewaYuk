@@ -589,11 +589,11 @@
 				<div class="col-lg-6 col-md-6 col-sm-12">
 					<h4 class="font-opensans-bold color-white2">Sewa Yuk Mudah Praktik dan Asyik</h4>
 				<p class="footer-links">
-					<a class="link-1" href="#">Home</a>
-					<a href="#">Blog</a>
-					<a href="#">About</a>
-					<a href="#">Faq</a>
-					<a href="#">Contact</a>
+					<a href="#kategori_barang">Kategori</a>
+					<a href="#teratas">Sewa Teratas</a>
+					<a href="#sewa_baru">Baru Disewa</a>
+					<a href="#tentang">Tentang</a>
+					<a href="#kontak">Kontak Kami</a>
 				</p>	
 				<br><br>
 				</div>
