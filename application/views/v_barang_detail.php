@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/fonts/icofont/icofont.min.css" />
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" type="text/css" media="screen" href="<?=base_url()?>assets/global/css/custom/home.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="<?=base_url()?>assets/global/css/custom/mediaquery_home.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="<?=base_url()?>assets/global/css/custom/mediaquery_detailbarang.css" />
 	<!--    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"-->
 	<!--          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="-->
 	<!--          crossorigin=""/>-->
@@ -166,7 +166,7 @@
 							<h1 id="nama-museum"><b>
                                     <?= $detail->nama_barang ?></b>
 							</h1>
-							<img class="img-responsive" src="<?= base_url('assets/user/foto/barang/'.$detail->nama_jenis."/".$detail->foto_barang) ?>" alt="" style="background: url('<?= base_url('assets/user/foto/barang/'.$detail->nama_jenis."/".$detail->foto_barang) ?>');background-size: cover; background-repeat: no-repeat; min-height: 400px; width: 100%; background-position: center; max-height: 401px;box-shadow: 0 0 4px rgba(33,33,33,0.60);"> 
+							<img class="img-fluid img-detailfoto" src="<?= base_url('assets/user/foto/barang/'.$detail->nama_jenis."/".$detail->foto_barang) ?>" alt="" style="background: url('<?= base_url('assets/user/foto/barang/'.$detail->nama_jenis."/".$detail->foto_barang) ?>');background-size: cover; background-repeat: no-repeat; min-height: 400px; width: 100%; background-position: center; max-height: 401px;box-shadow: 0 0 4px rgba(33,33,33,0.60);"> 
 								
 							
 						</div>
@@ -223,7 +223,7 @@
 					<section class="location-detail">
 						<h4>Lokasi Penyewa</h4>
 						<p>
-							<span class="fa fa-map-marker"></span>
+							<span class="icofont-marke"></span>
 							<span id="lokasi-museum"></span>
 						</p>
 						<div id="map" style="width: 100%; height: 600px">

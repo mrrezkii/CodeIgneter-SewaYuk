@@ -20,7 +20,7 @@
 
     <span style="color: white">
         <a href="<?= base_url() ?>">
-        <font color="white"><i class="fa fa-arrow-left"></i> <b>Kembali</b></font>
+        <font color="white"><i class="icofont-arrow-left"></i> <b>Kembali</b></font>
         </a>
     </span>
 
@@ -102,11 +102,11 @@
                     <br>
                     <h4>Kartu Tanda Pengenal:</h4>            
                     <?php if( $user->foto_identitas == null): ?>
-						<font color="red"><b><i class="fa fa-close"></i> Belum Diupload </b></font>
+						<font color="red"><b><i class="icofont-close"></i> Belum Diupload </b></font>
 						<?php elseif( $user->verifikasi == 0): ?>
 						<font color="#ffa42d"><b>Belum Di Verifikasi</font>
 						<?php else: ?>
-						<font color="#108410"><b><i class="fa fa-check"></i> Sudah Di Upload Dan Di Verifikasi</font>
+						<font color="#108410"><b><i class="icofont-check"></i> Sudah Di Upload Dan Di Verifikasi</font>
 						<?php endif ?>
                 </div>
             </div>

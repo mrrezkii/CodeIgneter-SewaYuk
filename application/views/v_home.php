@@ -220,6 +220,7 @@
 				<div class="item">
 					<a href="#">
 						<img class="img-fluid kategori-2" src="<?=base_url()?>assets/global/image/kategori/catering.jpg" alt="Alat Catering" width="100%" draggable="false">
+						<img class="img-fluid kategori-2-sm" src="<?=base_url()?>assets/global/image/kategori/catering-sm.jpg" alt="Alat Catering" width="100%" draggable="false">
 						<p class="color-white2 font-opensans-regular">Alat Catering</p>
 						<div class="item-overlay top"></div>
 					</a>
@@ -229,6 +230,7 @@
 				<div class="item">
 					<a href="#">
 						<img class="img-fluid kategori-2" src="<?=base_url()?>assets/global/image/kategori/mic.jpg" alt="Microphone" width="100%" draggable="false">
+						<img class="img-fluid kategori-2-sm" src="<?=base_url()?>assets/global/image/kategori/mic-sm.jpg" alt="Microphone" width="100%" draggable="false">
 						<p class="color-white2 font-opensans-regular">Peralatan Panggung</p>
 						<div class="item-overlay top"></div>
 					</a>
@@ -289,7 +291,7 @@
 			<div class="col-lg-4 col-md-4 col-sm-12">
 			  <div class="card">
 				  <center>
-					  <img class="img-fluid card-img-top w-75" src="<?= base_url('assets/user/foto/barang/'.$List->nama_jenis."/".$List->foto_barang) ?>" alt="700d">
+					  <img class="img-fluid card-img-top w-75" src="<?= base_url('assets/user/foto/barang/'.$List->nama_jenis."/".$List->foto_barang) ?>" alt="">
 				  </center>
 				  <div class="card-body">
 					<p class="card-text h5-baru color-black font-opensans-regular text-center"><?= $List->nama_barang ?></p>
