@@ -5,13 +5,11 @@ class Transaksi extends CI_Controller {
 
     public function __construct() {
         parent::__construct();
-        // if ($this->session->userdata('login')!=TRUE) {
-        //     redirect('user/login','refresh');
-        // }
+        if ($this->session->userdata('login')!=TRUE) {
+            redirect('user/login','refresh');
+        }
 
-        // if ($this->session->userdata('status')!="Admin") {
-        //     redirect('custom_error','refresh');
-        // }
+        
         $this->load->model('m_transaksi','transaksi');
     }
 
