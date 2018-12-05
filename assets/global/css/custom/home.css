@@ -90,6 +90,12 @@ a, a:hover{
 .icon-nav-sm{
 	display: none;
 }
+.collapse-sm{
+	display: none;
+}
+.profil-sm{
+	display: none
+}
 
 /* Section Beranda */
 
