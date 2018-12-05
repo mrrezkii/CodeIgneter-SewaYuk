@@ -107,16 +107,13 @@
 	}
 	.profil-sm{
 		display: block;
-		float: left;
 	}
 	.collapse-sm li a p{
-		margin-top: 10px;
+		margin-top: 5px;
 		font-size: 20px;
-		padding-left: 70px!important;
 	}
 	.hr-collapse {
 		margin: 0em;
-		
 	}
 }
 
