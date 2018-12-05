@@ -309,7 +309,7 @@
 			</div>
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="show-more-kategori text-center">
-					<a class="btn btn-show-more font-opensans-bold color-white2">Lihat Semua</a>
+					<a class="btn btn-show-more font-opensans-bold color-white2" href="#">Lihat Semua</a>
 				</div>
 			</div>
 		</div>
