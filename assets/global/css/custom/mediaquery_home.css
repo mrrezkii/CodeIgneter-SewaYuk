@@ -34,6 +34,9 @@
 }
 
 @media screen and (max-width: 414px){
+	.intro-kanan{
+		margin-top: 120px!important;
+	}
 	.icon-nav-sm{
 		width: 200px;
 	}
@@ -115,7 +118,7 @@
 }
 
 @media screen and (max-width: 1016px){
-	
+
 	.hidden-sm{
 		display: none;
 	}
