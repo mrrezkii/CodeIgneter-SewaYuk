@@ -81,14 +81,14 @@
         		<a class="nav-link dropdown-toggle font-opensans-bold " href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				<?=$this->session->userdata('nama_user')?> &nbsp;	
 				<?php if($this->session->userdata('foto_profil') != NULL ) : ?>
-				<img class="img-fluid" src="<?=base_url("assets/user/foto/profil/".$this->session->userdata('foto_profil'))?>" alt="" width="40" style="border-radius: 50%">
+				<center><img class="img-fluid" src="<?=base_url("assets/user/foto/profil/".$this->session->userdata('foto_profil'))?>" alt="" width="40" style="border-radius: 50%"></center>
 				<?php else: ?>	
-				<img class="img-fluid" src="<?= base_url() ?>assets/admin/images/user.png" alt="" width="22" style="border-radius: 50%">
+				<center><img class="img-fluid" src="<?= base_url() ?>assets/admin/images/user.png" alt="" width="22" style="border-radius: 50%"></center>
 				<?php endif ?>	
 				
 				</a>
 				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown02"> 	 	
-					<a class="dropdown-item" href="<?=base_url("user/profil/".$this->session->userdata('id_user'))?>"><p>Profil</p></a>
+					<a class="dropdown-item" href="<?=base_url("user/profil/".$this->session->userdata('id_user'))?>"><p class="text-center">Profil</p></a>
 					<?php if($this->session->userdata('status')== "Admin"): ?>
 					<a class="dropdown-item" href="<?=base_url()?>Admin">Laman Admin</a>
 					<?php endif ?>
@@ -172,9 +172,10 @@
 		
 		<ul class="navbar-nav mr-auto collapse-sm">
 			<li class="nav-item">
-        		<a class="nav-link font-opensans-bold " href="<?=base_url()?>user/login" aria-haspopup="true" aria-expanded="false">
-					<img class="img-fluid profil-sm" src="<?=base_url()?>assets/global/image/rounded account-sm.png" alt="Rounded account" width="50px">
-					<p>Login</p>
+        		<a class="nav-link font-opensans-bold" href="<?=base_url()?>user/login" aria-haspopup="true" aria-expanded="false">
+					<center><img class="img-fluid profil-sm" src="<?=base_url()?>assets/global/image/rounded account-sm.png" alt="Rounded account"></center>
+					<br>
+					<p class="text-center">Login</p>
 				</a>
 		
      		</li>
