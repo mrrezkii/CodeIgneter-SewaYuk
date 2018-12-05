@@ -31,46 +31,41 @@
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto">
+		<div  id="Sidenav"></div>
+		<ul class="navbar-nav mr-auto collapse-md">
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Beranda</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#home">Beranda</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Barang Sewa</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#kategori_barang">Kategori</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa Teratas</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#teratas">Sewa Teratas</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Baru Disewa</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#sewa_baru">Baru Disewa</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Mengapa SewaYuk</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#tentang">Tentang</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Tentang</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#kontak">Kontak Kami</a>
 			</li>
 		</ul>
 
-		<ul class="navbar-nav ml-auto">
-			<!-- <li class="nav-item">
-				<a href="#index.php">
-					<li class="icofont-cart color-blue" style="font-size: 25px;margin-top: 8px;">
-					</li>
-				</a>
-			</li>  -->
+		<ul class="navbar-nav ml-auto collapse-md">
 			<li class="nav-item dropdown">
         		<a class="nav-link dropdown-toggle font-opensans-bold " href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				<?=$this->session->userdata('nama_user')?> &nbsp;	
 				<?php if($this->session->userdata('foto_profil') != NULL ) : ?>
-				<img class="img-fluid" src="<?=base_url("assets/user/foto/profil/".$this->session->userdata('foto_profil'))?>" alt="Rounded account" width="40" style="border-radius: 50%">
+				<img class="img-fluid" src="<?=base_url("assets/user/foto/profil/".$this->session->userdata('foto_profil'))?>" alt="" width="40" style="border-radius: 50%">
 				<?php else: ?>	
-				<img class="img-fluid" src="<?= base_url() ?>assets/admin/images/user.png" alt="Rounded account" width="22" style="border-radius: 50%">
+				<img class="img-fluid" src="<?= base_url() ?>assets/admin/images/user.png" alt="" width="22" style="border-radius: 50%">
 				<?php endif ?>	
 				
 				</a>
 				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown02"> 	 	
-					<a class="dropdown-item" href="<?=base_url("assets/user/foto/profil/".$this->session->userdata('foto'))?>">Profil</a>
+					<a class="dropdown-item" href="<?=base_url("user/profil/".$this->session->userdata('id_user'))?>">Profil</a>
 					<?php if($this->session->userdata('status')== "Admin"): ?>
 					<a class="dropdown-item" href="<?=base_url()?>Admin">Laman Admin</a>
 					<?php endif ?>
@@ -79,8 +74,54 @@
 				  	<a class="dropdown-item" href="<?=base_url()?>user/logout">Logout</a>
 				</div>
      		</li>
-			
 		</ul>
+		
+		<ul class="navbar-nav mr-auto collapse-sm">
+			<li class="nav-item dropdown">
+        		<a class="nav-link dropdown-toggle font-opensans-bold " href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<?php if($this->session->userdata('foto_profil') != NULL ) : ?>
+				<center><img class="img-fluid" src="<?=base_url("assets/user/foto/profil/".$this->session->userdata('foto_profil'))?>" alt="" width="40" style="border-radius: 50%"></center>
+				<center><?=$this->session->userdata('nama_user')?> &nbsp;</center>	
+				<?php else: ?>	
+				<center><img class="img-fluid" src="<?= base_url() ?>assets/admin/images/user.png" alt="" width="22" style="border-radius: 50%"></center>
+				<?php endif ?>	
+				
+				</a>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown02"> 	 	
+					<a class="dropdown-item" href="<?=base_url("user/profil/".$this->session->userdata('id_user'))?>"><p class="text-center">Profil</p></a>
+					<?php if($this->session->userdata('status')== "Admin"): ?>
+					<a class="dropdown-item" href="<?=base_url()?>Admin">Laman Admin</a>
+					<?php endif ?>
+					<a class="dropdown-item" href="<?=base_url()?>transaksi">Transaksi</a>
+				  	<div class="dropdown-divider"></div>
+				  	<a class="dropdown-item" href="<?=base_url()?>user/logout">Logout</a>
+				</div>
+     		</li>
+		</ul>
+		
+		<hr class="hr-collapse collapse-sm">
+		
+		<ul class="navbar-nav ml-auto collapse-sm">
+			<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#home">Beranda</a>
+			</li>
+			<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#kategori_barang">Kategori</a>
+			</li>
+			<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent"  href="#teratas">Sewa Teratas</a>
+			</li>
+			<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#sewa_baru">Baru Disewa</a>
+			</li>
+			<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#tentang">Tentang</a>
+			</li>
+			<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#kontak">Kontak Kami</a>
+			</li>
+		</ul>
+		
 	</div>
 </nav>
 
@@ -96,46 +137,78 @@
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto">
-			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Beranda</a>
+		<ul class="navbar-nav mr-auto collapse-md">
+		<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" href="#home">Beranda</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Barang Sewa</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#kategori_barang">Kategori</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Sewa Teratas</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#teratas">Sewa Teratas</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Baru Disewa</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#sewa_baru">Baru Disewa</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Mengapa SewaYuk</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#tentang">Tentang</a>
 			</li>
 			<li class="nav-item">
-				<a data-scroll class="nav-link font-opensans-bold" href="index.html">Tentang</a>
+				<a data-scroll class="nav-link font-opensans-bold" href="#kontak">Kontak Kami</a>
 			</li>
 		</ul>
 
-		<ul class="navbar-nav ml-auto">
-			<!-- <li class="nav-item">
-				<a href="#index.php">
-					<li class="icofont-cart color-blue" style="font-size: 25px;margin-top: 8px;">
-					</li>
-				</a>
-			</li> -->
-			
-			<li class="nav-item dropdown">
-        		<a class="nav-link dropdown-toggle font-opensans-bold " href="<?=base_url()?>user/login" aria-haspopup="true" aria-expanded="false">
-					<img class="img-fluid" src="<?=base_url()?>assets/global/image/rounded account.png" alt="Rounded account">
+		<ul class="navbar-nav ml-auto collapse-md">
+			<li class="nav-item">
+        		<a class="nav-link font-opensans-bold " href="<?=base_url()?>user/login" aria-haspopup="true" aria-expanded="false">
+					<img class="img-fluid profil-md" src="<?=base_url()?>assets/global/image/rounded account.png" alt="Rounded account">
 					Login
 				</a>
 		
      		</li>
 		</ul>
+		
+		
+		
+		<ul class="navbar-nav mr-auto collapse-sm">
+			<li class="nav-item">
+        		<a class="nav-link font-opensans-bold" href="<?=base_url()?>user/login" aria-haspopup="true" aria-expanded="false">
+					<center><img class="img-fluid profil-sm" src="<?=base_url()?>assets/global/image/rounded account-sm.png" alt="Rounded account"></center>
+					<br>
+					<p class="text-center">Login</p>
+				</a>
+		
+     		</li>
+		</ul>
+		
+		<hr class="hr-collapse collapse-sm">
+		
+		<ul class="navbar-nav ml-auto collapse-sm">
+		<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#home">Beranda</a>
+			</li>
+			<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#kategori_barang">Kategori</a>
+			</li>
+			<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent"  href="#teratas">Sewa Teratas</a>
+			</li>
+			<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#sewa_baru">Baru Disewa</a>
+			</li>
+			<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#tentang">Tentang</a>
+			</li>
+			<li class="nav-item">
+				<a data-scroll class="nav-link font-opensans-bold" data-toggle="collapse" data-target="#navbarSupportedContent" href="#kontak">Kontak Kami</a>
+			</li>
+		</ul>
+
+		
 	</div>
 </nav>
 <?php endif ?>
+
 <section id="listbarang" class="listbarang-bg" style="padding-top:100px;">
 	<div class="container">
 		<div class="row">
@@ -184,7 +257,7 @@
 						</div>
 					</div>
 
-						<?php foreach($ListBarang as $List): ?>
+					<?php foreach($ListBarang as $List): ?>
 					<div class="col-lg-4 col-md-4 col-sm-6">
 						<div class="card">
 					  <center>
@@ -201,9 +274,7 @@
 					</div>
 					</div>
 					<?php endforeach ?>
-
-
-			
+								
 				</div>
 			</div>
 		</div>
@@ -213,29 +284,42 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 grid-footer">
-
 		<footer class="footer-distributed">
-			<div class="footer-right">
-				<a href="#"><i class="icofont-instagram"></i></a>
-				<a href="#"><i class="icofont-whatsapp"></i></a>
-				<a href="#"><i class="icofont-google-plus"></i></a>
-			</div>
-			<div class="footer-left">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<h4 class="font-opensans-bold color-white2">Sewa Yuk Mudah Praktik dan Asyik</h4>
 				<p class="footer-links">
 					<a class="link-1" href="#">Home</a>
 					<a href="#">Blog</a>
-					<a href="#">Pricing</a>
 					<a href="#">About</a>
 					<a href="#">Faq</a>
 					<a href="#">Contact</a>
-				</p>
-				<p>SewaYuk &copy; 2018</p>
+				</p>	
+				<br><br>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="footer-right2">
+					<p class="font-opensans-regular color-white2" style="font-size: 20px;"><i class="icofont-email pr-3"></i>support@sewa-yuk.com</p>
+					<p class="font-opensans-regular color-white2" style="font-size: 20px;"><i class="icofont-globe pr-3"></i>www.sewa-yuk.com</p>
+					<p class="font-opensans-regular color-white2" style="font-size: 20px;"><i class="icofont-ui-call pr-3"></i>+6281252678281</p>
+					</div>
+				</div>
+			</div>
+			<hr style="background-color: white">
+			<div class="footer-left">
+				<p>SewaYuk &copy; 2018. All Right Reserved</p>
+			</div>
+			<div class="footer-right">
+				<a href="https://www.instagram.com/sewayukofficial/"><i class="icofont-instagram"></i></a>
+				<a href="https://api.whatsapp.com/send?phone=628124047478"><i class="icofont-whatsapp"></i></a>
+				<a href="https://goo.gl/maps/Mq7Bdi8JxRv"><i class="icofont-google-map"></i></a>
 			</div>
 
 		</footer>
 			</div>
 		</div>
 	</div>
+	<div id="kontak"></div>
 </footer>
 </body>
 </html>

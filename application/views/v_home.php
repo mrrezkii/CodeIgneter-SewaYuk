@@ -379,7 +379,7 @@
 			<?php } ?>
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="show-more-kategori text-center">	
-					<a class="btn btn-show-more font-opensans-bold color-white2" href="<?=base_url()?>Home/Barang"><font color="white">Lihat Semua</font></a>
+					<a class="btn btn-show-more font-opensans-bold color-white2" href="<?=base_url()?>Home/Barang">Lihat Semua</a>
 				</div>
 			</div>
 		</div>
