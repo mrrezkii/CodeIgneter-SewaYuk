@@ -115,6 +115,9 @@
 	.hr-collapse {
 		margin: 0em;
 	}
+	.footer-right2{
+		float: none!important;
+	}
 }
 
 @media screen and (max-width: 1016px){

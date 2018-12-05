@@ -537,10 +537,14 @@ a, a:hover{
     transition:all .25s;
 }
 
+.footer-distributed{
+	padding-bottom: 60px;
+}
 
 .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
 
 .footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
 
 @media only screen and (max-width: 960px) {
     .containerpromo {

@@ -582,23 +582,35 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 grid-footer">
-
 		<footer class="footer-distributed">
-			<div class="footer-right">
-				<a href="#"><i class="icofont-instagram"></i></a>
-				<a href="#"><i class="icofont-whatsapp"></i></a>
-				<a href="#"><i class="icofont-google-plus"></i></a>
-			</div>
-			<div class="footer-left">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<h4 class="font-opensans-bold color-white2">Sewa Yuk Mudah Praktik dan Asyik</h4>
 				<p class="footer-links">
 					<a class="link-1" href="#">Home</a>
 					<a href="#">Blog</a>
-					<a href="#">Pricing</a>
 					<a href="#">About</a>
 					<a href="#">Faq</a>
 					<a href="#">Contact</a>
-				</p>
-				<p>SewaYuk &copy; 2018</p>
+				</p>	
+				<br><br>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="footer-right2">
+					<p class="font-opensans-regular color-white2" style="font-size: 20px;"><i class="icofont-email pr-3"></i>support@sewa-yuk.com</p>
+					<p class="font-opensans-regular color-white2" style="font-size: 20px;"><i class="icofont-globe pr-3"></i>www.sewa-yuk.com</p>
+					<p class="font-opensans-regular color-white2" style="font-size: 20px;"><i class="icofont-ui-call pr-3"></i>+6281252678281</p>
+					</div>
+				</div>
+			</div>
+			<hr style="background-color: white">
+			<div class="footer-left">
+				<p>SewaYuk &copy; 2018. All Right Reserved</p>
+			</div>
+			<div class="footer-right">
+				<a href="https://www.instagram.com/sewayukofficial/"><i class="icofont-instagram"></i></a>
+				<a href="https://api.whatsapp.com/send?phone=628124047478"><i class="icofont-whatsapp"></i></a>
+				<a href="https://goo.gl/maps/Mq7Bdi8JxRv"><i class="icofont-google-map"></i></a>
 			</div>
 
 		</footer>
