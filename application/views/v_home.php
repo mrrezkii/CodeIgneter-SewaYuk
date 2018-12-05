@@ -489,7 +489,7 @@
 					<div class="team-hover">
 						<div class="desk">
 							<h4 class="font-opensans-regular">Caption</h4>
-							<p class="font-opensans-light">" Kemenangan Sejati Ialah Bangkit Dari Kekalahan "</p>
+							<p class="font-opensans-light">" Otoriter Sumber Kesuksesan "</p>
 						</div>
 						<div class="s-link">
 							<a href="#"><i class="icofont-facebook"></i></a>
@@ -513,7 +513,7 @@
 					<div class="team-hover">
 						<div class="desk">
 							<h4 class="font-opensans-regular">Caption</h4>
-							<p class="font-opensans-light">" Kemenangan Sejati Ialah Bangkit Dari Kekalahan "</p>
+							<p class="font-opensans-light">" Pelawan Penguasa Diktaktor "</p>
 						</div>
 						<div class="s-link">
 							<a href="#"><i class="icofont-facebook"></i></a>
