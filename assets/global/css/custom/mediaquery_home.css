@@ -229,8 +229,8 @@
     }
 }
 
-
-
-
-
-
+@media screen and (min-width: 1385px){
+	.kategori-1{
+		width: 100%;
+	}
+}
