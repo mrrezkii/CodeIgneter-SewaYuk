@@ -81,15 +81,20 @@
 			<li class="nav-item dropdown">
         		<a class="nav-link dropdown-toggle font-opensans-bold " href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				<?php if($this->session->userdata('foto_profil') != NULL ) : ?>
-				<center><img class="img-fluid" src="<?=base_url("assets/user/foto/profil/".$this->session->userdata('foto_profil'))?>" alt="" width="40" style="border-radius: 50%"></center>
+				<center>
+				    <img class="img-fluid" src="<?=base_url("assets/user/foto/profil/".$this->session->userdata('foto_profil'))?>" alt="" width="40" style="border-radius: 50%">
+				</center>
 				<center><?=$this->session->userdata('nama_user')?> &nbsp;</center>	
 				<?php else: ?>	
-				<center><img class="img-fluid" src="<?= base_url() ?>assets/admin/images/user.png" alt="" width="22" style="border-radius: 50%"></center>
+				<center>
+				    <img class="img-fluid" src="<?= base_url() ?>assets/admin/images/user.png" alt="" width="40" style="border-radius: 50%">
+				</center>
+				<center><?=$this->session->userdata('nama_user')?> &nbsp;</center>	
 				<?php endif ?>	
 				
 				</a>
 				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown02"> 	 	
-					<a class="dropdown-item" href="<?=base_url("user/profil/".$this->session->userdata('id_user'))?>"><p class="text-center">Profil</p></a>
+					<a class="dropdown-item" href="<?=base_url("user/profil/".$this->session->userdata('id_user'))?>">Profil</a>
 					<?php if($this->session->userdata('status')== "Admin"): ?>
 					<a class="dropdown-item" href="<?=base_url()?>Admin">Laman Admin</a>
 					<?php endif ?>
@@ -436,7 +441,7 @@
 			<div class="col-md-4 col-sm-4">
 				<div class="row">
 					<div class="col-md-12 col-sm-12">
-						<img class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/barang.png" alt="Barang">
+						<img class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/barang.jpg" alt="Barang">
 					</div>
 					<div class="col-md-12 col-sm-12">
 						<div class="teks-mengapa-sm">
@@ -449,7 +454,7 @@
 			<div class="col-md-4 col-sm-4">
 				<div class="row">
 					<div class="col-md-12 col-sm-12">
-						<img class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/transaksi.png" alt="Transaksi">
+						<img class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/transaksi.jpg" alt="Transaksi">
 					</div>
 					<div class="col-md-12 col-sm-12">
 						<div class="teks-mengapa-sm">
@@ -462,7 +467,7 @@
 			<div class="col-md-4 col-sm-4">
 				<div class="row">
 					<div class="col-md-12 col-sm-12">
-						<img class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/murah.png" alt="Murah">
+						<img class="img-fluid" src="<?=base_url()?>assets/global/image/mengapa/murah.jpg" alt="Murah">
 					</div>
 					<div class="col-md-12 col-sm-12">
 						<div class="teks-mengapa-sm">
