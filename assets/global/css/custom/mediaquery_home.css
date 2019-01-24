@@ -229,8 +229,14 @@
     }
 }
 
+@media screen and (min-width: 1350px){
+	.mengapa-bg-parallax img{
+		width: 100%;
+	}
+}
 
-
-
-
-
+@media screen and (min-width: 1385px){
+	.kategori-1{
+		width: 100%;
+	}
+}
