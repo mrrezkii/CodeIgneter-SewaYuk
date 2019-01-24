@@ -21,6 +21,7 @@ class Admin extends CI_Controller {
         $data['konten'] = "admin/v_home";
         $data['Jumlah_User'] = count($this->admin->getUser());
         $data['Jumlah_Barang'] = count($this->admin->getBarang());
+        $data['Jumlah_Transaksi'] = count($this->admin->getTransaksi());
         $this->load->view('template/v_dashboard',$data);
     }
 
@@ -44,6 +45,15 @@ class Admin extends CI_Controller {
         $data['DataVerif'] = count($this->admin->getBarang_Verif());
         $data['DataNonVerif'] = count($this->admin->getBarang_NonVerif());
         $data['DataPromosi'] = count($this->admin->getBarang_Promosi());
+        $this->load->view('template/v_dashboard',$data);
+    }
+
+    public function tabel_transaksi()
+	{
+		$data['title'] = "Data Barang";
+        $data['konten'] = "admin/v_tabel_transaksi";
+        $data['Data_Transaksi'] = $this->admin->getTransaksi();
+        $data['Jumlah_Kategori'] = count($this->admin->getJenisTransaksi());
         $this->load->view('template/v_dashboard',$data);
     }
 

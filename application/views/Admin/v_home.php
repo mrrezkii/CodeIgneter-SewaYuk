@@ -28,7 +28,7 @@
               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"  style="color:white;">
                 <div class="tile-stats" style="background:#6400bc;">
                   <div class="icon"><i class="fa fa-usd"  style="color:white;"></i></div>
-                  <div class="count"  style="color:white;">13</div>
+                  <div class="count"  style="color:white;"><?= $Jumlah_Transaksi; ?></div>
                   <h3  style="color:white;">Transaksi</h3>
                   <p  style="color:white;">Jumlah Transaksi Oleh Pengguna</p>
                 </div>

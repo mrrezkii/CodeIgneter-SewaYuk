@@ -13,13 +13,48 @@
               </div>
             </div>
 
+            <div class="clearfix"></div>
+
+            <!-- <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Grafik Jenis Data Transaksi</h2>
+                    <?= $Jumlah_Kategori ?>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <canvas id="DataBarang"></canvas>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Grafik Status Transaksi</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <canvas id="Verifikasi"></canvas>
+                  </div>
+                </div>
+              </div>
+        </div> -->
+
          <div class="clearfix"></div>   
 
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Data Pengguna SewaYuk</h2>
+                    <h2>Data Transaksi SewaYuk</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -33,41 +68,31 @@
                              width="100%">
                       <thead>
                         <tr>
-                          <th>No.</th>
-                          <th>Foto Barang</th>
                           <th>Nama Barang</th>
-                          <th>Jenis Barang</th>
-                          <th>Harga</th>
-                          <th>Pemesan</th>
+                          <th>Nama Penyewa</th>
+                          <th>Pemilik</th>
                           <th>Tanggal Sewa</th>
+                          <th>Tanggal Kembali</th>
+                          <th>Status</th>
                           <th>Aksi</th>
-                          
                         </tr>
                       </thead>
 
                       <tbody>
                       <?php  
-                        $no=1; foreach ($DataTransaksi as $data) { 
+                        foreach ($Data_Transaksi as $data) { 
                       ?>                  
                           <tr>
-                          <td><?= $no++ ?></td>
-                            <td><img src="<?= base_url("assets/user/foto/barang/".$data->nama_jenis."/".$data->foto_barang)?>" class="img-responsive"></td>
                             <td><?= $data->nama_barang ?></td>
-                            <td><?= $data->nama_jenis ?></td>
-                            <td>Rp<?= number_format($data->harga_barang,2,',','.') ?></td>
                             <td><?= $data->nama_user ?></td>
-                            <td><?= date("d-m-Y", strtotime($data->tanggal_sewa ));?></td>
+                            <td><?= $data->nama_user ?></td>
+                            <td><?= $data->tanggal_sewa ?></td>
+                            <td><?= $data->waktu_kembali ?></td>
+                            <td><?= $data->status_transaksi ?></td>
                             <td>
-                            <?php if($data->status_transaksi == "Pending"): ?>
-                            <a class="btn btn-primary" data-toggle="modal" data-target="#konfirmasi" href="#"  onclick="edit('<?=$data->id_transaksi?>')" >Konfirmasi</a>
-                            <a class="btn btn-danger" data-toggle="modal" data-target="#edit" href="#"  onclick="edit('<?=$data->id_transaksi?>')"  >Tolak</a>
-                            <?php elseif($data->status_transaksi == "Disetujui"): ?>  
-                            <font color="green"><strong>Anda Sudah Menyutujui Penyewaan</strong></font>
-                            <?php else: ?>      
-                            <font color="green"><strong>Anda Menolak Penyewaan</strong></font>
-                            <?php endif ?>
-                        
-                        </td>
+                                <a data-toggle="modal" data-target="#edit" href="#"  onclick="edit('<?=$data->id_user?>')" ><i class="fa fa-pencil"></i></a>
+                                &nbsp;&nbsp;<a data-toggle="modal" data-target="#konfirmasi" href="#"><i class="fa fa-trash"></i></a>
+                            </td>
                           </tr>
                       <?php } ?>
                         
@@ -78,7 +103,7 @@
                     
 
 
-                    <!-- Modal Konfirmasi Sewa-->
+                    <!-- Modal Konfirmasi Hapus-->
                     <div class="modal fade" id="konfirmasi" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -86,21 +111,16 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             </button>
-                            <h2>Konfirmasi Sewa Barang</h2>
+                            <h2>Konfirmasi Hapus Data</h2>
                         </div>
                         <div class="modal-body">
-                            <h4>Anda Yakin Ingin Mengkonfirmasi Sewa ?</h4>
+                            <h4>Anda Yakin Ingin Menghapus User ?</h4>
                         </div>
-                        <form action="<?=base_url('transaksi/konfirmasi_transaksi')?>" method="post" class="form-horizontal form-label-left">
-                                    
-                                    <input type="hidden" id="id_transaksi" name="id_transaksi" required="required" class="form-control col-md-7 col-xs-12">
-            
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                                        <input type="submit" value="Konfirmasi" class="btn btn-primary">
-                                    </div>
-                                    </div>
-                                    </form>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <a class="btn btn-primary" href="<?php echo base_url("admin/hapus_user/");echo $data->id_user?>">Hapus Data</a>
+                        </div>
+                        </div>
                     </div>
                     </div>
                 
@@ -171,15 +191,119 @@
         </div>
         <script src="<?= base_url() ?>assets/admin/vendors/chartjs/Chart.js"></script>
          <script src="<?= base_url() ?>assets/admin/vendors/chartjs/PieceLabel.min.js"></script>
-        
+         <script>
+    var ctx = document.getElementById( "DataBarang" );
+    var JenisKelamin = new Chart( ctx, {
+        type: 'doughnut',
+        data: {
+             labels : ['Barang Terverifikasi','Barang Belum Terverifikasi', 'Barang Di Promosikan'],  
+            datasets: [
+                {
+                    
+                     data : [<?php echo json_encode($DataVerif);?>,
+                             <?php echo json_encode($DataNonVerif);?>,
+                             <?php echo json_encode($DataPromosi);?>
+                            ],
+                    backgroundColor: [
+                                    'rgb(66, 134, 244)',
+                                    'rgb(255, 158, 33)',
+                                    'rgb(0, 175, 38)'        
+                                     ],
+                    
+                    borderWidth: 2
+                            
+                },
+               
+                        ],
+          
+        },
+        options: {
+            legend: {
+            display: true
+            },
+            responsive: true,
+             tooltips: {
+             enabled: false
+             },
+            hover: {
+                mode: 'nearest',
+                intersect: true
+            },
+
+            pieceLabel: {
+                render: 'percentage',
+                fontColor: 'white',
+                precision: 2
+              }
+
+        }
+
+
+    } );
+         </script>
+               <script>
+    var ctx = document.getElementById( "Verifikasi" );
+    var JenisKelamin = new Chart( ctx, {
+        type: 'doughnut',
+        data: {
+             labels : ['Peralatan Kemah','Kendaraan','Peralatan Audio','Kostum','Catering','Kamera'],  
+            datasets: [
+                {
+                    
+                     data : ['10','4','3','2','5','1','9'],
+                    backgroundColor: [
+                                    'rgb(66, 134, 244)',
+                                    'rgb(255, 158, 33)',
+                                    'rgb(0, 175, 38)',
+                                    'rgb(175, 0, 0)',
+                                    'rgb(145, 0, 175)',
+                                    'rgb(214, 0, 103)',
+                                    'rgb(214, 0, 103)'       
+                                     ],
+                    
+                    borderWidth: 2
+                            
+                },
+               
+                        ],
+          
+        },
+        options: {
+            legend: {
+            display: true
+            },
+            responsive: true,
+             tooltips: {
+             enabled: false
+             },
+            hover: {
+                mode: 'nearest',
+                intersect: true
+            },
+
+            pieceLabel: {
+                render: 'percentage',
+                fontColor: 'white',
+                precision: 2
+              }
+
+        }
+
+
+    } );
+         </script>
 <script type="text/javascript">
-function edit(a){
-$.ajax({
-  type:"post",
-url:"<?=base_url()?>transaksi/konfirmasi_sewa/"+a,dataType:"json",
-success:function(data){
-  $("#id_transaksi").val(data.id_transaksi);
-}
-});
-}
+	function edit(a){
+		$.ajax({
+			type:"post",
+		url:"<?=base_url()?>admin/edit_user/"+a,dataType:"json",
+		success:function(data){
+      $("#id_user").val(data.id_user);
+			$("#nama_user").val(data.nama_user);
+			$("#email").val(data.email);
+      $("#telepon").val(data.telepon);
+      $("#status").val(data.status);
+		}
+		});
+	}
 </script>

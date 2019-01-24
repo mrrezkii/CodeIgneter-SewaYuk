@@ -31,7 +31,7 @@ class M_transaksi extends CI_Model {
         $this->db->join('user','user.id_user=transaksi.id_penyewa');
         $this->db->join('jenis_barang','jenis_barang.id_jenis=barang.id_jenis');
         $this->db->where('barang.id_user', $this->session->userdata('id_user'));   
-        $this->db->order_by('transaksi.id_barang', 'DESC'); 
+        $this->db->order_by('tanggal_sewa', 'DESC'); 
         return $this->db->get()->result();
     }
 
@@ -51,7 +51,7 @@ class M_transaksi extends CI_Model {
         $this->load->helper('date'); // load Helper for Date 
 
         date_default_timezone_set("UTC");
-        echo $date=gmdate("F j, Y").'<br>'; // ie. May 23, 2018
+    
 
         if (function_exists('date_default_timezone_set'))
         {
@@ -113,7 +113,24 @@ class M_transaksi extends CI_Model {
         return $this->db->insert('barang', $object);
     }
 
+    public function data_sewa($a)
+	{
+        return $this->db
+                    ->where('id_transaksi', $a)
+                    ->get('transaksi')
+                    ->row();
+    }
    
+    public function konfirmasi_transaksi()
+    {
+        $data = array(
+                'status_transaksi' => "Disetujui"
+            );
+
+        return $this->db->where('id_transaksi', $this->input->post('id_transaksi'))
+                        ->update('transaksi', $data);
+    }
+
     
 }
 

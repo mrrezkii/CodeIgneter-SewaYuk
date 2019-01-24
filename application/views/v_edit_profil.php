@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="<?= base_url() ?>assets/global/css/animate.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="<?= base_url() ?>assets/global/css/fonts.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="<?= base_url() ?>assets/global/css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/global/fonts/icofont/icofont.min.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="<?= base_url() ?>assets/global/css/custom/profile.css" />
 </head>
 
@@ -21,7 +22,7 @@
 	<div class="container container-profile">
 		<span style="color: white">
 			<a href="<?= base_url("user/profil/". $user->id_user) ?>">
-				<font color="white"><i class="fa fa-arrow-left"></i><b> Kembali</b></font>
+				<font color="white"><i class="icofont-arrow-left"></i><b> Kembali</b></font>
 			</a>
 		</span>
 
@@ -97,7 +98,7 @@
 						<div class="content-profile">
 							<h4>NIK :</h4>
 							<?php if($user->NIK == NULL): ?>
-							<font color="red"><b><i class="fa fa-close"></i> NIK Belum Di Isi</b></font>
+							<font color="red"><b><i class="icofont-close"></i> NIK Belum Di Isi</b></font>
 							<input type="text" name="NIK" value="<?= $user->NIK?>">
 							<?php elseif( $user->verifikasi == FALSE): ?>
 							<font color="#ffa42d"><b>Belum Di Verifikasi</b></font>
@@ -121,13 +122,13 @@
 							<br>
 							<h4>Kartu Tanda Pengenal:</h4>
 							<?php if($user->foto_identitas == null): ?>
-							<font color="red"><b><i class="fa fa-close"></i> Belum Diupload Atau Diverifikasi</b></font>
+							<font color="red"><b><i class="icofont-close"></i>Belum Diupload Atau Diverifikasi</b></font>
 							<input type="file" name="foto_identitas">
 							<?php elseif($user->verifikasi == 0 && $user->foto_identitas != null): ?>
 							<font color="#ffa42d"><b>Belum Di Verifikasi</font>
 							<div style="visibility:hidden"><input type="file" name="foto_identitas"></div>
 							<?php else: ?>
-							<font color="#108410"><b><i class="fa fa-check"></i> Sudah Di Upload Dan Di Verifikasi</font>
+							<font color="#108410"><b><i class="icofont-check"></i> Sudah Di Upload Dan Di Verifikasi</font>
 							<div style="visibility:hidden"><input type="file" name="foto_identitas"></div>
 							<?php endif ?>
 						</div>

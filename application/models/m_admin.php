@@ -86,6 +86,25 @@ class M_admin extends CI_Model {
         return $this->db->get()->result();
     }
 
+    public function getTransaksi(){      
+        $this->db->select('*');
+        $this->db->from('transaksi'); 
+        $this->db->join('barang','barang.id_barang=transaksi.id_barang');
+        $this->db->join('jenis_barang','jenis_barang.id_jenis=barang.id_jenis');
+        $this->db->join('user','user.id_user=barang.id_user AND transaksi.id_penyewa');
+        $this->db->order_by('tanggal_sewa', 'DESC'); 
+        return $this->db->get()->result();
+    }
+
+    
+    public function getJenisTransaksi(){      
+        $this->db->select('*');
+        $this->db->from('transaksi'); 
+        $this->db->join('barang','barang.id_barang=transaksi.id_barang', 'LEFT');
+        $this->db->join('jenis_barang','jenis_barang.id_jenis=barang.id_jenis');
+        return $this->db->get()->result();
+    }
+
     public function verifikasi_user()
     {
         $data = array(

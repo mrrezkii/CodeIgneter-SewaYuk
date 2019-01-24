@@ -104,5 +104,17 @@ class Transaksi extends CI_Controller {
 			redirect('transaksi/tabel_barang','refresh');
 		}
     }
+    public function konfirmasi_sewa($id){
+		$data=$this->transaksi->data_sewa($id);
+		echo json_encode($data);
+    }
+
+    public function konfirmasi_transaksi()
+    {
+        $this->transaksi->konfirmasi_transaksi();
+		$this->session->set_flashdata('pesan_sukses', 'Sukses Konfirmasi Sewa');
+		redirect('transaksi/transaksi_sewa');
+    }
+
 
 }

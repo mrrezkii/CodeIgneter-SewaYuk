@@ -61,7 +61,7 @@
                   <ul class="nav child_menu">
                     <li><a href="<?= base_url() ?>admin/tabel_user">Tabel User</a></li>
                     <li><a href="<?= base_url() ?>admin/tabel_barang">Tabel Barang</a></li>
-                    <li><a href="form_validation.html">Tabel Transaksi</a></li>
+                    <li><a href="<?= base_url() ?>admin/tabel_transaksi">Tabel Transaksi</a></li>
                   </ul>
                 </li>
 
