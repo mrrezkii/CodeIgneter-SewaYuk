@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.9.5deb2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: 14 Des 2018 pada 02.23
--- Versi Server: 10.1.30-MariaDB
--- PHP Version: 7.2.1
+-- Host: localhost:3306
+-- Generation Time: Aug 08, 2021 at 08:48 AM
+-- Server version: 8.0.26-0ubuntu0.20.04.2
+-- PHP Version: 7.4.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,24 +25,24 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `barang`
+-- Table structure for table `barang`
 --
 
 CREATE TABLE `barang` (
-  `id_barang` int(11) NOT NULL,
-  `id_jenis` int(11) NOT NULL,
+  `id_barang` int NOT NULL,
+  `id_jenis` int NOT NULL,
   `nama_barang` varchar(50) NOT NULL,
   `foto_barang` varchar(200) NOT NULL,
-  `harga_barang` int(11) NOT NULL,
+  `harga_barang` int NOT NULL,
   `deskripsi_barang` text NOT NULL,
   `tanggal_masuk` datetime NOT NULL,
   `status_barang` tinyint(1) NOT NULL,
   `status_promosi` tinyint(1) NOT NULL,
-  `id_user` int(11) NOT NULL
+  `id_user` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `barang`
+-- Dumping data for table `barang`
 --
 
 INSERT INTO `barang` (`id_barang`, `id_jenis`, `nama_barang`, `foto_barang`, `harga_barang`, `deskripsi_barang`, `tanggal_masuk`, `status_barang`, `status_promosi`, `id_user`) VALUES
@@ -69,16 +69,16 @@ INSERT INTO `barang` (`id_barang`, `id_jenis`, `nama_barang`, `foto_barang`, `ha
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `jenis_barang`
+-- Table structure for table `jenis_barang`
 --
 
 CREATE TABLE `jenis_barang` (
-  `id_jenis` int(11) NOT NULL,
+  `id_jenis` int NOT NULL,
   `nama_jenis` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `jenis_barang`
+-- Dumping data for table `jenis_barang`
 --
 
 INSERT INTO `jenis_barang` (`id_jenis`, `nama_jenis`) VALUES
@@ -92,7 +92,7 @@ INSERT INTO `jenis_barang` (`id_jenis`, `nama_jenis`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kabupaten`
+-- Table structure for table `kabupaten`
 --
 
 CREATE TABLE `kabupaten` (
@@ -102,7 +102,7 @@ CREATE TABLE `kabupaten` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `kabupaten`
+-- Dumping data for table `kabupaten`
 --
 
 INSERT INTO `kabupaten` (`id`, `id_prov`, `nama`) VALUES
@@ -609,7 +609,7 @@ INSERT INTO `kabupaten` (`id`, `id_prov`, `nama`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `provinsi`
+-- Table structure for table `provinsi`
 --
 
 CREATE TABLE `provinsi` (
@@ -618,7 +618,7 @@ CREATE TABLE `provinsi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `provinsi`
+-- Dumping data for table `provinsi`
 --
 
 INSERT INTO `provinsi` (`id`, `nama`) VALUES
@@ -660,20 +660,20 @@ INSERT INTO `provinsi` (`id`, `nama`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `transaksi`
+-- Table structure for table `transaksi`
 --
 
 CREATE TABLE `transaksi` (
-  `id_transaksi` int(11) NOT NULL,
-  `id_barang` int(11) NOT NULL,
-  `id_penyewa` int(11) NOT NULL,
+  `id_transaksi` int NOT NULL,
+  `id_barang` int NOT NULL,
+  `id_penyewa` int NOT NULL,
   `tanggal_sewa` datetime NOT NULL,
   `waktu_kembali` date NOT NULL,
   `status_transaksi` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `transaksi`
+-- Dumping data for table `transaksi`
 --
 
 INSERT INTO `transaksi` (`id_transaksi`, `id_barang`, `id_penyewa`, `tanggal_sewa`, `waktu_kembali`, `status_transaksi`) VALUES
@@ -686,16 +686,18 @@ INSERT INTO `transaksi` (`id_transaksi`, `id_barang`, `id_penyewa`, `tanggal_sew
 (11, 14, 28, '2018-12-06 07:27:34', '2018-12-06', 'Pending'),
 (12, 9, 28, '2018-12-06 07:28:44', '2018-12-06', 'Pending'),
 (13, 14, 28, '2018-12-06 07:30:19', '2018-12-06', 'Disetujui'),
-(14, 14, 29, '2018-12-06 14:35:59', '2018-12-06', 'Disetujui');
+(14, 14, 29, '2018-12-06 14:35:59', '2018-12-06', 'Disetujui'),
+(15, 17, 10, '2021-02-11 21:12:09', '2021-02-27', 'selesai'),
+(16, 9, 14, '2021-02-11 21:12:09', '2021-02-27', 'sfsdfsd');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
-  `id_user` int(11) NOT NULL,
+  `id_user` int NOT NULL,
   `nama_user` varchar(50) DEFAULT NULL,
   `tanggal_lahir` date DEFAULT NULL,
   `telepon` varchar(15) DEFAULT NULL,
@@ -713,7 +715,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id_user`, `nama_user`, `tanggal_lahir`, `telepon`, `email`, `alamat`, `provinsi`, `kota`, `jenis_kelamin`, `NIK`, `foto_profil`, `foto_identitas`, `password`, `status`, `verifikasi`) VALUES
@@ -724,7 +726,7 @@ INSERT INTO `user` (`id_user`, `nama_user`, `tanggal_lahir`, `telepon`, `email`,
 (5, 'Wijaya Kurniadi', '2018-11-09', '081', '', ' aaa', 'Jawa Timur', 'Malang', 'Laki-Laki', '89979', NULL, 'BMC.png', 'dwwdww', 'User', 1),
 (6, 'Kurniadi Ahmad Wijaya', '2018-11-01', '1213', 'sss@bb.com', NULL, 'Jawa Timur', 'Kab. Aceh Jaya', 'Laki-Laki', NULL, NULL, NULL, 'ssss', 'User', 0),
 (7, 'Almira Rahma Sabita', '2001-11-10', '09876543212', 'almirarahma@gmail.com', 'Jl Mastrip Ketiban Kerapu No 2 Malang', 'Jawa Timur', 'Malang', 'Perempuan', '9917462384', 'fotoku.jpg', 'fotosaya.jpg', 'almirarahma', 'Admin', 1),
-(8, 'Muhammad Rezki Ananda', '2001-04-08', '123456789089', 'rezki_ananda@gmail.com', 'Jl Danau Ranau Sawojajar Malang', 'Jawa Timur', 'Malang', 'Laki-Laki', '99018347381', 'profil.jpg', 'img123461.jpg', 'rezkiananda', 'Admin', 1),
+(8, 'Muhammad Rezki Ananda', '2001-04-08', '123456789089', 'rezki_ananda@gmail.comasdasdas', 'Jl Danau Ranau Sawojajar Malang', 'Jawa Timur', 'Malang', 'Laki-Laki', '99018347381', 'profil.jpg', 'img123461.jpg', 'rezkiananda', 'Admin', 1),
 (9, 'Naufal Atha Haidarbahy', '2001-05-16', '678905432132', 'crowledlegs@gmail.com', 'Jl Sapi Perah Timur Selosari Magetan', 'Jawa Timur', 'Magetan', 'Laki-Laki', '99372642313', 'img974928.jpg', 'img361471.jpg', 'naufalatha', 'Admin', 1),
 (10, 'Chris Nanda Zefanya', '2001-05-19', '07135413413', 'chrisnanda275@gmail.com', 'Jl Danau Towuti 4, Sawojajar, Malang', 'Jawa Timur', 'Malang', 'Laki-Laki', '18965482365', NULL, NULL, NULL, 'User', 0),
 (11, 'Ozdemiroglu Hayirlim Osman Cali', '1990-07-14', '123456789089', 'osmancali@gmail.com', 'Jl Danau Towuti Sawojajar Malang', 'Jawa Timur', 'Malang', 'Laki-Laki', '999910010224', NULL, NULL, NULL, 'User', 0),
@@ -801,39 +803,39 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id_barang` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `jenis_barang`
 --
 ALTER TABLE `jenis_barang`
-  MODIFY `id_jenis` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_jenis` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `transaksi`
 --
 ALTER TABLE `transaksi`
-  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_transaksi` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id_user` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+-- Constraints for dumped tables
 --
 
 --
--- Ketidakleluasaan untuk tabel `barang`
+-- Constraints for table `barang`
 --
 ALTER TABLE `barang`
   ADD CONSTRAINT `barang_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `user` (`id_user`),
   ADD CONSTRAINT `barang_ibfk_2` FOREIGN KEY (`id_jenis`) REFERENCES `jenis_barang` (`id_jenis`);
 
 --
--- Ketidakleluasaan untuk tabel `transaksi`
+-- Constraints for table `transaksi`
 --
 ALTER TABLE `transaksi`
   ADD CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id_barang`),
